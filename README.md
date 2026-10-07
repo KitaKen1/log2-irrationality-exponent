@@ -9,8 +9,7 @@ The natural logarithm of 2 has irrationality exponent 2:
 This repository contains the complete split Lean proof and a statement in the style
 of Formal Conjectures.
 
-**Lean4Web edition:** [copy/paste single file](lean4web/LogTwoLean4WebPaste.lean),
-94,873 lines; browser pass reported on **v4.35.0-rc4**.
+**Try it in Lean4Web:** [open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Flog2-irrationality-exponent%2F93a66a6c6b69e5e2f7775d791fd4943f4b1cf671%2Flean4web%2FLogTwoLean4WebPaste.lean) (Lean **v4.35.0-rc4**).
 
 ## Formal Conjectures target
 

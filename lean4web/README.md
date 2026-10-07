@@ -1,5 +1,7 @@
 # Complete single-file edition for Lean4Web
 
+**Try it in Lean4Web:** [open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Flog2-irrationality-exponent%2F93a66a6c6b69e5e2f7775d791fd4943f4b1cf671%2Flean4web%2FLogTwoLean4WebPaste.lean) (Lean **v4.35.0-rc4**).
+
 **Copy/paste edition:** [LogTwoLean4WebPaste.lean](LogTwoLean4WebPaste.lean).
 Copy the entire file into Lean4Web with **Lean v4.35.0-rc4**. It has no local
 project imports and needs no checkpoint cache or additional files.
