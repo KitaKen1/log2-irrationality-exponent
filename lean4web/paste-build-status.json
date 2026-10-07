@@ -1,0 +1,37 @@
+{
+  "status": "browser_pass_reported",
+  "source_sha256": "0720586a6483e28b1b3bc0f46a6f9373f95c5dab9992db346f3507f6fb717ca7",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "scope": "User reports a successful full Lean4Web rc4 run, with screenshot showing 885/885 and the final public theorem axiom output. Local CLI checks cover the first 325 modules; a full local CLI run was not performed.",
+  "focused_check": "evidence/20261007T222044Z-paste-instances/result.json",
+  "focused_status": "passed",
+  "focused_elapsed_seconds": 53.659,
+  "focused_modules": [
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteCoverCohomology",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleTensor"
+  ],
+  "implicit_instance_imports": [
+    "Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.FunctorCategory",
+    "Mathlib.CategoryTheory.Abelian.GrothendieckCategory.EnoughInjectives",
+    "Mathlib.Algebra.Category.ModuleCat.EnoughInjectives",
+    "Mathlib.Algebra.Category.ModuleCat.Presheaf.PushforwardZeroMonoidal"
+  ],
+  "mathlib_source_module_count": 4330,
+  "previous_paste_mathlib_source_module_count": 4288,
+  "baseline_failure": "evidence/20261007T221759Z-paste-grothendieck/result.json",
+  "browser_error_report": "evidence/20261008T071642JST-browser-report/report.json",
+  "prior_hash_prefix_check": "evidence/20261007T220350Z-paste-prefix/result.json",
+  "editor_control_probe": "evidence/20261007T220327Z-paste-editor/result.json",
+  "prefix_check": "evidence/20261007T222145Z-paste-prefix/result.json",
+  "prefix_status": "passed",
+  "prefix_module_count": 325,
+  "prefix_source_lines_checked": 36292,
+  "prefix_elapsed_seconds": 238.783,
+  "browser_pass_report": "evidence/20261008T080310JST-browser-pass/report.json",
+  "browser_execution_reported_by_user": true,
+  "browser_execution_performed_by_agent": false,
+  "final_log_two_theorem_checked_locally": false,
+  "final_log_two_theorem_browser_status": "passed_user_report",
+  "browser_source_hash_verified": false,
+  "full_cli_status": "not_checked"
+}

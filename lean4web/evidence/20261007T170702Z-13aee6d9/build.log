@@ -1,0 +1,330 @@
+LogTwoLean4WebLite.lean:39:0: warning: 
+'Mathlib.Data.ENat.SuccOrder' has been deprecated: please replace this import by
+
+import Mathlib.Order.SuccPred.ENat
+LogTwoLean4WebLite.lean:40:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic
+LogTwoLean4WebLite.lean:41:0: warning: 
+'Mathlib.Data.Opposite' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Opposite
+LogTwoLean4WebLite.lean:42:0: warning: 
+'Mathlib.Data.SetLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.SetLike.Basic
+LogTwoLean4WebLite.lean:293:3: error: unknown tactic
+LogTwoLean4WebLite.lean:447:2: error: Function expected at
+  explicit_shape (delta_pos n) (delta_le hn)
+but this term has type
+  Shape (theta (delta n)) (a (delta n)) (b (delta n)) (c (delta n))
+
+Note: Expected a function because this term is being applied to the argument
+  ring
+LogTwoLean4WebLite.lean:752:3: error: unknown tactic
+LogTwoLean4WebLite.lean:806:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:906:4: error: unknown tactic
+LogTwoLean4WebLite.lean:1325:11: error: Function expected at
+  ⌈F * w.w i / w.v0⌉₊
+but this term has type
+  ℕ
+
+Note: Expected a function because this term is being applied to the argument
+  (div_le_iff₀ w.v0_pos).mp
+LogTwoLean4WebLite.lean:1337:6: error: mod_cast has type
+  ↑⌈F * w.w i / w.v0⌉₊ ≤ F * w.w i / w.v0 + 1
+but is expected to have type
+  ↑(truncationOrders w F i) ≤ F * w.w i / w.v0 + 1
+LogTwoLean4WebLite.lean:1565:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:1793:2: error: Function expected at
+  map_add ?m.26 ?m.27 ?m.28
+but this term has type
+  ?m.26 (?m.27 + ?m.28) = ?m.26 ?m.27 + ?m.26 ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  ring
+LogTwoLean4WebLite.lean:1831:60: error: Function expected at
+  rfl
+but this term has type
+  ?m.17 = ?m.17
+
+Note: Expected a function because this term is being applied to the argument
+  polynomialFrame_commute
+LogTwoLean4WebLite.lean:1832:37: error: unexpected token ','; expected command
+LogTwoLean4WebLite.lean:1868:2: error: unexpected identifier; expected command
+LogTwoLean4WebLite.lean:2030:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:2036:47: error: Function expected at
+  (coeff ↑d) f
+but this term has type
+  R
+
+Note: Expected a function because this term is being applied to the argument
+  simp
+LogTwoLean4WebLite.lean:2126:55: error: Function expected at
+  (coeff ↑d) f
+but this term has type
+  R
+
+Note: Expected a function because this term is being applied to the argument
+  simp
+LogTwoLean4WebLite.lean:2399:28: error: Function expected at
+  α i
+but this term has type
+  ℕ
+
+Note: Expected a function because this term is being applied to the argument
+  simp
+LogTwoLean4WebLite.lean:2670:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:2932:4: error: unexpected token '('; expected command
+LogTwoLean4WebLite.lean:3152:6: error: No goals to be solved
+LogTwoLean4WebLite.lean:3464:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:4267:2: error: Function expected at
+  scaled_weightedOrder_subst w (fun x => 1) A B hB f a ha N hf hcontact
+but this term has type
+  ↑A * N ≤ ↑B * weightedOrder (fun x => 1) (subst a f)
+
+Note: Expected a function because this term is being applied to the argument
+  scaled_order_subst
+LogTwoLean4WebLite.lean:4281:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:4284:41: error: unexpected token ':='; expected command
+LogTwoLean4WebLite.lean:4383:2: error: Function expected at
+  rational_order_subst_of_jet_vanishing v μ H hμ f a ha hf hcontact
+but this term has type
+  ↑⌈μ * H⌉₊ ≤ (subst a f).order
+
+Note: Expected a function because this term is being applied to the argument
+  exact
+LogTwoLean4WebLite.lean:4394:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:4785:6: error: No goals to be solved
+LogTwoLean4WebLite.lean:4787:4: error: unexpected identifier; expected command
+LogTwoLean4WebLite.lean:4793:4: error: unexpected identifier; expected command
+LogTwoLean4WebLite.lean:4873:2: error: Function expected at
+  DVRBranchExpansion.constantCoeff_expansionHom ?m.36 ?m.37 ?m.38 ?m.39 a
+but this term has type
+  PowerSeries.constantCoeff ((DVRBranchExpansion.expansionHom ?m.36 ?m.37 ?m.38 ?m.39) a) = ?m.36 a
+
+Note: Expected a function because this term is being applied to the argument
+  (uniformizer_irreducible A)
+LogTwoLean4WebLite.lean:5090:26: error: Application type mismatch: The argument
+  congrFun h ⟨d, hd⟩
+has type
+  rationalCoefficientPacket v H f ⟨d, hd⟩ = rationalCoefficientPacket v H g ⟨d, hd⟩
+but is expected to have type
+  f d = g d
+in the application
+  sub_eq_zero.mpr (congrFun h ⟨d, hd⟩)
+LogTwoLean4WebLite.lean:5093:25: error: Application type mismatch: The argument
+  h (↑d) d.property
+has type
+  (coeff ↑d) (f - g) = 0
+but is expected to have type
+  rationalCoefficientPacket v H f d - rationalCoefficientPacket v H g d = 0
+in the application
+  sub_eq_zero.mp (h (↑d) d.property)
+LogTwoLean4WebLite.lean:5101:2: error: Type mismatch
+  dite_eq_left d.property
+has type
+  dite ((Finsupp.weight v) ↑d < H) ?m.42 ?m.43 = ?m.42 ⋯
+but is expected to have type
+  rationalCoefficientPacket v H (fun d => if hd : (Finsupp.weight v) d < H then p ⟨d, hd⟩ else 0) d = p d
+LogTwoLean4WebLite.lean:5116:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:5404:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5405:35: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5407:35: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5406:12: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5405:71: error: unsolved goals
+A : Type u_1
+inst✝⁴ : CommRing A
+inst✝³ : IsDomain A
+inst✝² : IsDiscreteValuationRing A
+inst✝¹ : Algebra ℂ A
+inst✝ : Algebra.IsIntegral ℂ (IsLocalRing.ResidueField A)
+n : ℕ
+x : Fin n → A
+p : MvPolynomial (Fin n) ℂ
+⊢ sorry = (MvPolynomial.aeval fun i => sorry) p
+LogTwoLean4WebLite.lean:5415:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5416:14: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5419:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5420:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5423:41: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5421:64: error: unsolved goals
+A : Type u_1
+inst✝⁴ : CommRing A
+inst✝³ : IsDomain A
+inst✝² : IsDiscreteValuationRing A
+inst✝¹ : Algebra ℂ A
+inst✝ : Algebra.IsIntegral ℂ (IsLocalRing.ResidueField A)
+m : ℕ
+c : Fin m → ℂ
+y : A
+x : Fin m → A
+hy : sorry = 1
+hx : ∀ (i : Fin m), sorry = c i
+i : Fin (m + 1)
+⊢ PowerSeries.constantCoeff (coordinates c y x i) = 0
+LogTwoLean4WebLite.lean:5448:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5449:4: error: No goals to be solved
+LogTwoLean4WebLite.lean:5455:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5456:4: error: No goals to be solved
+LogTwoLean4WebLite.lean:5471:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5472:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5480:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5481:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5492:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5493:37: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5494:18: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5499:45: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5500:16: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5502:30: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5503:55: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5504:14: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5515:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5516:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5613:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:5670:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:5730:84: error: unexpected token 'theorem'; expected ':='
+LogTwoLean4WebLite.lean:5761:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5759:70: error: unsolved goals
+E : Type u_1
+inst✝¹ : Field E
+inst✝ : Algebra ℂ E
+f : E
+hf : IsAlgebraic ℂ f
+hm : f ∈ algebraicClosure ℂ E
+⊢ ∃ c, (algebraMap ℂ E) c = f
+LogTwoLean4WebLite.lean:5803:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:5878:5: error: unknown tactic
+LogTwoLean4WebLite.lean:5981:2: error: Function expected at
+  Set.Finite.mem_toFinset (finite_centered_family x a hx hfinite)
+but this term has type
+  ?m.49 ∈ ⋯.toFinset ↔ ?m.49 ∈ {p | ∃ j, Centered x (a j) p}
+
+Note: Expected a function because this term is being applied to the argument
+  exact
+LogTwoLean4WebLite.lean:5996:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:6242:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:6273:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:6334:4: error: unknown tactic
+LogTwoLean4WebLite.lean:6664:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:6751:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:6855:4: error: unknown tactic
+LogTwoLean4WebLite.lean:6874:47: error: Function expected at
+  rfl
+but this term has type
+  ?m.47 = ?m.47
+
+Note: Expected a function because this term is being applied to the argument
+  rw
+LogTwoLean4WebLite.lean:6930:2: error(lean.unknownIdentifier): Unknown identifier `exact`
+LogTwoLean4WebLite.lean:7048:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:7049:84: error: unexpected token ')'; expected command
+LogTwoLean4WebLite.lean:7301:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:7426:8: error: Invalid `⟨...⟩` notation: The expected type of this term could not be determined
+LogTwoLean4WebLite.lean:7427:73: error: unexpected token '⟩'; expected command
+LogTwoLean4WebLite.lean:7490:2: error: unexpected token '|'; expected command
+LogTwoLean4WebLite.lean:7506:3: error: unknown tactic
+LogTwoLean4WebLite.lean:7561:49: error(lean.unknownIdentifier): Unknown identifier `hab`
+LogTwoLean4WebLite.lean:7561:54: error(lean.unknownIdentifier): Unknown identifier `hdelta`
+LogTwoLean4WebLite.lean:7562:4: error: invalid occurrence of `·` notation, it must be surrounded by parentheses (e.g. `(· + 1)`)
+LogTwoLean4WebLite.lean:7595:52: error: Function expected at
+  rfl
+but this term has type
+  ?m.8 = ?m.8
+
+Note: Expected a function because this term is being applied to the argument
+  ring
+LogTwoLean4WebLite.lean:7653:4: error(lean.unknownIdentifier): Unknown identifier `d`
+LogTwoLean4WebLite.lean:7653:6: error(lean.unknownIdentifier): Unknown identifier `P`
+LogTwoLean4WebLite.lean:7702:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:7769:2: error: No goals to be solved
+LogTwoLean4WebLite.lean:7797:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4WebLite.lean:7798:35: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsAlgClosed ℂ
+
+Hint: Type class instance resolution failures can be inspec

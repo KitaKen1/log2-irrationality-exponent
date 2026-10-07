@@ -1,23 +1,72 @@
 # The irrationality exponent of log 2
 
-The conjecture on the irrationality exponent of $\log 2$ states the following.
+The natural logarithm of 2 has irrationality exponent 2:
 
-| Conjecture |
-| :--- |
-| The natural logarithm of $2$ has irrationality exponent $2$: $\mu(\log 2)=2$. |
+```math
+\mu(\log 2)=2.
+```
 
-This repository presents a proof giving an affirmative answer to this conjecture: $\mu(\log 2)=2$.
+This repository contains the complete split Lean proof and a statement in the style
+of Formal Conjectures.
 
-Its purpose is to support adding this conjecture to Formal Conjectures and proposing its classification as `research solved`. It describes the solution and the main steps of the proof.
+**Lean4Web edition:** [copy/paste single file](lean4web/LogTwoLean4WebPaste.lean),
+94,873 lines; browser pass reported on **v4.35.0-rc4**.
 
-For more detailed proof notes, see the [PDF](PDF/log2_proof_notes.pdf).
+## Formal Conjectures target
+
+[FC-style statement draft](FClikelean/LogTwoIrrationalityExponent.lean) of
+`μ(log 2) = 2`, using an independent definition of the irrationality exponent.
+
+```lean
+theorem LogTwo.irrationalityExponent_log_two :
+    LogTwo.irrationalityExponent (Real.log 2) = answer(2)
+```
+
+## Files
+
+| Directory | Lean version | Purpose |
+|---|---|---|
+| [lean/](lean/) | `v4.34.1` | Complete split proof: 88 project modules and 797 pinned supporting modules |
+| [FClikelean/](FClikelean/) | FC-style draft; not FC-linted | Statement and one independent definition |
+| [lean4web/](lean4web/) | `v4.35.0-rc4` | Copy/paste source and browser verification report |
+| [PDF/](PDF/) | — | Mathematical proof notes |
+
+The split entry point is [LogTwo.lean](lean/LogTwo.lean). The included
+[OAI/](lean/OAI/) tree is exactly the imported closure from the pinned OpenAI
+comparison source, with its recorded Lean-module compatibility patch. It includes
+no nested Git repository and requires no separate OpenAI checkout.
+[Third-party notices](THIRD_PARTY_NOTICES.txt) record provenance and modifications.
 
 ## Proof sketch
+
+The [PDF proof notes](PDF/log2_proof_notes.pdf) describe the structure and steps
+of the Lean proof in detail.
+
+## Verification
+
+```bash
+cd lean
+lake update
+lake exe cache get
+python3 scripts/build_audit.py
+```
+
+Axioms: `propext`, `Classical.choice`, `Quot.sound`.
+
+[Build results](lean/evidence/build-results.json) ·
+[Build instructions](lean/README.md) · [Lean4Web](lean4web/README.md)
+
+## Mathematical explanation (AI generated)
+
+The following sketch follows the formal proof. The Lean statements and proofs,
+rather than this sketch or the earlier PDF, determine the formal result.
+
+
 
 Write $\lambda=\log 2$, where $\log$ is the natural logarithm. To establish that its irrationality exponent is $2$, it suffices to show that for every real $\nu>2$, there is an integer $Q\ge 2$ such that
 
 $$
-\left|\lambda-\frac{p}{q}\right|>q^{-\nu}
+\left|\lambda-\frac{p}{q}\right|\ge q^{-\nu}
 \qquad (p\in\mathbb Z,\ q\in\mathbb Z,\ q\ge Q).
 $$
 
@@ -86,9 +135,16 @@ so the interpolation ratio is exactly $1/2$. The dimension and weights are chose
 
 The incompatible bounds on the same nonzero determinant rule out arbitrarily large denominators with error at most $q^{-\nu}$. Since $\nu>2$ was arbitrary, this gives $\mu(\log 2)\le 2$. The classical lower bound from Dirichlet approximation gives the equality.
 
+## Status boundary
+
+The split proof has been checked locally on Lean v4.34.1.
+A successful Lean4Web v4.35.0-rc4 run was [reported with a screenshot](lean4web/evidence/20261008T080310JST-browser-pass/report.json).
+
 ## AI usage disclosure
 
-This formalization, mathematical exploration, proof development, and documentation were produced by Kenta Kitamura with assistance from ChatGPT and OpenAI Codex using GPT-6 Astra and GPT-6.1 sol
+This formalization, mathematical exploration, proof development, and documentation
+were produced by Kenta Kitamura with assistance from ChatGPT and OpenAI Codex using
+GPT-6 Astra and GPT-6.1 sol.
 
 ## References
 
@@ -105,7 +161,8 @@ This formalization, mathematical exploration, proof development, and documentati
 | 2009 | [Marcovecchio][marcovecchio] improves the upper bound to $\mu(\log 2)\le 3.574\ldots$. |
 | 2026-04-20 | [Bugeaud–Kim, v2][bugeaud-kim] lists the exact value of $\mu(\log 2)$ as unknown. |
 | 2026-09-24 | [OpenAI][openai] presents a proof of $\mu(\pi)=2$. |
-| 2026-10-07 | This repository presents a proof outline for $\mu(\log 2)=2$, intended for a proposal to Formal Conjectures. |
+| 2026-10-07 | The complete split Lean proof was checked locally on v4.34.1; the FC-style statement and v4.35.0-rc4 browser edition were prepared separately. |
+| 2026-10-08 | The independent public definition and final target passed the local v4.34.1 audit; the browser's `quotientSection` error was fixed and its three-module rc4 check passed. |
 
 [openai]: https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/build/main.tex
 [marcovecchio]: https://ricerca.unich.it/handle/11564/648605

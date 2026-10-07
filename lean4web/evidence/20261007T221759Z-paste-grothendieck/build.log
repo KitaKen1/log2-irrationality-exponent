@@ -1,0 +1,124 @@
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:44:0: warning: 
+'Mathlib.Data.ENat.SuccOrder' has been deprecated: please replace this import by
+
+import Mathlib.Order.SuccPred.ENat
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:45:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:46:0: warning: 
+'Mathlib.Data.Opposite' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Opposite
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:47:0: warning: 
+'Mathlib.Data.SetLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.SetLike.Basic
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:625:19: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HasExactColimitsOfShape J (Cᵒᵖ ⥤ Ab)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:662:70: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (SheafOfModules R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:831:54: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (SheafOfModules R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:833:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Mono S.f
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:830:9: error: unsolved goals
+case zero.refine_1
+X : TopCat
+R : Sheaf (Opens.grothendieckTopology ↑X) RingCat
+M : SheafOfModules R
+inst✝ : TopCat.Sheaf.IsFlasque ((SheafOfModules.toSheaf R).obj M)
+x : Ext (SheafOfModules.unit R) M (0 + 1)
+⊢ EnoughInjectives (SheafOfModules R)
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:842:54: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (SheafOfModules R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:844:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Mono S.f
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:848:43: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (SheafOfModules R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:841:14: error: unsolved goals
+case succ.refine_1
+X : TopCat
+R : Sheaf (Opens.grothendieckTopology ↑X) RingCat
+n : ℕ
+ih :
+  ∀ (M : SheafOfModules R) [TopCat.Sheaf.IsFlasque ((SheafOfModules.toSheaf R).obj M)]
+    (x : Ext (SheafOfModules.unit R) M (n + 1)), x = 0
+M : SheafOfModules R
+inst✝ : TopCat.Sheaf.IsFlasque ((SheafOfModules.toSheaf R).obj M)
+x : Ext (SheafOfModules.unit R) M (n + 1 + 1)
+⊢ EnoughInjectives (SheafOfModules R)
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:885:54: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (ModuleCat ↑R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:887:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Mono S.f
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:889:30: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Mono ((tilde.functor R).map S.f)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:890:56: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (ModuleCat ↑R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:884:9: error: unsolved goals
+case zero.refine_1
+R : CommRingCat
+inst✝ : IsNoetherianRing ↑R
+M : ModuleCat ↑R
+x : Ext (schemeUnit (Spec R)) (tilde M) (0 + 1)
+⊢ EnoughInjectives (ModuleCat ↑R)
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:901:54: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (ModuleCat ↑R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:903:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Mono S.f
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:905:30: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Mono ((tilde.functor R).map S.f)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:906:56: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  EnoughInjectives (ModuleCat ↑R)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+evidence/20261007T221759Z-paste-grothendieck/Modules.lean:900:14: error: unsolved goals
+case succ.refine_1
+R : CommRingCat
+inst✝ : IsNoetherianRing ↑R
+n : ℕ
+ih : ∀ (M : ModuleCat ↑R) (x : Ext (schemeUnit (Spec R)) (tilde M) (n + 1)), x = 0
+M : ModuleCat ↑R
+x : Ext (schemeUnit (Spec R)) (tilde M) (n + 1 + 1)
+⊢ EnoughInjectives (ModuleCat ↑R)
+'OAI.PiExponentSeshadri.ModuleGrothendieck.presheafAB5' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponentSeshadri.ModuleGrothendieck.sheafGrothendieck' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponentSeshadri.ModuleGrothendieck.enoughInjectives' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

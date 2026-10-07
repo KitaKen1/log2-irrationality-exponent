@@ -1,0 +1,69 @@
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:42:0: warning: 
+'Mathlib.Data.ENat.SuccOrder' has been deprecated: please replace this import by
+
+import Mathlib.Order.SuccPred.ENat
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:43:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:44:0: warning: 
+'Mathlib.Data.Opposite' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Opposite
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:45:0: warning: 
+'Mathlib.Data.SetLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.SetLike.Basic
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:7828:32: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:7828:62: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:8189:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:8237:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:8310:55: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [truncatedJetAt, truncatedFormalJet, frameMonomial, scaleY, map_prod, mul_pow,
+    MvPowerSeries.algebraMap_apply, add_comm, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:8807:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+evidence/20261007T171752Z-lite-prefix/Prefix.lean:8814:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'OAI.PiExponent.irrationalityExponent_eq_two_of_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.coordinateKernel_height_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponent.derivation_mem_polynomialTangent' depends on axioms: [propext, Classical.choice, Quot.sound]

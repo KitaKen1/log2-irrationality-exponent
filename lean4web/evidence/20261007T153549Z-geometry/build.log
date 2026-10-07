@@ -1,0 +1,7 @@
+'OAI.PiExponentSeshadri.CartierSequence.exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponent.CartierDegreeLength.cartier_euler_difference_eq_sum_local_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponent.TwistSectionClearing.frame_twistForward_zero_on' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

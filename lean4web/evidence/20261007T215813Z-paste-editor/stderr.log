@@ -1,0 +1,234 @@
+PANIC at outOfBounds Init.GetElem:18:2: index out of bounds
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x0000000110c2f248 Lean.Language.Lean.process.parseCmd [λ, private] + 172
+4   libleanshared.dylib                 0x0000000110c2f798 Lean.Language.Lean.process.parseCmd [boxed, λ, private] + 68
+5   libleanshared.dylib                 0x0000000113af5860 <apply/2> + 2688
+6   libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+7   libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+8   libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+9   libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+10  libleanshared.dylib                 0x0000000113af18c4 _ZN4lean12task_manager12resolve_coreERNSt3__111unique_lockINS1_5mutexEEEP9lean_taskP11lean_object + 96
+11  libleanshared.dylib                 0x0000000113af248c _ZZN4lean12task_manager12spawn_workerEvENKUlvE_clEv + 304
+12  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+13  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+14  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at _private.Lean.Elab.InfoTree.Util.0.Lean.Elab.InfoTree.visitM.go Lean.Elab.InfoTree.Util:65:21: unexpected context-free info tree node
+backtrace:
+PANIC at outOfBounds Init.GetElem:18:2: index out of bounds
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x0000000110c2f248 Lean.Language.Lean.process.parseCmd [λ, private] + 172
+4   libleanshared.dylib                 0x0000000110c2f798 Lean.Language.Lean.process.parseCmd [boxed, λ, private] + 68
+5   libleanshared.dylib                 0x0000000113af5860 <apply/2> + 2688
+6   libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+7   libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+8   libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+9   libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+10  libleanshared.dylib                 0x0000000113af18c4 _ZN4lean12task_manager12resolve_coreERNSt3__111unique_lockINS1_5mutexEEEP9lean_taskP11lean_object + 96
+11  libleanshared.dylib                 0x0000000113af248c _ZZN4lean12task_manager12spawn_workerEvENKUlvE_clEv + 304
+12  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+13  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+14  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at outOfBounds Init.GetElem:18:2: index out of bounds
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x00000001136682cc panic [arity↓] spec at Lean.Elab.InfoTree.visitM.go spec at Lean.Elab.InfoTree.visitM' spec at Lean.Server.findReferences + 624
+4   libleanshared.dylib                 0x0000000113669154 Lean.Elab.InfoTree.visitM' spec at Lean.Server.findReferences + 116
+5   libleanshared.dylib                 0x0000000113669314 Array.forIn'Unsafe.loop [private] spec at Lean.Server.findReferences + 224
+6   libleanshared.dylib                 0x0000000113674ba8 Lean.Server.findModuleRefs + 56
+7   libleanshared.dylib                 0x000000011351ab08 Lean.Server.FileWorker.mkIleanInfoNotification [private] + 124
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+8   libleanshared.dylib                 0x000000011351e404 Lean.Server.FileWorker.reportSnapshots.handleNode [private] + 2724
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+9   libleanshared.dylib                 0x000000011351f46c Lean.Server.FileWorker.reportSnapshots.handleFinished [private] + 176
+10  libleanshared.dylib                 0x000000011351f904 Array.foldlMUnsafe.fold [private] spec at Lean.Server.FileWorker.reportSnapshots.handleFinished + 268
+11  libleanshared.dylib                 0x0000000113520038 Lean.Server.FileWorker.reportSnapshots.handleTasks [private] + 312
+12  libleanshared.dylib                 0x0000000113521140 Lean.Server.FileWorker.reportSnapshots [λ, private] + 232
+3   libleanshared.dylib                 0x0000000110c2f248 Lean.Language.Lean.process.parseCmd [λ, private] + 172
+13  libleanshared.dylib                 0x0000000113521abc Lean.Server.FileWorker.reportSnapshots [boxed, λ, private] + 64
+14  libleanshared.dylib                 0x0000000113af41c0 <apply/1> + 5856
+15  libleanshared.dylib                 0x0000000113b185fc _ZN4leanL18lean_io_as_task_fnEP11lean_objectS1_ + 20
+4   libleanshared.dylib                 0x0000000110c2f798 Lean.Language.Lean.process.parseCmd [boxed, λ, private] + 68
+16  libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+5   libleanshared.dylib                 0x0000000113af5860 <apply/2> + 2688
+17  libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+6   libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+7   libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+18  libleanshared.dylib                 0x0000000113af1a44 _ZNSt3__128__invoke_void_return_wrapperIvLb1EE6__callB8ne200100IJRZN4lean12task_manager22spawn_dedicated_workerEP9lean_taskEUlvE_EEEvDpOT_ + 68
+8   libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+9   libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+19  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+20  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+21  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+10  libleanshared.dylib                 0x0000000113af18c4 _ZN4lean12task_manager12resolve_coreERNSt3__111unique_lockINS1_5mutexEEEP9lean_taskP11lean_object + 96
+11  libleanshared.dylib                 0x0000000113af248c _ZZN4lean12task_manager12spawn_workerEvENKUlvE_clEv + 304
+PANIC at _private.Lean.Elab.InfoTree.Util.0.Lean.Elab.InfoTree.visitM.go Lean.Elab.InfoTree.Util:65:21: unexpected context-free info tree node
+backtrace:
+12  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+13  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+14  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at outOfBounds Init.GetElem:18:2: index out of bounds
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x0000000110c2f248 Lean.Language.Lean.process.parseCmd [λ, private] + 172
+4   libleanshared.dylib                 0x0000000110c2f798 Lean.Language.Lean.process.parseCmd [boxed, λ, private] + 68
+5   libleanshared.dylib                 0x0000000113af5860 <apply/2> + 2688
+6   libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+7   libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+8   libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+9   libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+10  libleanshared.dylib                 0x0000000113af18c4 _ZN4lean12task_manager12resolve_coreERNSt3__111unique_lockINS1_5mutexEEEP9lean_taskP11lean_object + 96
+11  libleanshared.dylib                 0x0000000113af248c _ZZN4lean12task_manager12spawn_workerEvENKUlvE_clEv + 304
+12  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+13  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+14  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at outOfBounds Init.GetElem:18:2: index out of bounds
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x000000011366e588 panic [arity↓] spec at Lean.Elab.InfoTree.visitM.go spec at Lean.Elab.InfoTree.visitM' spec at Lean.Server.combineIdents.buildIdMap + 624
+4   libleanshared.dylib                 0x000000011366f3ec Lean.Elab.InfoTree.visitM' spec at Lean.Server.combineIdents.buildIdMap + 116
+5   libleanshared.dylib                 0x000000011366f574 Array.foldlMUnsafe.fold [private] spec at Lean.Server.combineIdents.buildIdMap + 168
+6   libleanshared.dylib                 0x000000011366fdd0 Lean.Server.combineIdents.buildIdMap [private] + 152
+7   libleanshared.dylib                 0x00000001136717f0 Lean.Server.combineIdents + 248
+8   libleanshared.dylib                 0x0000000113674be4 Lean.Server.findModuleRefs + 116
+9   libleanshared.dylib                 0x000000011351ab08 Lean.Server.FileWorker.mkIleanInfoNotification [private] + 124
+10  libleanshared.dylib                 0x000000011351e404 Lean.Server.FileWorker.reportSnapshots.handleNode [private] + 2724
+11  libleanshared.dylib                 0x000000011351f46c Lean.Server.FileWorker.reportSnapshots.handleFinished [private] + 176
+12  libleanshared.dylib                 0x000000011351f904 Array.foldlMUnsafe.fold [private] spec at Lean.Server.FileWorker.reportSnapshots.handleFinished + 268
+13  libleanshared.dylib                 0x0000000113520038 Lean.Server.FileWorker.reportSnapshots.handleTasks [private] + 312
+14  libleanshared.dylib                 0x0000000113521140 Lean.Server.FileWorker.reportSnapshots [λ, private] + 232
+15  libleanshared.dylib                 0x0000000113521abc Lean.Server.FileWorker.reportSnapshots [boxed, λ, private] + 64
+16  libleanshared.dylib                 0x0000000113af41c0 <apply/1> + 5856
+17  libleanshared.dylib                 0x0000000113b185fc _ZN4leanL18lean_io_as_task_fnEP11lean_objectS1_ + 20
+18  libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+19  libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+20  libleanshared.dylib                 0x0000000113af1a44 _ZNSt3__128__invoke_void_return_wrapperIvLb1EE6__callB8ne200100IJRZN4lean12task_manager22spawn_dedicated_workerEP9lean_taskEUlvE_EEEvDpOT_ + 68
+21  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+22  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+23  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at _private.Lean.Elab.InfoTree.Util.0.Lean.Elab.InfoTree.visitM.go Lean.Elab.InfoTree.Util:65:21: unexpected context-free info tree node
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x0000000110c2f248 Lean.Language.Lean.process.parseCmd [λ, private] + 172
+4   libleanshared.dylib                 0x0000000110c2f798 Lean.Language.Lean.process.parseCmd [boxed, λ, private] + 68
+5   libleanshared.dylib                 0x0000000113af5860 <apply/2> + 2688
+6   libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+7   libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+8   libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+9   libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+10  libleanshared.dylib                 0x0000000113af18c4 _ZN4lean12task_manager12resolve_coreERNSt3__111unique_lockINS1_5mutexEEEP9lean_taskP11lean_object + 96
+11  libleanshared.dylib                 0x0000000113af248c _ZZN4lean12task_manager12spawn_workerEvENKUlvE_clEv + 304
+12  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+13  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+14  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at Lean.Server.Snapshots.Snapshot.infoTree Lean.Server.Snapshots:48:2: assertion violation: infoState.trees.size == 1
+  
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x00000001136682cc panic [arity↓] spec at Lean.Elab.InfoTree.visitM.go spec at Lean.Elab.InfoTree.visitM' spec at Lean.Server.findReferences + 624
+4   libleanshared.dylib                 0x0000000113669154 Lean.Elab.InfoTree.visitM' spec at Lean.Server.findReferences + 116
+5   libleanshared.dylib                 0x0000000113669314 Array.forIn'Unsafe.loop [private] spec at Lean.Server.findReferences + 224
+6   libleanshared.dylib                 0x0000000113674ba8 Lean.Server.findModuleRefs + 56
+7   libleanshared.dylib                 0x000000011351ab08 Lean.Server.FileWorker.mkIleanInfoNotification [private] + 124
+8   libleanshared.dylib                 0x000000011351e404 Lean.Server.FileWorker.reportSnapshots.handleNode [private] + 2724
+9   libleanshared.dylib                 0x000000011351f46c Lean.Server.FileWorker.reportSnapshots.handleFinished [private] + 176
+10  libleanshared.dylib                 0x000000011351f904 Array.foldlMUnsafe.fold [private] spec at Lean.Server.FileWorker.reportSnapshots.handleFinished + 268
+11  libleanshared.dylib                 0x0000000113520038 Lean.Server.FileWorker.reportSnapshots.handleTasks [private] + 312
+12  libleanshared.dylib                 0x0000000113521140 Lean.Server.FileWorker.reportSnapshots [λ, private] + 232
+13  libleanshared.dylib                 0x0000000113521abc Lean.Server.FileWorker.reportSnapshots [boxed, λ, private] + 64
+14  libleanshared.dylib                 0x0000000113af41c0 <apply/1> + 5856
+15  libleanshared.dylib                 0x0000000113b185fc _ZN4leanL18lean_io_as_task_fnEP11lean_objectS1_ + 20
+16  libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+17  libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+18  libleanshared.dylib                 0x0000000113af1a44 _ZNSt3__128__invoke_void_return_wrapperIvLb1EE6__callB8ne200100IJRZN4lean12task_manager22spawn_dedicated_workerEP9lean_taskEUlvE_EEEvDpOT_ + 68
+19  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+20  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+21  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at _private.Lean.Elab.InfoTree.Util.0.Lean.Elab.InfoTree.visitM.go Lean.Elab.InfoTree.Util:65:21: unexpected context-free info tree node
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x00000001135bcf30 Lean.Server.FileWorker.handleHover [λ] + 504
+4   libleanshared.dylib                 0x00000001135bdc1c Lean.Server.FileWorker.handleHover [boxed, λ] + 20
+5   libleanshared.dylib                 0x0000000113af8b54 <apply/3> + 5980
+6   libleanshared.dylib                 0x00000001136955d8 Lean.Server.RequestM.waitFindSnapAux [boxed] + 36
+7   libleanshared.dylib                 0x0000000113af8ae4 <apply/3> + 5868
+8   libleanshared.dylib                 0x0000000113692f58 Lean.Server.RequestM.mapTaskCheap [boxed, λ, arity↓] + 52
+9   libleanshared.dylib                 0x0000000113af65cc <apply/2> + 6124
+10  libleanshared.dylib                 0x00000001136cc588 Lean.Server.ServerTask.EIO.mapTaskCheap [λ, arity↓] + 20
+11  libleanshared.dylib                 0x0000000113af5c14 <apply/2> + 3636
+12  libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+13  libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+14  libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+15  libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+16  libleanshared.dylib                 0x0000000113af1a44 _ZNSt3__128__invoke_void_return_wrapperIvLb1EE6__callB8ne200100IJRZN4lean12task_manager22spawn_dedicated_workerEP9lean_taskEUlvE_EEEvDpOT_ + 68
+17  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+18  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+19  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+PANIC at _private.Lean.Elab.InfoTree.Util.0.Lean.Elab.InfoTree.visitM.go Lean.Elab.InfoTree.Util:65:21: unexpected context-free info tree node
+backtrace:
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x000000011366e588 panic [arity↓] spec at Lean.Elab.InfoTree.visitM.go spec at Lean.Elab.InfoTree.visitM' spec at Lean.Server.combineIdents.buildIdMap + 624
+4   libleanshared.dylib                 0x000000011366f3ec Lean.Elab.InfoTree.visitM' spec at Lean.Server.combineIdents.buildIdMap + 116
+5   libleanshared.dylib                 0x000000011366f574 Array.foldlMUnsafe.fold [private] spec at Lean.Server.combineIdents.buildIdMap + 168
+6   libleanshared.dylib                 0x000000011366fdd0 Lean.Server.combineIdents.buildIdMap [private] + 152
+7   libleanshared.dylib                 0x00000001136717f0 Lean.Server.combineIdents + 248
+8   libleanshared.dylib                 0x0000000113674be4 Lean.Server.findModuleRefs + 116
+9   libleanshared.dylib                 0x000000011351ab08 Lean.Server.FileWorker.mkIleanInfoNotification [private] + 124
+10  libleanshared.dylib                 0x000000011351e404 Lean.Server.FileWorker.reportSnapshots.handleNode [private] + 2724
+11  libleanshared.dylib                 0x000000011351f46c Lean.Server.FileWorker.reportSnapshots.handleFinished [private] + 176
+12  libleanshared.dylib                 0x000000011351f904 Array.foldlMUnsafe.fold [private] spec at Lean.Server.FileWorker.reportSnapshots.handleFinished + 268
+13  libleanshared.dylib                 0x0000000113520038 Lean.Server.FileWorker.reportSnapshots.handleTasks [private] + 312
+14  libleanshared.dylib                 0x0000000113521140 Lean.Server.FileWorker.reportSnapshots [λ, private] + 232
+15  libleanshared.dylib                 0x0000000113521abc Lean.Server.FileWorker.reportSnapshots [boxed, λ, private] + 64
+16  libleanshared.dylib                 0x0000000113af41c0 <apply/1> + 5856
+17  libleanshared.dylib                 0x0000000113b185fc _ZN4leanL18lean_io_as_task_fnEP11lean_objectS1_ + 20
+18  libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+19  libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+20  libleanshared.dylib                 0x0000000113af1a44 _ZNSt3__128__invoke_void_return_wrapperIvLb1EE6__callB8ne200100IJRZN4lean12task_manager22spawn_dedicated_workerEP9lean_taskEUlvE_EEEvDpOT_ + 68
+21  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+22  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+23  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8
+0   libleanshared.dylib                 0x0000000113aefe48 _ZN4leanL15print_backtraceEb + 60
+1   libleanshared.dylib                 0x0000000113ae5f74 _ZN4leanL15lean_panic_implEPKcmb + 176
+2   libleanshared.dylib                 0x0000000113ae6090 lean_panic_fn_borrowed + 64
+3   libleanshared.dylib                 0x00000001135b9f34 panic [arity↓] spec at Lean.Elab.InfoTree.visitM.go spec at Lean.Elab.InfoTree.hoverableInfoAtM? spec at Lean.Server.FileWorker.handleHover + 188
+4   libleanshared.dylib                 0x00000001135bbfd4 Lean.Elab.InfoTree.hoverableInfoAtM? spec at Lean.Server.FileWorker.handleHover + 120
+5   libleanshared.dylib                 0x00000001135bcf40 Lean.Server.FileWorker.handleHover [λ] + 520
+6   libleanshared.dylib                 0x00000001135bdc1c Lean.Server.FileWorker.handleHover [boxed, λ] + 20
+7   libleanshared.dylib                 0x0000000113af8b54 <apply/3> + 5980
+8   libleanshared.dylib                 0x00000001136955d8 Lean.Server.RequestM.waitFindSnapAux [boxed] + 36
+9   libleanshared.dylib                 0x0000000113af8ae4 <apply/3> + 5868
+10  libleanshared.dylib                 0x0000000113692f58 Lean.Server.RequestM.mapTaskCheap [boxed, λ, arity↓] + 52
+11  libleanshared.dylib                 0x0000000113af65cc <apply/2> + 6124
+PANIC at _private.Lean.Elab.InfoTree.Util.0.Lean.Elab.InfoTree.visitM.go Lean.Elab.InfoTree.Util:65:21: unexpected context-free info tree node
+12  libleanshared.dylib                 0x00000001136cc588 Lean.Server.ServerTask.EIO.mapTaskCheap [λ, arity↓] + 20
+backtrace:
+13  libleanshared.dylib                 0x0000000113af5c14 <apply/2> + 3636
+14  libleanshared.dylib                 0x0000000113b186f8 _ZN4leanL20lean_io_bind_task_fnEP11lean_objectS1_ + 20
+15  libleanshared.dylib                 0x0000000113af37ac <apply/1> + 3276
+16  libleanshared.dylib                 0x0000000113af413c <apply/1> + 5724
+17  libleanshared.dylib                 0x0000000113af14fc _ZN4lean12task_manager8run_taskERNSt3__111unique_lockINS1_5mutexEEEP9lean_task + 164
+18  libleanshared.dylib                 0x0000000113af1a44 _ZNSt3__128__invoke_void_return_wrapperIvLb1EE6__callB8ne200100IJRZN4lean12task_manager22spawn_dedicated_workerEP9lean_taskEUlvE_EEEvDpOT_ + 68
+19  libleanshared.dylib                 0x0000000113ae3838 _ZN4lean7lthread3imp5_mainEPv + 56
+20  libsystem_pthread.dylib             0x00000001964bbc0c _pthread_start + 136
+21  libsystem_pthread.dylib             0x00000001964b6b80 thread_start + 8

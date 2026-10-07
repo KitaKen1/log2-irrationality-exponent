@@ -1,0 +1,210 @@
+This project reuses openai/math at commit
+adc7f1241b42e322a6451854ab7e4b4c146bf78a
+https://github.com/openai/math
+
+The upstream Lean sources are licensed under Apache-2.0.
+A copy is provided in LICENSES/openai-math-Apache-2.0.txt.
+The included source closure is derived from that pinned commit. Selected source headers have been
+adapted to Lean 4.34's public module format to reduce import memory usage:
+module, public import, and @[expose] public section. The recorded migration exposes 72 helpers, renames 7 colliding helper names,
+and removes two redundant rfl steps after simp has already closed the goal.
+Mathematical statements are unchanged. The full patch is retained in
+lean/evidence/comparison-module-headers.patch, and every packaged source is
+hash-pinned in lean/evidence/source-manifest.json. The packaged OAI/ directory
+contains only the 797 imported modules, without a nested Git checkout.
+
+The generated lean4web/ edition additionally adapts twenty-two upstream modules
+and LogTwo.Geometry.SectionIdealBridge for Lean 4.35.0-rc4 and single-file scope:
+JetGeometry qualifies a HasAntidiagonal lemma; CurveLocalOrder
+and PolynomialPoleBound bundle the monotonicity proof for AddValuation.map;
+PrimeHilbertDegree supplies the field torsion-free instance explicitly;
+FiniteFreeResolutionExt removes one redundant rfl after simp;
+LocalComponentDegree and PrimeHilbertDimension use the current IsConcreteLE names;
+CartierSequence, CartierDegreeLength, CurveDegreeAdditivity, SectionZeroStalk,
+CurveSectionDegree, IdealTensorPowers, LogTwo.Geometry.SectionIdealBridge,
+CartierEulerDifference, SectionCartierPower, CartierMixedEuler,
+AmpleCurveDegreePositive and GeneralCartierDegreeLength parenthesize multiline
+singleton elements to disambiguate the syntax while preserving singleton notation;
+TwistSectionClearing qualifies GlobalSectionClearing.restrictScalar;
+CartierMixedEuler qualifies CartierPowerFrames.tensorFrame in a simplification;
+GlobalInvertibleIdeal, EulerSupportDimension and SectionCartierRegular rename
+private helpers to avoid collisions after module flattening.
+These transformations are recorded in lean/scripts/make_lean4web.py and
+lean4web/source-map.json. They do not modify the pinned split proof sources.
+
+The additional lean4web/LogTwoLean4WebLite.lean edition narrows the Mathlib
+imports and removes unused plain lemmas. The removal list and original source
+hashes are recorded in lean4web/reduction.json. Its header identifies these
+changes, and each affected source section carries a modification comment.
+All existing source copyright, license and provenance notices are retained.
+The original full single-file edition and pinned split sources are unchanged.
+
+The diagnostic lean4web/LogTwoLean4WebSequential.lean edition adds
+set_option Elab.async false and progress messages to the reduced edition.
+Removing these insertions restores the reduced source exactly; no proof text
+or original notice is altered. Its source map and generator are recorded in
+lean4web/sequential-source-map.json and lean/scripts/make_lean4web_sequential.py.
+
+The local lean4web/checkpoints/ edition partitions the reduced source blocks
+into separate public Lean modules. It adds narrower per-checkpoint imports and
+synchronous elaboration, retaining every original block verbatim. Each generated
+file identifies these modifications in its header. Source correspondence and
+hashes are recorded in lean4web/checkpoints/manifest.json. The final target uses
+the same independent project definition; no mathematical statement is weakened.
+
+The single-file lean4web/LogTwoLean4WebPaste.lean edition adds editor-metadata
+controls to the reduced source: asynchronous elaboration and style linters are
+disabled, and 7,784 by-proofs are wrapped in a tactic that omits internal editor
+information while executing the original proof steps. Outer command information
+is retained; the independent definition and final target are not wrapped.
+Progress messages and four explicit Mathlib instance-provider imports are added
+(for cohomology and tensor constructions). The header identifies these changes. Removing
+the wrappers and insertions recorded in lean4web/paste-source-map.json restores
+the reduced source exactly. All notices, kernel checking and errors remain.
+
+Distribution notices were added to all 797 modified imported OAI files and
+41 LogTwo files with recorded proof adaptations or extractions. Each notice
+identifies the source, revision, license and local changes. Existing contents
+and notices are retained verbatim after the new comment prefix. The exact
+before/after hashes are in lean/evidence/notice-update.json; this comment-only
+update is checked separately from the earlier Lean compilation and axiom audit.
+
+LogTwo/Geometry/JetTruncation.lean adapts the proof of
+OAI.PiExponent.FormalLogTruncation.formalLog_packets_surjective_iff_truncated.
+The adaptation uses different Y-centers and scales the same global polynomial
+at each center before applying the common formal-series shift.
+Other geometry files use the upstream polynomial-frame and local-contact APIs.
+LogTwo/Geometry/InterpolationBridge.lean adapts the packet-surjectivity argument
+from Approximation/FormalMatrixSurjectivity.lean to the varying Y-centers and
+the actual rational matrix, with rational determinant descent added.
+LogTwo/Geometry/AuxiliaryAtCenters.lean adapts Jets/FormalAuxiliaryJet.lean to
+varying Y-centers and adds the simultaneous derivative-word consequence.
+LogTwo/Geometry/CurveWordVanishing.lean adapts
+Cohomology/CurveDerivativeVanishing.logarithmic_words_vanish to arbitrary nonzero
+Y-centers and a finite family of actual normalized contacts, without the
+global rigidity import.
+LogTwo/Geometry/ContactFamilyAt.lean adapts Geometry/CurveContactFamily.lean
+to varying nonzero Y-centers and a total center choice for the complete finite
+place set; it assembles the auxiliary polynomial and derivative vanishing.
+These additions do not establish the irrationality exponent of log 2.
+
+LogTwo/Geometry/SeparatedWeights.lean adapts the finite-index conversion in
+Geometry/AdmissibleCurveWeights.lean; SeparationAssembly constructs denominator
+thresholds using Approximation/WeightSeparation.lean.
+LogTwo/Geometry/PersistentRigidity.lean adapts the logarithmic implication in
+Geometry/CurveFieldRigidity.lean and the cutoff argument in
+Jets/NormalBasisProducts.lean. These component lemmas take a persistent normal comparison as input.
+LogTwo/Geometry/NormalComparison.lean now adapts the logarithmic proof from
+Approximation/PersistentWeightComparison.lean to discharge that input, using
+Jets/TransverseSliceComparison.lean. IntrinsicContactBound.lean adapts the
+nonconstant-coordinate argument from Geometry/CurveInequalityIntrinsic.lean
+and uses Geometry/PlaceLocalRing.lean to derive the local field hypotheses.
+The varying-Y centers replace the original fixed Y=1 centers.
+These results do not establish the main theorem.
+
+LogTwo/Geometry/JetIdealAt.lean adapts the radical, support, and packet-vanishing
+arguments in Jets/CompactJetPolynomial.lean and Jets/CompactLogJetIdeal.lean
+using the inverse Y-scaling equivalence. JetIdealContact.lean connects these
+ideals to Analysis/LogarithmicContactIdeal.lean and the normalized branch lifts.
+JetIdealCRT.lean applies Mathlib's Chinese Remainder Theorem to the resulting
+coprime ideals; it makes no weighted-degree claim.
+
+LogTwo/Geometry/CompactJetIdealAt.lean adapts Jets/CompactLogJetIdeal.lean
+to arbitrary Y-centers, with an explicit affine-pullback identity and a unit-ideal
+statement away from the centers. JetProductContact.lean combines local-ring
+units, the computed radical, and the existing one-center colength identity.
+
+LogTwo/Geometry/IntegralProj.lean extracts the graded-domain Proj lemmas from
+Ampleness/BlowupProperIntegral.lean. WeightedCompactification.lean and the
+support arguments in WeightedJetIdeal.lean adapt the compactification part of
+Ampleness/AdmissibleBlowupGeometry.lean to the actual rational matrix weights
+and varying Y-centers. The affine section-ring ideal calculation follows
+Ampleness/ExceptionalCurveDegree.localIdeal_specIdeal. This adaptation does not
+import the fixed-Y curve inequality or assert the main theorem.
+
+LogTwo/Geometry/NormalizationBranch.lean uses the global extension and stalk
+isomorphism results in Geometry/CurveGlobalMonomial.lean and
+Geometry/CurvePlaceCenterStalk.lean. Its centered-map uniqueness argument
+adapts Ampleness/ExceptionalCurveDegree.centerMorphism_eq_centeredLift to
+varying nonzero Y centers and the constructed weighted compactification.
+The global map is constructed rather than assumed.
+
+LogTwo/Geometry/JetCenterAt.lean adapts Jets/JetCenterIdentification.lean
+to varying Y-centers. CurveIdealSupport.lean adapts the generic-unit and
+off-support local-ideal arguments in Ampleness/ExceptionalCurveDegree.lean.
+Its radical argument and finite colength cycle reuse this project's earlier
+varying-center ideal and contact-family results. No line-bundle degree
+identity is asserted by these new modules.
+
+LogTwo/Geometry/SectionIdealBridge.lean extracts the scheme-generic
+zero-ideal, section-divisor and inverse-line-bundle degree arguments from
+Ampleness/ExceptionalCurveDegree.lean. CurveSectionDegree.lean connects
+these arguments to this project's varying-center colength cycle and
+adapts the rational degree-cast calculation. License: Apache-2.0.
+The fixed-Y contact specialization and full admissible blowup construction
+are not imported by these modules.
+
+LogTwo/Geometry/WeightedBlowup.lean adapts the construction pattern from
+Ampleness/AdmissibleBlowupGeometry.lean, instantiating generic blowup APIs
+with the varying-center ideal. CurvePolarizationDegree.lean applies
+Geometry/WeightedProjectiveCurveDegree.lean to the actual matrix scale.
+CurveDegreeMargin.lean follows the degree/contact combination pattern
+in Ampleness/BlowupCurveMargin.lean for this project's intrinsic bound.
+License: Apache-2.0; pinned source revision as listed above.
+
+LogTwo/Geometry/BlowupPolarization.lean adapts the auxiliary ample-bundle
+construction from Ampleness/AdmissibleBlowupPolarization.lean.
+BlowupCurveImage.lean, BlowupCurveCoordinates.lean and BlowupCurveModel.lean
+adapt Geometry/AdmissibleCurveImage.lean, AdmissibleCurveCoordinates.lean
+and AdmissibleCurveModel.lean to the actual varying-center blowup.
+IntegralCurveDegree.lean applies the generic normalized-degree transfer
+and the project's proved varying-center degree inequality.
+License: Apache-2.0, with the pinned source revision listed above.
+
+LogTwo/Geometry/CurveMarginLemmas.lean adapts the scheme-generic first part
+of Ampleness/BlowupCurveMargin.lean, omitting the fixed-center contact bound.
+UniformCurveMargin.lean adapts the three-case proof strategy to the actual
+varying-center blowup, using the project's verified curve degree inequality.
+MatrixAmpleness.lean applies the generic numerical ampleness criterion.
+Source: pinned openai/math revision above; license: Apache-2.0.
+
+LogTwo/Geometry/WeightedAffineFrame.lean, WeightedHomogeneousSubstitution.lean,
+WeightedPullbackDegree.lean and WeightedGlobalSectionBound.lean retain the
+scheme-generic declarations of the corresponding pinned openai/math modules,
+with local namespaces/imports and without fixed-center admissible wrappers.
+MatrixJetSurjectivity.lean and MatrixSectionPolynomial.lean adapt the generic
+blowup/affine-jet application strategy to the actual varying Y centers.
+JetPacketSurjectivity.lean adapts the CRT packet proof strategy with scaleYEquiv.
+MatrixInterpolation.lean assembles these results with the existing rational minor bridge.
+Source: pinned openai/math revision above; license: Apache-2.0.
+
+LogTwo/Analysis/MatrixAnalyticBridge.lean adds the actual rational-entry bridge
+and adapts mathlib's optionEquivLeft coefficient proof strategy to optionEquivRight.
+LogTwo/Analysis/RealCenterRows.lean and RealCenterMatrix.lean adapt the generic
+PeriodAnalytic, AnalyticRowSeries and MatrixTranslation interfaces at the actual
+nonperiodic centers j*log(2), preserving the factor 2^(j*h).
+Sources: pinned mathlib (Apache-2.0) and openai/math (Apache-2.0) revisions above.
+No periodic exp(center)=1 specialization is used for the actual matrix.
+
+LogTwo/Analysis/AnalyticSummand.lean instantiates generic
+AnalyticDeterminantCollision at the actual nonperiodic log-two centers.
+TranslationScalar.lean uses generic MatrixTranslationBounds with a new
+log-two error estimate. AnalyticUpper.lean adapts the low-index injection
+and finite-choice aggregation strategies in LiteralAnalyticSummand and
+AnalyticAggregate, using generic DeterminantAnalyticBound.
+Source: pinned openai/math (Apache-2.0) revision above. The completed fixed-data
+analytic wrappers and the periodic center-error specialization are not applied.
+
+LogTwo/Analysis/Counting.lean generalizes the strategy in pinned openai/math
+Approximation/MatrixCounting.lean to arbitrary rational weights, using the
+already imported SimplexRational theorems. AsymptoticUpper.lean and
+BudgetContradiction.lean adapt the generic asymptotic/comparison strategy
+from AnalyticAggregate, Comparison and DeterminantContradiction, applied to
+the actual log-two rational minor and geometry. Those completed fixed-data
+wrappers are not imported or applied. Source: openai/math, Apache-2.0.
+FinalParameters.lean and Main.lean construct and discharge all numerical
+inputs using the project's explicit log-two parameters.
+
+Packaging and README structure were informed by KitaKen1/bapat-lal-q-permanent-lean
+at c459861078d42d22dd18144a103b2aee286dbf53. Its proof and claims are not part of
+this project. The local packaging/generation scripts are specific to this repository.

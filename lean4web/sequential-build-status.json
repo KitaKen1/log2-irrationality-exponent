@@ -1,0 +1,17 @@
+{
+  "status": "not_checked",
+  "source_sha256": "bdbbce78ca421ba76c84924b43884b5c1646d8b4bd427183457869fe1da7671a",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "scope": "Full synchronous diagnostic edition not checked. Its 100-module local prefix attempt reached the 240-second cap with an empty log; no speedup or browser success is established.",
+  "partial_checks": [
+    {
+      "status": "time_limit",
+      "module_count": 100,
+      "source_lines_checked": 11446,
+      "elapsed_seconds": 240.118,
+      "final_log_two_theorem_checked": false,
+      "result": "evidence/20261007T173614Z-sequential-prefix/result.json"
+    }
+  ],
+  "browser_execution_performed": false
+}

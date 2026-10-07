@@ -1,0 +1,272 @@
+LogTwoLean4WebLite.lean:39:0: warning: 
+'Mathlib.Data.ENat.SuccOrder' has been deprecated: please replace this import by
+
+import Mathlib.Order.SuccPred.ENat
+LogTwoLean4WebLite.lean:40:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic
+LogTwoLean4WebLite.lean:41:0: warning: 
+'Mathlib.Data.Opposite' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Opposite
+LogTwoLean4WebLite.lean:42:0: warning: 
+'Mathlib.Data.SetLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.SetLike.Basic
+LogTwoLean4WebLite.lean:7818:32: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+LogTwoLean4WebLite.lean:7818:62: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+LogTwoLean4WebLite.lean:8179:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+LogTwoLean4WebLite.lean:8227:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+LogTwoLean4WebLite.lean:8300:55: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [truncatedJetAt, truncatedFormalJet, frameMonomial, scaleY, map_prod, mul_pow,
+    MvPowerSeries.algebraMap_apply, add_comm, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LogTwoLean4WebLite.lean:8797:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+LogTwoLean4WebLite.lean:8804:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+LogTwoLean4WebLite.lean:9247:16: error(lean.unknownIdentifier): Unknown constant `MvPolynomial.ringKrullDim_of_isNoetherianRing`
+LogTwoLean4WebLite.lean:9248:6: error(lean.unknownIdentifier): Unknown identifier `ringKrullDim_eq_zero_of_field`
+LogTwoLean4WebLite.lean:9247:4: error: Type mismatch: After simplification, term
+  hdim
+ has type
+  ↑(coordinateKernel a).height ≤ ringKrullDim (MvPolynomial (Fin (m + 1)) ℂ)
+but is expected to have type
+  ↑(coordinateKernel a).height ≤ ↑m + 1
+LogTwoLean4WebLite.lean:10484:0: error: Unexpected name `PiExponent` after `end`: The current section is unnamed
+
+Hint: Delete the name `PiExponent` to end the current unnamed scope; outer named scopes can then be closed using additional `end` command(s):
+  end ̵P̵i̵E̵x̵p̵o̵n̵e̵n̵t̵
+LogTwoLean4WebLite.lean:10486:0: error: Missing name after `end`: Expected the current scope name `PiExponent`
+
+Hint: To end the current scope `PiExponent`, specify its name:
+  end ̲P̲i̲E̲x̲p̲o̲n̲e̲n̲t̲
+LogTwoLean4WebLite.lean:10488:0: error: Invalid name after `end`: Expected `PiExponent`, but found `OAI`
+LogTwoLean4WebLite.lean:10489:0: error: Invalid name after `end`: Expected `PiExponent`, but found `Source0089`
+LogTwoLean4WebLite.lean:10508:8: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.totalDegree_pderiv_lt_of_ne_zero`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10536:8: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.eq_constant_of_pderiv_eq_zero`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10561:8: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.ideal_eq_bot_of_pderiv_stable`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10614:7: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.primeNormalProjection`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10617:18: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.primeCoordinateNormals`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10622:18: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.primeLogarithmicNormals`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10631:0: error: Unexpected name `PiExponent` after `end`: The current section is unnamed
+
+Hint: Delete the name `PiExponent` to end the current unnamed scope; outer named scopes can then be closed using additional `end` command(s):
+  end ̵P̵i̵E̵x̵p̵o̵n̵e̵n̵t̵
+LogTwoLean4WebLite.lean:10633:0: error: Missing name after `end`: Expected the current scope name `PiExponent`
+
+Hint: To end the current scope `PiExponent`, specify its name:
+  end ̲P̲i̲E̲x̲p̲o̲n̲e̲n̲t̲
+LogTwoLean4WebLite.lean:10635:0: error: Invalid name after `end`: Expected `PiExponent`, but found `OAI`
+LogTwoLean4WebLite.lean:10636:0: error: Invalid name after `end`: Expected `PiExponent`, but found `Source0091`
+LogTwoLean4WebLite.lean:10656:8: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.OAI.PiExponent.polynomialNormal_mkQ_ne_zero_of_kernel`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10676:8: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.OAI.PiExponent.constant_zeroth_coordinate_of_generic_normal_separation`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10730:4: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.OAI.PiExponentApprox.frameWordCost`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10733:16: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.OAI.PiExponentApprox.frameWordCost_nil`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10736:16: warning: The namespaces `OAI` and `PiExponent` are duplicated in the declaration `OAI.PiExponent.OAI.PiExponent.OAI.PiExponentApprox.frameWordCost_cons`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+LogTwoLean4WebLite.lean:10741:21: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10741:49: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10743:4: error(lean.unknownIdentifier): Unknown identifier `polynomialFrameWord`
+LogTwoLean4WebLite.lean:10746:21: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10748:35: error: Function expected at
+  frameDerivativeIdeal
+but this term has type
+  ?m.4
+
+Note: Expected a function because this term is being applied to the argument
+  cost
+
+Hint: The identifier `frameDerivativeIdeal` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10748:4: error: Function expected at
+  polynomialFrameWord
+but this term has type
+  ?m.5
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `polynomialFrameWord` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10749:20: error: Invalid `⟨...⟩` notation: The expected type of this term could not be determined
+LogTwoLean4WebLite.lean:10752:9: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10753:4: error: Function expected at
+  frameDerivativeIdeal
+but this term has type
+  ?m.4
+
+Note: Expected a function because this term is being applied to the argument
+  cost
+
+Hint: The identifier `frameDerivativeIdeal` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10753:36: error: Function expected at
+  frameDerivativeIdeal
+but this term has type
+  ?m.4
+
+Note: Expected a function because this term is being applied to the argument
+  cost
+
+Hint: The identifier `frameDerivativeIdeal` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10760:46: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10761:31: error: Function expected at
+  frameDerivativeIdeal
+but this term has type
+  ?m.4
+
+Note: Expected a function because this term is being applied to the argument
+  cost
+
+Hint: The identifier `frameDerivativeIdeal` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10762:2: error(lean.unknownIdentifier): Unknown identifier `frameWord_mem_derivativeIdeal`
+LogTwoLean4WebLite.lean:10765:23: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10765:43: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10766:16: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10766:45: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10784:23: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+LogTwoLean4WebLite.lean:10784:23: error: Function expected at
+  FramePolynomial
+but this term has type
+  ?m.3
+
+Note: Expected a function because this term is being applied to the argument
+  m
+
+Hint: The identifier `FramePolynomial` is unknown, an

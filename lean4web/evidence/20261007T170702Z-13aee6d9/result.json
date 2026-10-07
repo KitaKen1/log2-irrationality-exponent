@@ -1,0 +1,31 @@
+{
+  "run_id": "20261007T170702Z-13aee6d9",
+  "started_at_utc": "2026-10-07T17:07:02.667212+00:00",
+  "status": "failed",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 300,
+  "browser_execution_performed": false,
+  "scope": "Local CLI build of the selected single-file edition, not a browser/server run.",
+  "edition": "lite",
+  "source": "LogTwoLean4WebLite.lean",
+  "source_sha256": "efe5997f478f957fb509379cbd0bed44fbd3b01974354ae648363f05624d3ad5",
+  "log": "evidence/20261007T170702Z-13aee6d9/build.log",
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "LogTwoLean4WebLite.lean"
+  ],
+  "exit_code": -15,
+  "first_error": "LogTwoLean4WebLite.lean:293:3: error: unknown tactic",
+  "stop_reason": "first_compiler_error",
+  "compiler_cpu_seconds": 113.016,
+  "elapsed_seconds": 195.79,
+  "completed_at_utc": "2026-10-07T17:10:18.463255+00:00",
+  "log_sha256": "62f6723e9c4c9e617bdf156949d783345bb793b0b28dacec0caaf6559d9cbc13"
+}

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "7d2a3231096f4db1b926b9a09a23115410565e1d5c62463808b6abe3e679848a",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "full_olean_bytes": 1813168680,
+  "lite_olean_bytes": 1075950296,
+  "scope": "Sum of existing Mathlib .olean file sizes in each import closure, excluding private/server/IR artifacts; not resident memory or elapsed time."
+}

@@ -1,0 +1,24 @@
+evidence/20261007T220350Z-paste-prefix/Prefix.lean:44:0: warning: 
+'Mathlib.Data.ENat.SuccOrder' has been deprecated: please replace this import by
+
+import Mathlib.Order.SuccPred.ENat
+evidence/20261007T220350Z-paste-prefix/Prefix.lean:45:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic
+evidence/20261007T220350Z-paste-prefix/Prefix.lean:46:0: warning: 
+'Mathlib.Data.Opposite' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Opposite
+evidence/20261007T220350Z-paste-prefix/Prefix.lean:47:0: warning: 
+'Mathlib.Data.SetLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.SetLike.Basic
+LogTwo progress: reached module 25/885
+LogTwo progress: reached module 50/885
+LogTwo progress: reached module 75/885
+'OAI.PiExponent.irrationalityExponent_eq_two_of_eventualLowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.coordinateKernel_height_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponent.derivation_mem_polynomialTangent' depends on axioms: [propext, Classical.choice, Quot.sound]

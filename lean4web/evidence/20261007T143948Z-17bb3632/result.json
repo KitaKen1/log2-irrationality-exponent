@@ -1,0 +1,28 @@
+{
+  "run_id": "20261007T143948Z-17bb3632",
+  "started_at_utc": "2026-10-07T14:39:48.022454+00:00",
+  "status": "failed",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 600,
+  "browser_execution_performed": false,
+  "scope": "Local CLI build of the complete single-file edition, not a browser/server run.",
+  "source_sha256": "8aac5756ee46c81c27598d9e9af67bb8702be2e5c585d804e893294d7fe79d4f",
+  "log": "evidence/20261007T143948Z-17bb3632/build.log",
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "LogTwoLean4Web.lean"
+  ],
+  "exit_code": -15,
+  "first_error": "LogTwoLean4Web.lean:2160:33: error: Type mismatch",
+  "stop_reason": "first_compiler_error",
+  "elapsed_seconds": 226.702,
+  "completed_at_utc": "2026-10-07T14:43:34.730090+00:00",
+  "log_sha256": "f3907486d53b0c17259b269092b4edaaef309caa2a9d49c486f751ee808414b7"
+}

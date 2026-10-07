@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "pinned_source_files": 885,
+  "FC_definitions_identical": true,
+  "FC_independent_definition_count": 1,
+  "split_audit_matches_current_sources": false,
+  "split_audit_code_preserved_by_notice_only_update": true,
+  "notice_only_files_verified": 838,
+  "FC_draft_contains_intentional_sorry": true,
+  "FC_utilities_linted": false,
+  "complete_sources_without_proof_holes": true,
+  "standalone_imports": [
+    "Mathlib"
+  ],
+  "standalone_lines": 104875,
+  "local_markdown_links": 65,
+  "standalone_build_status": "not_checked",
+  "standalone_build_matches_current_source": true,
+  "reduced_edition": {
+    "lines": 94778,
+    "removed_lemmas": 641,
+    "independent_definition_identical": true,
+    "build_status": "not_checked"
+  },
+  "sequential_edition": {
+    "lines": 94854,
+    "reduced_proof_text_preserved_exactly": true,
+    "source_map_verified": true,
+    "build_status": "not_checked"
+  },
+  "checkpoint_edition": {
+    "modules": 36,
+    "original_source_blocks_preserved": 885,
+    "max_source_lines": 5995,
+    "whole_proof_compilation_inferred": false
+  },
+  "paste_edition": {
+    "lines": 94873,
+    "original_proof_preserved_exactly": true,
+    "no_project_imports": true,
+    "final_independent_target_unchanged": true,
+    "build_status": "browser_pass_reported"
+  }
+}

@@ -1,0 +1,4 @@
+LogTwoCheckpoints/Part001.lean:11:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic

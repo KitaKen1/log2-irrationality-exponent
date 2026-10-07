@@ -1,0 +1,63 @@
+{
+  "scope": "26 complete dependency modules plus two complete lemmas from CartierMixedEuler; not a complete proof build",
+  "modules": [
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteCoverCohomology",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleTensor",
+    "OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficients",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameSections",
+    "OAI.NumberTheory.PiExponent.Approximation.CoherentTwistPresentation",
+    "OAI.NumberTheory.PiExponent.Approximation.OpenBaseChange",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionOpens",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameTensorPowers",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorPowerRestriction",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionPowerOpens",
+    "OAI.NumberTheory.PiExponent.Approximation.IntegralLineSections",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorPure",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameSubopens",
+    "OAI.NumberTheory.PiExponent.Approximation.LinePullback",
+    "OAI.NumberTheory.PiExponent.Approximation.PushforwardTensor",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorOpenBaseChange",
+    "OAI.NumberTheory.PiExponent.Approximation.LinePullbackPowers",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleProduct",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorSectionOpen",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveEuler",
+    "OAI.NumberTheory.PiExponent.Cohomology.CohomologyIso",
+    "OAI.NumberTheory.PiExponent.Cohomology.NakaiCohomology",
+    "OAI.NumberTheory.PiExponent.Cohomology.NakaiEulerGrowth",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiCartier",
+    "OAI.NumberTheory.PiExponent.Geometry.CartierPowerFrames",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TensorIdealInclusion"
+  ],
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "source_sha256": "91262303d5bdb9feeafed53972b966b254f9cc84998b0d1a21b53ba83ac55158",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "evidence/20261007T161918Z-tensor-frame/Compatibility.lean"
+  ],
+  "timeout_seconds": 300,
+  "browser_execution_performed": false,
+  "declaration_slice": {
+    "module": "OAI.NumberTheory.PiExponent.Cohomology.CartierMixedEuler",
+    "declarations": [
+      "framed_map",
+      "tensorMap_framed"
+    ],
+    "omitted_unused_open": "PiExponent.SectionZeroIdeal"
+  },
+  "status": "passed",
+  "exit_code": 0,
+  "elapsed_seconds": 174.777,
+  "completed_at_utc": "2026-10-07T16:22:20.938506+00:00",
+  "axiom_audit": {
+    "OAI.PiExponent.NumericalAmpleness.tensorMap_framed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "log_sha256": "6ae786c0afb61037aa6b41cbe397e2c2202cbbd41b9c85b83444f1e0070ca4d1"
+}

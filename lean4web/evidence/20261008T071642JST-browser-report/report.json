@@ -1,0 +1,42 @@
+{
+  "observed_at_jst": "2026-10-08T07:16:42+09:00",
+  "kind": "user_screenshot",
+  "lean": "v4.35.0-rc4",
+  "candidate_source": "LogTwoLean4WebPaste.lean",
+  "candidate_source_sha256": "88a6c8be2aadb08086ea824049c00444f693d88249b102ef650b87e155f5ec81",
+  "browser_source_hash_verified": false,
+  "identity_basis": "Visible final theorem and line numbers match the local paste edition. Browser bytes were not retrieved.",
+  "visible_progress_module": 300,
+  "module_total": 885,
+  "errors": [
+    {
+      "line": 32069,
+      "column": 19,
+      "message": "failed to synthesize HasExactColimitsOfShape J (Cᵒᵖ ⥤ Ab)"
+    },
+    {
+      "line": 32106,
+      "column": 70,
+      "message": "failed to synthesize EnoughInjectives (SheafOfModules R)"
+    },
+    {
+      "line": 32350,
+      "column": 56,
+      "message": "failed to synthesize EnoughInjectives (ModuleCat ↑R)"
+    },
+    {
+      "line": 32344,
+      "column": 14,
+      "message": "unsolved goal EnoughInjectives (ModuleCat ↑R)"
+    },
+    {
+      "line": 32977,
+      "column": 5,
+      "message": "failed to synthesize (PresheafOfModules.pushforward₀OfCommRingCat (Scheme.Hom.opensFunctor U.ι) X.presheaf).Monoidal"
+    }
+  ],
+  "connection_loss_shown": false,
+  "final_axiom_output_visible": false,
+  "screenshot": "/var/folders/lg/85hqrvfn1mj7qg0rgt5nv24r0000gn/T/TemporaryItems/NSIRD_screencaptureui_wZ3NxI/スクリーンショット 2026-10-08 7.16.42.png",
+  "followup_screenshot": "/var/folders/lg/85hqrvfn1mj7qg0rgt5nv24r0000gn/T/TemporaryItems/NSIRD_screencaptureui_0HH3dF/スクリーンショット 2026-10-08 7.18.04.png"
+}

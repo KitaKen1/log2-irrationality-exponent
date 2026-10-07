@@ -1,0 +1,4102 @@
+{
+  "run_id": "20261007T144449Z-11da14a2",
+  "status": "passed",
+  "started_at_utc": "2026-10-07T14:44:49.308853+00:00",
+  "lean": "leanprover/lean4:v4.34.1",
+  "freshly_compiled": [],
+  "reused": [
+    "OAI.NumberTheory.PiExponent.Statement",
+    "LogTwo.Statement",
+    "LogTwo.ApproximationSelection",
+    "OAI.NumberTheory.PiExponent.Approximation.Exponent",
+    "LogTwo.Approximation",
+    "LogTwo.Parameters",
+    "LogTwo.Dimension",
+    "LogTwo.DimensionChoice",
+    "LogTwo.Geometry.Centers",
+    "LogTwo.Matrix",
+    "LogTwo.Determinant",
+    "LogTwo.Rescale",
+    "LogTwo.LogDenominator",
+    "LogTwo.Arithmetic",
+    "LogTwo.LogarithmicBound",
+    "LogTwo.LcmBound",
+    "LogTwo.ArithmeticEstimate",
+    "LogTwo.ParameterAssembly",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialFrameDegree",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialFrame",
+    "LogTwo.Geometry.YScaling",
+    "OAI.NumberTheory.PiExponent.Jets.JetGeometry",
+    "OAI.NumberTheory.PiExponent.Jets.FormalJetDerivatives",
+    "OAI.NumberTheory.PiExponent.Jets.FormalLogJet",
+    "LogTwo.Geometry.ScaledJet",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveParameterFinite",
+    "OAI.NumberTheory.PiExponent.Geometry.WeightedCurveDegree",
+    "OAI.NumberTheory.PiExponent.Jets.IntrinsicLength",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveLocalOrder",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveZeroPole",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.DVRValuationUnique",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveValuationCenter",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveProductFormula",
+    "OAI.NumberTheory.PiExponent.Jets.FormalBranchOrder",
+    "OAI.NumberTheory.PiExponent.Jets.FormalBranchOrderRational",
+    "OAI.NumberTheory.PiExponent.Jets.BranchContact",
+    "OAI.NumberTheory.PiExponent.Jets.DVRBranchExpansion",
+    "OAI.NumberTheory.PiExponent.Jets.DVRBranchOrder",
+    "OAI.NumberTheory.PiExponent.Jets.DVRBranch",
+    "OAI.NumberTheory.PiExponent.Analysis.FormalLogTruncation",
+    "OAI.NumberTheory.PiExponent.Jets.FormalBranchEvaluation",
+    "OAI.NumberTheory.PiExponent.Jets.DVRBranchJet",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialPoleBound",
+    "OAI.NumberTheory.PiExponent.Polynomials.WeightedPolynomialPole",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveContactSum",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveCenters",
+    "OAI.NumberTheory.PiExponent.Geometry.PlaceValuationRing",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedSliceDegree",
+    "OAI.NumberTheory.PiExponent.Polynomials.SimplexFloor",
+    "OAI.NumberTheory.PiExponent.Polynomials.SimplexUnweighted",
+    "OAI.NumberTheory.PiExponent.Polynomials.SimplexCounting",
+    "OAI.NumberTheory.PiExponent.Approximation.InterpolationMatrix",
+    "OAI.NumberTheory.PiExponent.Polynomials.SimplexRationalWeights",
+    "OAI.NumberTheory.PiExponent.Polynomials.SimplexRational",
+    "OAI.NumberTheory.PiExponent.Polynomials.AuxiliaryPolynomial",
+    "OAI.NumberTheory.PiExponent.Jets.OrdinaryAuxiliaryJet",
+    "OAI.NumberTheory.PiExponent.Approximation.PersistentComponents",
+    "OAI.NumberTheory.PiExponent.Jets.DerivativeIdeals",
+    "OAI.NumberTheory.PiExponent.Jets.OrdinaryDerivativeIdeals",
+    "OAI.NumberTheory.PiExponent.Jets.OrdinaryJetDerivatives",
+    "OAI.NumberTheory.PiExponent.Jets.OrdinaryBranchEvaluation",
+    "OAI.NumberTheory.PiExponent.Jets.OrdinaryDVRBranchJet",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FibreContact",
+    "OAI.NumberTheory.PiExponent.Geometry.PlaceCenteredBranch",
+    "LogTwo.Geometry.NormalizedContact",
+    "LogTwo.Geometry.JetTruncation",
+    "LogTwo.Analysis.CenterGrowth",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateContactBound",
+    "LogTwo.Geometry.ConstantFiber",
+    "LogTwo.Geometry.JetMatrix",
+    "OAI.NumberTheory.PiExponent.Jets.FormalJetIndices",
+    "LogTwo.Geometry.WeightedIndices",
+    "LogTwo.Geometry.InterpolationBridge",
+    "LogTwo.Geometry.AuxiliaryAtCenters",
+    "LogTwo.Geometry.CurveWordVanishing",
+    "LogTwo.Geometry.ContactFamilyAt",
+    "LogTwo.Geometry.GeometricParameters",
+    "LogTwo.Geometry.CurveCertificate",
+    "LogTwo.Geometry.CoordinateKernel",
+    "LogTwo.Geometry.RigidityInput",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightSeparationProducts",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightSeparation",
+    "LogTwo.Geometry.SeparatedWeights",
+    "OAI.NumberTheory.PiExponent.Analysis.LogarithmicObstruction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TranscendenceBasisReduction",
+    "OAI.NumberTheory.PiExponent.Analysis.AlgebraicLogarithmicObstruction",
+    "OAI.NumberTheory.PiExponent.Jets.DifferentialConstant",
+    "OAI.NumberTheory.PiExponent.Jets.NormalBasisRigidity",
+    "OAI.NumberTheory.PiExponent.Jets.NormalFrameBasis",
+    "OAI.NumberTheory.PiExponent.Jets.PolynomialTangentDifferential",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialNormalNonzero",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeNormalRigidity",
+    "OAI.NumberTheory.PiExponent.Approximation.GenericNormalRigidity",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveContact",
+    "OAI.NumberTheory.PiExponent.Jets.ConormalPairing",
+    "OAI.NumberTheory.PiExponent.Jets.ResidueConormalPairing",
+    "OAI.NumberTheory.PiExponent.Jets.PrimeNormalCotangent",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentRigidity",
+    "OAI.NumberTheory.PiExponent.Approximation.RectangularVolume",
+    "LogTwo.Geometry.PersistentRigidity",
+    "LogTwo.Geometry.SeparationAssembly",
+    "LogTwo.Geometry.ContactBound",
+    "LogTwo.Geometry.ChosenContactBound",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameEquationFamily",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightSeparationConstant",
+    "OAI.NumberTheory.PiExponent.Jets.FilteredLength",
+    "OAI.NumberTheory.PiExponent.Jets.GradedGeneration",
+    "OAI.NumberTheory.PiExponent.Jets.CotangentGeneration",
+    "OAI.NumberTheory.PiExponent.Jets.TransverseMultiplicity",
+    "OAI.NumberTheory.PiExponent.Jets.TransverseWeightedMultiplicity",
+    "OAI.NumberTheory.PiExponent.Jets.NormalBasisProducts",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameResidueDirections",
+    "OAI.NumberTheory.PiExponent.Jets.CommutingTaylor",
+    "OAI.NumberTheory.PiExponent.Jets.TaylorRectangular",
+    "OAI.NumberTheory.PiExponent.Jets.FrameTransverseMultiplicity",
+    "OAI.NumberTheory.PiExponent.Jets.RectangularCotangent",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeNormalKernel",
+    "OAI.NumberTheory.PiExponent.Jets.PrimeTaylorCotangent",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeFrameMultiplicity",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientLengthEquivalence",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedLengthEquivalence",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizationQuotientParameters",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeResidueAlgebraEquiv",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateFiniteSlice",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalLengthTransport",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedBezout",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SeparablePointLength",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalResidueResolution",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateTranscendenceLocalization",
+    "OAI.NumberTheory.PiExponent.Polynomials.CoefficientLocalizationMaximal",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialCoefficientLocalization",
+    "OAI.NumberTheory.PiExponent.Polynomials.RationalResidueCoefficientField",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SplitCoordinateClosedPoint",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SplitClosedPointCompatibility",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialPrimeClosedPointEquiv",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateSliceLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateTranscendenceBasis",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PointLengthEquiv",
+    "OAI.NumberTheory.PiExponent.Approximation.CoordinateSliceComparison",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FlatLocalLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeLocalLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ConePrimeLocalization",
+    "OAI.NumberTheory.PiExponent.Polynomials.Homogenization",
+    "OAI.NumberTheory.PiExponent.Polynomials.ConeHomogeneousEquations",
+    "OAI.NumberTheory.PiExponent.Geometry.ConePrimeProperties",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeEquationLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeRegularSequence",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedComponent",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedRadical",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularDegreePositivity",
+    "OAI.NumberTheory.PiExponent.Ampleness.LocalHomogeneousDegrees",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.GenericCombination",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IsolatedIntersectionSteps",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CyclicPrimeFactor",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SubquotientLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeExtTransfer",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FreeResolutionAssociatedHeight",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalUnmixedness",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PairResolutionShortComplex",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPairExtObstruction",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialAssociatedLocalization",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPrefixLocalization",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPrefixCutDimension",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDegree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertGrowthComparison",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousIdealStep",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularHilbertStep",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularPrefixes",
+    "OAI.NumberTheory.PiExponent.Analysis.HilbertSeries",
+    "OAI.NumberTheory.PiExponent.Polynomials.HilbertPolynomialBase",
+    "OAI.NumberTheory.PiExponent.Analysis.RegularSequenceSeries",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CompleteIntersectionHilbert",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PositiveDimensionalHilbert",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ColonHilbertStep",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousPrimeFactor",
+    "OAI.NumberTheory.PiExponent.Analysis.ColonSeriesTelescope",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertDenominatorReduction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertZeroVariables",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.StabilizedColonPowers",
+    "OAI.NumberTheory.PiExponent.Polynomials.CoordinateQuotientGrading",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousHilbertExistence",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousHilbertPolynomial",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeDegreeExistence",
+    "OAI.NumberTheory.PiExponent.Polynomials.ColonHilbertPolynomial",
+    "OAI.NumberTheory.PiExponent.Polynomials.HilbertPolynomial",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertMultiplicityFiltration",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiltrationLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalComponentDegree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedCyclicFactor",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedFiltrationLength",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousPrimeFiltration",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousComponentLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ComponentMultiplicityBound",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDimension",
+    "OAI.NumberTheory.PiExponent.Geometry.NormalizationGrowth",
+    "OAI.NumberTheory.PiExponent.Geometry.FiniteNormalizationGrowth",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousQuotientDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CumulativeHilbertSections",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialCumulative",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialGrowthRanks",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertComparison",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CompleteIntersectionComponentBound",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHypersurfaceDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientLocalizedLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineClosedPointLocalization",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineTranscendenceDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineResidueTranscendence",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialMaximalHeight",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ClosedPointLocalDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AffinePrimeDimensionBridge",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoordinateBasisSplitting",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientPrimeResidueBasis",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialPrimeDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHypersurfaceEquidimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.HilbertDifferenceDegree",
+    "OAI.NumberTheory.PiExponent.Geometry.ProperHypersurfaceHilbert",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ComponentMultiplicitySum",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeCutBudget",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RetainedIntersectionCycles",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RetainedMinimalPrimeFamily",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.EquidimensionalRetainedCut",
+    "OAI.NumberTheory.PiExponent.Cohomology.EndomorphismEulerAdditivity",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionTransport",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionExactStep",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionPrimeFiltration",
+    "OAI.NumberTheory.PiExponent.Cohomology.LocalIntersectionEulerFiltration",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionPrimeFactors",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionDimensionOne",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterKilledFiniteLength",
+    "OAI.NumberTheory.PiExponent.Cohomology.LocalIntersectionRegularEuler",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionMinimalSum",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionQuotientTransport",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalIntersectionFormula",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPrimeTower",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedMinimalPrimeFamily",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedOneCutPropagation",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.NaturalMultiplicityPropagation",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.MultiplicityCycles",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularCutHistory",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousListHistory",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineLocalRegularBezout",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterCombinations",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FinsuppCandidates",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterAvoidance",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterSelection2",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeResolutionExt",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceResolution",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeQuotientAugmentation",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ConeComplex",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulFiniteFree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulBounded",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IteratedKoszulExactness",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceExt",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceExtObstruction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualCone",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualTransport",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualBottom",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulTopTerm",
+    "OAI.NumberTheory.PiExponent.Jets.KoszulTopDifferential",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceAugmentation",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulTopAugmentation",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualInitial",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualEndpoint",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.KoszulDualStep",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceQuotientTail",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceDualExactness",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceHomZero",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularSequenceLowExt",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialCoordinateMinpolyQuotient",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParameters",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParametersAssembly",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TriangularLocalParametersTransport",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalRegularParameters",
+    "OAI.NumberTheory.PiExponent.Polynomials.PolynomialLocalLowExt",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RegularParameterSelection",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalBezout",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedLocalization",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedLocalLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedPointMap",
+    "OAI.NumberTheory.PiExponent.Polynomials.PowerCoverExponents",
+    "OAI.NumberTheory.PiExponent.Polynomials.PowerCoverSubstitution",
+    "OAI.NumberTheory.PiExponent.Polynomials.PowerCoverBasis",
+    "OAI.NumberTheory.PiExponent.Polynomials.TranslatedPowerCover",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.RamifiedPowerLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedBezoutBound",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeWeightedBezout",
+    "OAI.NumberTheory.PiExponent.Jets.TransverseSliceComparison",
+    "LogTwo.Geometry.NormalComparison",
+    "LogTwo.Geometry.GlobalContactBound",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.ParameterResidueField",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedLocalLattice",
+    "OAI.NumberTheory.PiExponent.Geometry.PlaceParameterModel",
+    "OAI.NumberTheory.PiExponent.Geometry.PlaceLocalRing",
+    "LogTwo.Geometry.IntrinsicContactBound",
+    "LogTwo.Analysis.RealCenterIdentity",
+    "OAI.NumberTheory.PiExponent.Jets.BranchContactIdeal",
+    "OAI.NumberTheory.PiExponent.Analysis.FormalLogTailOrder",
+    "OAI.NumberTheory.PiExponent.Jets.FormalBranchCoordinates",
+    "OAI.NumberTheory.PiExponent.Jets.FormalBranchContact",
+    "OAI.NumberTheory.PiExponent.Analysis.LogarithmicContactIdeal",
+    "OAI.NumberTheory.PiExponent.Jets.PolynomialJetPackets",
+    "OAI.NumberTheory.PiExponent.Jets.AlgebraicJetPackets",
+    "OAI.NumberTheory.PiExponent.Jets.CompactJetPolynomial",
+    "LogTwo.Geometry.JetIdealAt",
+    "LogTwo.Geometry.JetIdealContact",
+    "LogTwo.Geometry.JetIdealCRT",
+    "LogTwo.Geometry.JetProductContact",
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteCoverCohomology",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleTensor",
+    "OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficients",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealModule",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupIdeal",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesPushdown",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesExceptional",
+    "OAI.NumberTheory.PiExponent.Approximation.GlobalSectionClearing",
+    "OAI.NumberTheory.PiExponent.Ampleness.CoherentAffineFinite",
+    "OAI.NumberTheory.PiExponent.Approximation.CoherentTwistPresentation",
+    "OAI.NumberTheory.PiExponent.Approximation.TwistSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteGlobalPresentation",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardAffine",
+    "OAI.NumberTheory.PiExponent.Approximation.OpenBaseChange",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardCoherent",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleCoherent",
+    "OAI.NumberTheory.PiExponent.Jets.CompactJetIdeal",
+    "OAI.NumberTheory.PiExponent.Jets.CompactJetIdealCoherent",
+    "OAI.NumberTheory.PiExponent.Jets.CompactLogJetIdeal",
+    "LogTwo.Geometry.CompactJetIdealAt",
+    "LogTwo.Geometry.StrictJetTruncation",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionOpens",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCharts",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinates",
+    "OAI.NumberTheory.PiExponent.Polynomials.GradedSubring",
+    "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialMap",
+    "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialImage",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedCompactification",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveDenseChart",
+    "LogTwo.Geometry.IntegralProj",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedGeometryScale",
+    "OAI.NumberTheory.PiExponent.Polynomials.SurjectiveGradedMap",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedCompactificationImmersion",
+    "OAI.NumberTheory.PiExponent.Geometry.PolynomialProjectiveStructure",
+    "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveStructure",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedCompactificationGeometry",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedAffineParametrization",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationModel",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationLocalRing",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveProperExtension",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveMonomialMap",
+    "LogTwo.Geometry.WeightedCompactification",
+    "LogTwo.Geometry.WeightedJetIdeal",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveFunctionFieldCompatibility",
+    "OAI.NumberTheory.PiExponent.Ampleness.AffineFunctionFieldCompatibility",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationOverlap",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLineLaurent",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineProper",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineCharts",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLineReciprocal",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationProper",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveModelGenericPoint",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveStalkGluing",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveGlobalMonomial",
+    "OAI.NumberTheory.PiExponent.Geometry.BirationalValuationStalk",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationDimension",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveModelPlaces",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveModelLocalOrder",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveChartFunctionField",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveModelFieldEmbedding",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveModelInfinityGenericPoint",
+    "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceCenter",
+    "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceCenterStalk",
+    "LogTwo.Geometry.NormalizationBranch",
+    "LogTwo.Geometry.JetCenterAt",
+    "LogTwo.Geometry.CurveIdealSupport",
+    "OAI.NumberTheory.PiExponent.Approximation.LinePowerLaws",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameTensorPowers",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorPowerRestriction",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionPowerOpens",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleCommonDegree",
+    "OAI.NumberTheory.PiExponent.Approximation.IntegralLineSections",
+    "OAI.NumberTheory.PiExponent.Approximation.PowerSectionExtension",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveEmbeddingCharts",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFramedSections",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleProjectiveSections",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorPure",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameSubopens",
+    "OAI.NumberTheory.PiExponent.Approximation.LinePullback",
+    "OAI.NumberTheory.PiExponent.Approximation.PushforwardTensor",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorOpenBaseChange",
+    "OAI.NumberTheory.PiExponent.Approximation.LinePullbackPowers",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleProduct",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorSectionOpen",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleFromCover",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleIso",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionPullback",
+    "OAI.NumberTheory.PiExponent.Approximation.FramedPullback",
+    "OAI.NumberTheory.PiExponent.Ampleness.ClosedAmpleRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.FinitePullbackAmple",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFramedAtlas",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartOverlaps",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartRingNaturalityCore",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartRingNaturality",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateValues",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionPowerFrames",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCech",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLaurentVertex",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveChartSections",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateSections",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFiniteSections",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateRingNaturality",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFrameNaturality",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateConstants",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleGluing",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveRatioCocycle",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1ChartMap",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleGluingTransitions",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleGluingSections",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Sections",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1LocalIdentity",
+    "OAI.NumberTheory.PiExponent.Polynomials.PullbackFrameCoefficient",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectivePullbackFrames",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionsPullback",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Morphism",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveO1Identity",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceIntegral",
+    "OAI.NumberTheory.PiExponent.Ampleness.ProjectiveO1Ample",
+    "OAI.NumberTheory.PiExponent.Cohomology.SerreVanishing",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveNormalizationCohomology",
+    "OAI.NumberTheory.PiExponent.Ampleness.NumericalAmpleness",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveEuler",
+    "OAI.NumberTheory.PiExponent.Cohomology.CohomologyIso",
+    "OAI.NumberTheory.PiExponent.Approximation.NumericalMarginRestriction",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerExact",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveZeroEuler",
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteZeroEuler",
+    "OAI.NumberTheory.PiExponent.Geometry.FiniteCurveZeros",
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteSupportCohomology",
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteLineEuler",
+    "OAI.NumberTheory.PiExponent.Approximation.OpenPullbackUnit",
+    "OAI.NumberTheory.PiExponent.Approximation.LineClosedUnit",
+    "OAI.NumberTheory.PiExponent.Geometry.PrincipalCartierSequence",
+    "OAI.NumberTheory.PiExponent.Geometry.CartierSequence",
+    "OAI.NumberTheory.PiExponent.Geometry.CartierDegreeLength",
+    "OAI.NumberTheory.PiExponent.Cohomology.NakaiCohomology",
+    "OAI.NumberTheory.PiExponent.Cohomology.NakaiEulerGrowth",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiCartier",
+    "OAI.NumberTheory.PiExponent.Geometry.CartierPowerFrames",
+    "OAI.NumberTheory.PiExponent.Approximation.GlueGlobalGenerators",
+    "OAI.NumberTheory.PiExponent.Approximation.TwistSectionScalars",
+    "OAI.NumberTheory.PiExponent.Approximation.TwistSectionClearing",
+    "OAI.NumberTheory.PiExponent.Geometry.SheafSectionGluing",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TwistLocalExtension",
+    "OAI.NumberTheory.PiExponent.Approximation.TwistGlobalExtension",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleGlobalGeneration",
+    "OAI.NumberTheory.PiExponent.Geometry.SheafificationUnitIso",
+    "OAI.NumberTheory.PiExponent.Approximation.ModuleLinePowerLaws",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveEffectiveTwist",
+    "OAI.NumberTheory.PiExponent.Approximation.InverseFrames",
+    "OAI.NumberTheory.PiExponent.Approximation.CocycleTensor",
+    "OAI.NumberTheory.PiExponent.Approximation.CocycleTensorIso",
+    "OAI.NumberTheory.PiExponent.Approximation.FrameSubopensCoherence",
+    "OAI.NumberTheory.PiExponent.Polynomials.FrameCoefficientLaws",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleFrameCocycle",
+    "OAI.NumberTheory.PiExponent.Geometry.LineBundleInverse",
+    "OAI.NumberTheory.PiExponent.Approximation.InverseDualRestriction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SectionImageIdeal",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SectionZeroIdeal",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveDegreeAdditivity",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationNonaffine",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologySections",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyCharts",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyLaurent",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyCech",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyFiniteCharts",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomologyPencil",
+    "OAI.NumberTheory.PiExponent.Cohomology.PencilCohomology",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectivePencilScalars",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFinitePencil",
+    "OAI.NumberTheory.PiExponent.Ampleness.CurveNormalizationPolarization",
+    "OAI.NumberTheory.PiExponent.Geometry.SectionZeroStalk",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveSectionDegree",
+    "OAI.NumberTheory.PiExponent.Geometry.SectionOrderDivisor",
+    "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceSectionDivisor",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalSectionOrder",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalPullbackSectionOrder",
+    "OAI.NumberTheory.PiExponent.Geometry.CurvePlaceSectionOrder",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.InvertibleIdealLocal",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TensorIdealInclusion",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealTensorPowers",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.GlobalInvertibleIdeal",
+    "OAI.NumberTheory.PiExponent.Approximation.CoherentCokernels",
+    "OAI.NumberTheory.PiExponent.Approximation.FullSupportNilpotence",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerFiltration",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerAnnihilator",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PresentedIdealIso",
+    "LogTwo.Geometry.SectionIdealBridge",
+    "LogTwo.Geometry.CurveSectionDegree",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesPrincipalLift",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupSchemeExt",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesUniversalUniqueness",
+    "OAI.NumberTheory.PiExponent.Ampleness.AffineBlowupUniversal",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupUniversalBaseChange",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupGluing",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupComplement",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupProperIntegral",
+    "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveLineBundle",
+    "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveEmbedding",
+    "OAI.NumberTheory.PiExponent.Ampleness.WeightedProjectiveAmple",
+    "LogTwo.Geometry.WeightedBlowup",
+    "OAI.NumberTheory.PiExponent.Geometry.WeightedLocalSheaf",
+    "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialPole",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedSectionOrder",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLocalCoefficients",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLatticePullback",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceBasics",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveGlobalMonomialLocal",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveLatticeOrder",
+    "OAI.NumberTheory.PiExponent.Polynomials.CompositePullbackCoefficient",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveGlobalCoordinateOrder",
+    "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialLattice",
+    "OAI.NumberTheory.PiExponent.Polynomials.WeightedMonomialFamilyLattice",
+    "OAI.NumberTheory.PiExponent.Geometry.WeightedProjectiveCurveDegree",
+    "LogTwo.Geometry.CurvePolarizationDegree",
+    "LogTwo.Geometry.CurveDegreeMargin",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupPresentationRestriction",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionDivision",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesRelativeSections",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupAffineSections",
+    "OAI.NumberTheory.PiExponent.Approximation.MixedSectionExtension",
+    "OAI.NumberTheory.PiExponent.Approximation.TensorMixedSection",
+    "OAI.NumberTheory.PiExponent.Approximation.MixedFrameExtension",
+    "OAI.NumberTheory.PiExponent.Approximation.MixedSectionOpenExtension",
+    "OAI.NumberTheory.PiExponent.Ampleness.RelativeAffineSectionAmple",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupAmpleTwist",
+    "LogTwo.Geometry.BlowupPolarization",
+    "OAI.NumberTheory.PiExponent.Ampleness.CurveBlowupImageBase",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveImageOpenLocus",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveMorphismFinite",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveProperImageDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.OpenIsoFunctionField",
+    "OAI.NumberTheory.PiExponent.Ampleness.CurveBlowupImage",
+    "LogTwo.Geometry.BlowupCurveImage",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveGeometricFunctionField",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerSupportDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IntegralAffineOpenDimension",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveImageAffineCoordinates",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveImageAffineChart",
+    "LogTwo.Geometry.BlowupCurveCoordinates",
+    "OAI.NumberTheory.PiExponent.Geometry.BirationalOpenIso",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationMorphism",
+    "LogTwo.Geometry.BlowupCurveModel",
+    "OAI.NumberTheory.PiExponent.Approximation.TwistPowerSection",
+    "OAI.NumberTheory.PiExponent.Approximation.NoetherianPowerExtension",
+    "OAI.NumberTheory.PiExponent.Ampleness.NoetherianAmpleProjectiveSections",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechOne",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCechHigher",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechHigher",
+    "OAI.NumberTheory.PiExponent.Cohomology.FreeCechResolution",
+    "OAI.NumberTheory.PiExponent.Cohomology.FreeCechSections",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechLinear",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechZero",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechExtFinite",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveMonomialFinite",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveMonomialCohomology",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveTwistCech",
+    "OAI.NumberTheory.PiExponent.Cohomology.LaurentCechFinite",
+    "OAI.NumberTheory.PiExponent.Cohomology.LaurentExtFinite",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.SerreDimensionShift",
+    "OAI.NumberTheory.PiExponent.Approximation.TwistPresentations",
+    "OAI.NumberTheory.PiExponent.Approximation.SerreAssembly",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveTwistAcyclicity",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveLaurentTransitions",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFiniteValues",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateRatios",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateTransitions",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateOverlapNaturality",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveTupleCharts",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveCoordinateAcyclicity",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveFramedCech",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateScalars",
+    "OAI.NumberTheory.PiExponent.Approximation.InverseFrameRestriction",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeFrames",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeTransitions",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeCoordinates",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveNegativeScalars",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedImmersionSerreTransfer",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedPushforwardLinear",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoherentExtFiniteness",
+    "OAI.NumberTheory.PiExponent.Approximation.NegativeTwistPresentations",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PositiveCoherentExtFiniteness",
+    "OAI.NumberTheory.PiExponent.Geometry.CoherentProjectiveFinite",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.CoherentInverseFinite",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateFinite",
+    "OAI.NumberTheory.PiExponent.Cohomology.CohomologyFinite",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveFiniteCoordinates",
+    "OAI.NumberTheory.PiExponent.Cohomology.AmpleCohomologyFinite",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveTwoAffineVanishing",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveFinitePushforwardCohomology",
+    "OAI.NumberTheory.PiExponent.Approximation.ProjectionFormula",
+    "OAI.NumberTheory.PiExponent.Geometry.SupportedSheaf",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteSupportLocalIso",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationDegree",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveNormalizationEuler",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveFinitePushforwardCoherent",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationUnit",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationInvariance",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCurveTwoAffine",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizationProjective",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveNormalizedDegreeTransfer",
+    "LogTwo.Geometry.IntegralCurveDegree",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionImageSupport",
+    "OAI.NumberTheory.PiExponent.Approximation.SectionZeroSupport",
+    "OAI.NumberTheory.PiExponent.Ampleness.LineAmpleOperations",
+    "OAI.NumberTheory.PiExponent.Ampleness.ZeroDimensionalAmple",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleAllPowersGeneration",
+    "OAI.NumberTheory.PiExponent.Approximation.GeneratorsSectionCover",
+    "OAI.NumberTheory.PiExponent.Approximation.RegularSectionMono",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AssociatedPrimeAvoidance",
+    "OAI.NumberTheory.PiExponent.Approximation.RegularSectionChoice",
+    "OAI.NumberTheory.PiExponent.Cohomology.CartierEulerDifference",
+    "OAI.NumberTheory.PiExponent.Geometry.SectionCartierPower",
+    "OAI.NumberTheory.PiExponent.Geometry.SectionCartierRegular",
+    "OAI.NumberTheory.PiExponent.Cohomology.CartierMixedEuler",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerZeroDimensional",
+    "OAI.NumberTheory.PiExponent.Approximation.SerrePowerDescent",
+    "OAI.NumberTheory.PiExponent.Approximation.CoordinateFrameIdentification",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinateChartMap",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoordinatePullback",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSerreTransfer",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceSerre",
+    "OAI.NumberTheory.PiExponent.Cohomology.NoetherianAmpleSerreVanishing",
+    "OAI.NumberTheory.PiExponent.Cohomology.LineCohomologyDimension",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleCurveDegreePositive",
+    "OAI.NumberTheory.PiExponent.Ampleness.NefAmple",
+    "OAI.NumberTheory.PiExponent.Approximation.ConstantPullbackDegree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.InvertibleIdealAway",
+    "LogTwo.Geometry.CurveMarginLemmas",
+    "LogTwo.Geometry.UniformCurveMargin",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionReindex",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleFiniteProjectiveEmbedding",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedRestrictionTensor",
+    "OAI.NumberTheory.PiExponent.Approximation.AffineThickeningCriterion",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedThickeningSections",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedPowerSectionLifting",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedSupportedSerre",
+    "OAI.NumberTheory.PiExponent.Cohomology.IdealPowerCohomology",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedAnnihilatedDescent",
+    "OAI.NumberTheory.PiExponent.Approximation.AffineClosedAnnihilatedDescent",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedPullbackUnit",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedImmersionModules",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedPullbackUnitRestriction",
+    "OAI.NumberTheory.PiExponent.Approximation.ModulePullbackCoherent",
+    "OAI.NumberTheory.PiExponent.Approximation.GlobalClosedAnnihilatedDescent",
+    "OAI.NumberTheory.PiExponent.Geometry.IdealSheafPowers",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealModuleRestriction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerRestriction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPowerDescent",
+    "OAI.NumberTheory.PiExponent.Cohomology.NilpotentIdealVanishing",
+    "OAI.NumberTheory.PiExponent.Ampleness.NilpotentAmpleDescent",
+    "OAI.NumberTheory.PiExponent.Ampleness.ClosedAmpleBaseChange",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleGeneratedTensor",
+    "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentCover",
+    "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentIdeal",
+    "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentLocal",
+    "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescentSupported",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiSectionLifting",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedSectionLifting",
+    "OAI.NumberTheory.PiExponent.Approximation.ClosedUnitKernel",
+    "OAI.NumberTheory.PiExponent.Ampleness.ComponentAmpleDescent",
+    "OAI.NumberTheory.PiExponent.Geometry.IntegralCurveExistence",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentMultiplicity",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReducedComponentAmple",
+    "OAI.NumberTheory.PiExponent.Ampleness.IntegralComponentAmple",
+    "OAI.NumberTheory.PiExponent.Ampleness.ProperAmpleFiniteDimension",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmplePositiveTwist",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleSlopeAlgebra",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleSlopeTopology",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleThresholdPolynomial",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiBasepointFree",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiDivisorAmple",
+    "OAI.NumberTheory.PiExponent.Cohomology.CartierEulerPair",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerTwistTransport",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiStationarity",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerRegularTwists",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSpaceFinite",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiEffectivity",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFromClosedFibers",
+    "OAI.NumberTheory.PiExponent.Geometry.FiniteOfNoContractedCurves",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiAmpleFromSections",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerDifferencePolynomial",
+    "OAI.NumberTheory.PiExponent.Cohomology.ProjectiveEmbeddingCohomologyBound",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerCutoff",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerPolynomialInterpolation",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerRegularSections",
+    "OAI.NumberTheory.PiExponent.Cohomology.EulerPolynomialDegree",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveDegreeLaws",
+    "OAI.NumberTheory.PiExponent.Ampleness.NakaiInductionStep",
+    "OAI.NumberTheory.PiExponent.Approximation.NumericalSlopeInduction",
+    "OAI.NumberTheory.PiExponent.Approximation.NumericalThresholdStep",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleDivisorDimensionBase",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrincipalQuotientDimension",
+    "OAI.NumberTheory.PiExponent.Ampleness.AmpleDivisorDimension",
+    "OAI.NumberTheory.PiExponent.Cohomology.AmpleLineCohomology",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCartier",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCartierAmple",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerAlgebra",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerDimension",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerAmpleDimension",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerPolarization",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerRestriction",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerPositivity",
+    "OAI.NumberTheory.PiExponent.Geometry.GeneralCartierDegreeLength",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveRegularEuler",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveTensorEuler",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveLocalAssociativity",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentStalks",
+    "OAI.NumberTheory.PiExponent.Geometry.ReducedComponentStalk",
+    "OAI.NumberTheory.PiExponent.Approximation.RegularComponentSection",
+    "OAI.NumberTheory.PiExponent.Geometry.FromSpecStalkLocalIso",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveLocalMultiplicity",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentLocalLengths",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentZeroPoints",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveCutQuotient",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentCutLengths",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentIncidence",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveCycleLengths",
+    "OAI.NumberTheory.PiExponent.Cohomology.CurveCycleEuler",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveComponentsDimension",
+    "OAI.NumberTheory.PiExponent.Geometry.CurveCycleNumerical",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerCurveMargin",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerTop",
+    "OAI.NumberTheory.PiExponent.Polynomials.MixedSlopePolynomial",
+    "OAI.NumberTheory.PiExponent.Cohomology.MixedEulerSlope",
+    "OAI.NumberTheory.PiExponent.Cohomology.NumericalEulerSlopeInputs",
+    "OAI.NumberTheory.PiExponent.Ampleness.NumericalAmplenessTheorem",
+    "LogTwo.Geometry.MatrixAmpleness",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalPowerSections",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalPowerPresentation",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPullbackMap",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRecoveryMap",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.TwistLocalSections",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRecoveryTwist",
+    "OAI.NumberTheory.PiExponent.Ampleness.FiniteAffineFrames",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechOneConverse",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechH1Transfer",
+    "OAI.NumberTheory.PiExponent.Approximation.PushforwardOpenSections",
+    "OAI.NumberTheory.PiExponent.Approximation.PushforwardSectionComparison",
+    "OAI.NumberTheory.PiExponent.Ampleness.FiniteReesComparison",
+    "OAI.NumberTheory.PiExponent.Approximation.SerreSectionLifting",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupJetSurjectivity",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupJetSurjectivity",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupJetReesReduction",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalAffineChart",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalAffineChartRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedValue",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalChartPullbackValue",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedOpaque",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalRepresentedTypes",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedTransport",
+    "OAI.NumberTheory.PiExponent.Polynomials.ShiftedFreeGrading",
+    "OAI.NumberTheory.PiExponent.Polynomials.GradedSerre",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesPolynomialPresentation",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesFiniteCover",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesExceptionalSheaf",
+    "OAI.NumberTheory.PiExponent.Polynomials.GradedLocalizationExact",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedCech",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedH0",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedPolynomialLaurent",
+    "OAI.NumberTheory.PiExponent.Polynomials.NatToIntGrading",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesGradedModule",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalizedAlgebraEvaluation",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesLocalizedChart",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesLocalizedIntersections",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductChart",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductSchemeChart",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductFrames",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedChart",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedFrames",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductPower",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedPower",
+    "OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechBase",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesSectionInclusion",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductAugmentation",
+    "OAI.NumberTheory.PiExponent.Approximation.AdditiveKernelTransport",
+    "OAI.NumberTheory.PiExponent.Cohomology.CechZeroAdditive",
+    "OAI.NumberTheory.PiExponent.Cohomology.TupleCechBound",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedCechBound",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedCechRecovery",
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSubmoduleGrading",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedCechExactness",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedPolynomialCech",
+    "OAI.NumberTheory.PiExponent.Polynomials.GradedLocalizationFree",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedFreeCech",
+    "OAI.NumberTheory.PiExponent.Polynomials.GradedSerreStep",
+    "OAI.NumberTheory.PiExponent.Cohomology.GradedSerreVanishing",
+    "OAI.NumberTheory.PiExponent.Cohomology.ReesCechInjectivity",
+    "OAI.NumberTheory.PiExponent.Cohomology.ReesCechRecovery",
+    "OAI.NumberTheory.PiExponent.Cohomology.ReesCohomologySetup",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.ExceptionalTypedTransportNaturality",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesProductSchemeRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedRestriction",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesFixedPowerRestriction",
+    "OAI.NumberTheory.PiExponent.Approximation.AddEquivSignedSum",
+    "OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechNaturality",
+    "OAI.NumberTheory.PiExponent.Cohomology.ReesSheafCechRecovery",
+    "OAI.NumberTheory.PiExponent.Ampleness.ReesSheafCanonicalValue",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealSectionRestriction",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealPullbackOpenSquare",
+    "OAI.NumberTheory.PiExponent.Geometry.CanonicalRecoveryProperties",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.AffineIdealSections",
+    "OAI.NumberTheory.PiExponent.Approximation.CanonicalAffineRecovery",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.IdealFiniteGenerators",
+    "OAI.NumberTheory.PiExponent.Ampleness.AffineReesCanonicalRecovery",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalExceptionalComparison",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalBlowupAffineSquare",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalReesRecoveryComparison",
+    "OAI.NumberTheory.PiExponent.Ampleness.GlobalReesCanonicalRecovery",
+    "OAI.NumberTheory.PiExponent.Ampleness.BlowupJetSurjectivityComplete",
+    "LogTwo.Geometry.MatrixJetSurjectivity",
+    "LogTwo.Geometry.WeightedAffineFrame",
+    "OAI.NumberTheory.PiExponent.Approximation.WeightedFrameDegree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.WeightedChartRingEvaluation",
+    "OAI.NumberTheory.PiExponent.Approximation.CompositePullbackFrame",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveGlobalPolynomialAlgebra",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveRepresentedCoefficient",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveVertexCompatibility",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveGlobalPolynomials",
+    "OAI.NumberTheory.PiExponent.Polynomials.GlobalPolynomialCoefficientLaw",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveIntrinsicCoefficientLaw",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionExtension",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionPullback",
+    "OAI.NumberTheory.PiExponent.Jets.AffineJetSupport",
+    "OAI.NumberTheory.PiExponent.Jets.AffineJetQuotient",
+    "OAI.NumberTheory.PiExponent.Jets.AffineJetPolynomial",
+    "OAI.NumberTheory.PiExponent.Jets.AffineJetCoefficientInterface",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveSectionInterface",
+    "OAI.NumberTheory.PiExponent.Jets.AffineJetCoefficientFrame",
+    "OAI.NumberTheory.PiExponent.Polynomials.GlobalPolynomialWeightedBound",
+    "LogTwo.Geometry.WeightedHomogeneousSubstitution",
+    "LogTwo.Geometry.WeightedPullbackDegree",
+    "OAI.NumberTheory.PiExponent.Geometry.ProjectiveCoefficientBound",
+    "LogTwo.Geometry.WeightedGlobalSectionBound",
+    "LogTwo.Geometry.JetPacketSurjectivity",
+    "LogTwo.Geometry.MatrixSectionPolynomial",
+    "LogTwo.Geometry.MatrixInterpolation",
+    "OAI.NumberTheory.PiExponent.Analysis.AnalyticCollision",
+    "OAI.NumberTheory.PiExponent.Approximation.RowTranslation",
+    "OAI.NumberTheory.PiExponent.Analysis.LogTailAnalytic",
+    "OAI.NumberTheory.PiExponent.Approximation.MatrixTranslation",
+    "OAI.NumberTheory.PiExponent.Analysis.PeriodAnalytic",
+    "OAI.NumberTheory.PiExponent.Analysis.AnalyticRowSeries",
+    "LogTwo.Analysis.RealCenterRows",
+    "LogTwo.Analysis.MatrixAnalyticBridge",
+    "LogTwo.Analysis.RealCenterMatrix",
+    "OAI.NumberTheory.PiExponent.Analysis.CollisionCombinatorics",
+    "OAI.NumberTheory.PiExponent.Analysis.CollisionExponential",
+    "OAI.NumberTheory.PiExponent.Analysis.CollisionGeometricSum",
+    "OAI.NumberTheory.PiExponent.Analysis.FiniteDeterminantCollision",
+    "OAI.NumberTheory.PiExponent.Analysis.CollisionLimit",
+    "OAI.NumberTheory.PiExponent.Analysis.AnalyticDeterminantCollision",
+    "OAI.NumberTheory.PiExponent.Polynomials.SimplexLog",
+    "OAI.NumberTheory.PiExponent.Analysis.Collision",
+    "OAI.NumberTheory.PiExponent.Analysis.CollisionOccupancy",
+    "OAI.NumberTheory.PiExponent.Analysis.DeterminantAnalyticBound",
+    "OAI.NumberTheory.PiExponent.Approximation.ApproximationCenters",
+    "OAI.NumberTheory.PiExponent.Approximation.MatrixTranslationBounds",
+    "LogTwo.Analysis.AnalyticSummand",
+    "LogTwo.Analysis.TranslationScalar",
+    "LogTwo.Analysis.AnalyticUpper",
+    "OAI.NumberTheory.PiExponent.Analysis.TranslationCountLimit",
+    "LogTwo.Analysis.Counting",
+    "LogTwo.Analysis.AsymptoticUpper",
+    "LogTwo.Analysis.BudgetContradiction",
+    "LogTwo.FinalParameters",
+    "LogTwo.Main",
+    "LogTwo"
+  ],
+  "commands": [
+    {
+      "label": "type-axioms",
+      "exit_code": 0,
+      "elapsed_seconds": 64.623,
+      "log": "evidence/runs/20261007T144449Z-11da14a2/type-axioms.log",
+      "log_sha256": "7b775f0693809cdab5d5843fe59018b6c0cc887b28cd92be64e72c9a1efac12b"
+    },
+    {
+      "label": "fc-target-type",
+      "exit_code": 0,
+      "elapsed_seconds": 15.989,
+      "log": "evidence/runs/20261007T144449Z-11da14a2/fc-target-type.log",
+      "log_sha256": "411ffcc2146486a4572065ff7fbfd38c39596afa93970fb154f0db1687f5b952"
+    }
+  ],
+  "source_manifest_sha256": "db3460f1744f2dc628b82e5d1640e50824b9c817a7ae4adfdd63041079bfa015",
+  "resource_policy": {
+    "compilers": 1,
+    "threads": 1,
+    "lean_memory_mib": 4096,
+    "trust": 1
+  },
+  "clean_network_bootstrap_executed": false,
+  "independent_kernel_executed": false,
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "source_count": 883,
+  "axioms_audited": [
+    {
+      "declaration": "LogTwo.Analysis.column_y_degree_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.log_center_factor_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.leibniz_center_growth_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.center_growth_tendsto",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.sequentialLowerBound_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.irrational_of_eventualLowerBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exponent_eq_two_of_sequentialLowerBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.logTwoExponentTwo_of_sequentialLowerBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.explicit_shape",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.gap_before_eta",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.gap_after_eta",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.epsilon_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.nu_div_factor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.scalarConditions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.growth_ratios",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.dimension_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.volume_ratio_half",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.complex_centerY_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logTwo_constant_fiber_card_le_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.sum_contact_le_of_constant_fiber",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Interpolation.coefficient_oneColumn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Interpolation.coefficient_yColumn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Interpolation.FullRowMinor.matrix_det_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Determinant.det_scale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Determinant.scaled_integer_det_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Determinant.scaled_integer_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Determinant.contradiction_of_scaled_upper_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Polynomial.coeff_rescale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.lcmBelow_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.map_integerLog",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.map_integerFactor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.map_integerColumnExpansion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.integerMatrix_cast",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.fullRowMinor_arithmetic_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.fullRowMinor_logarithmic_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.alpha_le_floor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.fullRowMinor_uniform_log_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.log_lcmBelow_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.truncation_denominatorBudget_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.ceilLogWeight_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.rowLogSaving_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.averageRowWeight_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.fullRowMinor_normalized_arithmetic_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.fullRowMinor_bound_of_ceilLogWeights",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exists_unbounded_of_not_sequential",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.centerCount_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.count_over_horizontal_tendsto",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.verticalWeight_tendsto",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.dimension_over_vertical_tendsto",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.exists_dimension",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Parameters.chosen_volume_ratio",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exists_large_log_approximation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exists_sequential_approximations",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.arithmeticError_le_uniform",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exists_small_arithmetic_parameters",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coeff_scaleY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.scaleY_preserves_weightedDegree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.scaleY_polynomialFrameWord",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.aeval_normalizeY_scaled_word",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logTwo_formalJet_frameMonomial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_polynomialFrameWord",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_word_vanishing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinateOrder_div_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinatePole_normalizeY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.weightedDegree_normalizeY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.valuation_normalizeY_sub_center",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.normalized_centered_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.normalized_nonconstant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logContactAt_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logWord_order_lower_at",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logContactAt_fiber",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.shiftMap_truncatedJetAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_surjective_iff_truncated",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Arithmetic.truncation_weight_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.center_index_unique_of_constantY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.weightedDegree_constant_fiber",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.constant_fiber_contact_sum_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.constant_fiber_family_contact_sum_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rationalJetEmbedding_C",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rationalJetEmbedding_X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coeff_rationalJetEmbedding",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rationalJetEmbedding_truncatedLog",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.truncatedJetAt_frameMonomial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rationalJetEmbedding_columnExpansion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coefficientMatrix_eq_truncatedJetAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.columnWeight_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.jetWeight_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.cast_jetWeight",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.columnOfIndex_valid",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rowOfIndex_valid",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.columnOfIndex_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rowOfIndex_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.exists_rowIndex",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rowExponent_index",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.monomial_eq_C_mul_frameMonomial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.indexedMatrix_mulVec_eq_coeff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.indexedMatrix_surjective_of_truncated_packets",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.indexedMatrix_surjective_of_formal_packets",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.fullRowMinor_of_indexedMatrix_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.fullRowMinor_of_formal_packets",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.eventually_exists_auxiliary_at_centers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.eventually_exists_auxiliary_at_centers_nat",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.eventually_exists_auxiliary_words_at_centers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.curve_words_vanish_of_excess",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.mem_places",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.centered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.nonconstant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.contact_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.contact_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.contact_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.words_vanish_of_excess",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.eventually_exists_annihilator_of_excess",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rationalColumnWeight_pos",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.cast_rationalColumnWeight",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.weighted_volume_ratio",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.curveSigma_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.curveSigma_contact_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.pow_mul_one_sub_mul_le_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.curveSigma_power_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.curveSigma_volume_lt_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_half_volume",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_geometric_margins",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.contact_sum_le_of_constantY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.ContactFamilyAt.no_excess_of_constantY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.weights_no_excess_of_constantY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_annihilator_of_excess",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.mem_coordinateKernel",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.eval_center_eq_zero_of_aeval_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinateKernel_lt_pointKernel",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinateKernel_height_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinateKernel_X_zero_not_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.cast_word_cost",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rigidity_data_of_excess",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.separatedProducts_of_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.normalizedLogWeights_one_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.normalizedLogWeights_prod",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_separatedProducts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.exists_small_arithmetic_separated_parameters",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.rigidityComparisonConstant_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.eventually_uniformRectangles_nat",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinate_constant_of_persistent_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.coordinate_eq_center_of_persistent_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.constantY_of_excess_of_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.contact_bound_of_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_contact_bound_of_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logarithmic_normal_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logarithmic_persistent_comparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.eventualKernelComparison",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.contact_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenComparisonConstant_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_contact_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.nonconstant_coordinates_of_trdeg_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosenWeights_intrinsic_contact_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logTwo_intrinsic_contact_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.scaled_log_monomial_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.exp_logTwo_center",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.logTwo_scaled_log_monomial_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.scaleY_comp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.scaleY_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.aeval_comp_scaleY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.jetIdealAt_eq_map_inverse",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.radical_jetIdealAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.zeroLocus_jetIdealAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.centerPrime_injective_of_Y",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.logTwo_centerPrime_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.zeroLocus_finset_prod_jetIdealAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.zeroLocus_jetProductIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_mem_weighted_of_mem_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.jetProductIdeal_pow_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_packet_zero_of_mem_product_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.map_jetIdealAt_aeval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.lift_normalizeY",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.localJetIdealAt_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.localJetIdealAt_colength_eq_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.localJetIdealAt_colength_ne_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.jetIdealAt_pairwise_coprime",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.jetIdealAt_residue_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.isUnit_of_residueAugmentation_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.map_jetIdealAt_eq_top_of_residue_ne",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.map_jetProductIdeal_eq_factor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.localJetProductIdeal_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.localJetProductIdeal_colength_eq_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.localJetProductIdeal_colength_ne_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.point_section",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.range_point",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.support_affineIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.restrict_compactIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.comap_compactIdeal_spec",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.support_compactIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.compactIdeal_isFinitePresentation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CompactJetIdealAt.comap_compactIdeal_eq_top_of_avoids_centers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.truncation_weight_strict",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.chosen_truncation_weight_strict",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.IntegralProj.homogeneous_isReduced",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.IntegralProj.proj_isReduced",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.IntegralProj.genericPoint_dense",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.IntegralProj.proj_irreducible",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.IntegralProj.proj_isIntegral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.index_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.structureMap_proper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.affineChart_isOpenImmersion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.space_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.space_isIntegral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.space_isLocallyNoetherian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.space_compact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.space_isNoetherian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.affineChart_quasiCompact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.affineChart_over",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.affineChart_denseRange",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.degree_balance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.jet_balance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.monomial_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_restrict",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_support",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_support_finite",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_support_subset_chart",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_coherent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_affine_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.center_points_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.origin_ne_center",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.origin_avoids_centers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_support_ne_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.formalJet_packet_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.logTwoIdeal_support_finite",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.logTwoIdeal_support_ne_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.logTwo_centers_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.branchMap_over",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.branchMap_generic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.centerIdeal_branch_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.branchIdeal_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.branch_colength_eq_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.branch_colength_ne_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.space_isSeparated",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.exists_curveMap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveMap_over",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveMap_generic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveMap_center",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curve_center_stalk_isIso",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveMap_stalk",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveIdeal_center_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_eq_branchIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_eq_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_ne_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.centeredAt_of_closedPoint_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.map_jetIdealAt_eq_top_of_nonconstant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.map_jetProductIdeal_eq_top_of_transcendental",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveIdeal_generic_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveIdeal_ne_bot",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveMap_centered_of_mem_support",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_eq_top_of_not_mem_support",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_eq_top_of_not_mem_places",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_zero_off_places",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveColengthCycle_apply",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveColengthCycle_support_subset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_finite_all",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveColengthCycle_eq_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveColengthCycle_sum_eq_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveColengthCycle_natCast_eq_length",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveColengthCycle_support_eq_places",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.inverseSection_zeroIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.inverseSection_zeroIdeal_eq_comap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.zeroIdeal_pullback",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.zeroIdeal_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.pullback_inverseSection_zeroIdeal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.pullback_inverseSection_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.zeroIdeal_spec_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.divisor_eq_localIdeal_length",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.idealDivisor_apply",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.SectionIdealBridge.degree_eq_neg_idealDivisor_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.parameterCurveGenericPoint_isDominant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.curveMap_eq_of_generic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.presented_curveIdeal_ne_bot",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.presentedDivisor_eq_curveColengthCycle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.euler_degree_eq_neg_curveColengthCycle_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.euler_degree_eq_neg_contact_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.hyperplane_ample",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.projection_proper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.structureMap_proper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.space_isIntegral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.space_isLocallyNoetherian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.space_compact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.space_isNoetherian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.exceptional_presents",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.isBlowup",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.exceptional_degree_eq_neg_contact_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.hyperplane_degree_eq_weightedDegree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.curveMap_hyperplane_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.A_degree_eq_weightedDegree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.chosenWeights_degree_nonnegative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.logTwo_degree_nonnegative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.exists_ampleExponent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.ampleExponent_gt_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.H_ample",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Image.center_point_isClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Image.meets_center_complement",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Image.projection_restrict_isIso",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Image.functionFieldIso_generic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Image.image_meets_chart",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Coordinates.chart_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Coordinates.field_properties",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.Coordinates.coordinates_generic_map",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.CurveModel.existsModelData",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.curveDegree_eq_modelDegree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.chosenWeights_integralCurve_degree_nonnegative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.logTwo_integralCurve_degree_nonnegative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.curve_degree_laws",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.marginCoefficient_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.margin_of_nonnegative_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.curveDegree_zero_of_frame",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.margin_of_exceptional_frame",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.margin_of_avoids_center",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.margin_of_image_outside_chart",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.CurveMarginLemmas.margin_of_contracted",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.degreeMargin_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.contracted_curve_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.outside_chart_curve_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.chosenWeights_uniform_curve_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.logTwo_exists_positive_uniform_curve_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.chosenWeights_interpolationBundle_ample",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.logTwo_interpolationBundle_ample",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.blowupBundle_ample_of_interpolationBundle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.chosenWeights_eventual_jetRestriction_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixBlowup.logTwo_eventual_jetRestriction_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedAffineFrame.frame_nonempty_of_isoOpen_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedAffineFrame.affineChart_isoOpen",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedAffineFrame.affineFrame_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedHomogeneousSubstitution.supportBound_substitution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedHomogeneousSubstitution.dehomogenize_substitution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedPullbackDegree.pullback_supportBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.WeightedGlobalSectionBound.eventual_supportBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_packet_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_packet_eq_of_sub_mem_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_packets_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.formalJetAt_packets_surjective_of_quotient",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.frame_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.exponent_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.eventual_supportBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.formalPackets_surjective_of_jetRestriction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.logTwo_eventual_fullRowMinor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Geometry.MatrixCompactification.logTwo_cofinally_fullRowMinor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.rowTest_logTwo_exponentialMonomial_eq_coeff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.scaled_periodMonomial_coeff_eq_rowTest",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.logTwo_center_radius",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.hasSum_logTwo_column_row",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.norm_logTwo_rowTest_power_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_taylor_coefficient_collision",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.optionEquivRight_monomial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.optionEquivRight_coeff_coeff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.splitRationalPolynomial_C",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.splitRationalPolynomial_X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.splitRationalPolynomial_truncatedLog",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.splitRationalPolynomial_columnExpansion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.coefficientMatrix_eq_scaled_entry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.coefficientMatrix_eq_analytic_rows",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_analytic_expansion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_support_subset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_analytic_expansion_weighted",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_row_hasSum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_analytic_summand_exp_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.norm_logTwo_center_error_exp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.truncationOrders_analytic_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_row_order_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.norm_actualRowScalar_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actualRowScalar_ne_zero_beta_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.norm_choiceScalar_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.lowIndexCount_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.low_transverse_capacity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.choiceScalar_ne_zero_weight_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.norm_analyticSummand_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.card_minorChoice_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_complex_det",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_log_analytic_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_log_bound_of_approximations",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.fullRowMinor_size_eq_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.fullRowMinor_size_eq_rowCount",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.rowDensity_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.lowDensity_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.tendsto_rowCount_normalized",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.tendsto_lowCount_normalized",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.tendsto_collisionRate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.tendsto_analyticRemainder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.combinedAnalyticBudget_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.actual_minor_log_bound_with_remainder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.eventual_analytic_errors",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.eventual_actual_minor_log_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.normalized_bounds_inconsistent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.eventual_no_fullRowMinor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.Analysis.logTwo_contradiction_of_budgets",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.totalError_le_uniform",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.chosen_collisionLimit_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exists_dimension_total_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.exists_small_total_parameters",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.not_unbounded_logTwo",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.logTwo_sequentialLowerBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.logTwo_eventualLowerBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.logTwo_irrational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "LogTwo.logTwo_exponent_eq_two",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "main_theorem": "LogTwo.logTwo_exponent_eq_two",
+  "explicit_assumptions": [],
+  "fc_target_numeral_type_checked": true,
+  "fc_utilities_linted": false,
+  "completed_at_utc": "2026-10-07T14:46:20.006514+00:00"
+}

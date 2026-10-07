@@ -1,0 +1,330 @@
+LogTwoLean4Web.lean:2160:33: error: Type mismatch
+  Finset.mem_antidiagonal.mp ?m.126
+has type
+  ?m.123.1 ∈ ?m.118 ∧ ?m.123.2 ∈ ?m.119 ∧ ?m.123.1 + ?m.123.2 = ?m.122
+but is expected to have type
+  ij.1 + ij.2 = d
+LogTwoLean4Web.lean:2160:60: error: Application type mismatch: The argument
+  hij
+has type
+  ij ∈ Finset.HasAntidiagonal.antidiagonal d
+but is expected to have type
+  ?m.123 ∈ Finset.antidiagonal ?m.120 ?m.121 ?m.122
+in the application
+  Finset.mem_antidiagonal.mp hij
+LogTwoLean4Web.lean:2146:4: error: (kernel) declaration has metavariables 'OAI.PiExponent.JetGeometry.rationalWeightedIdeal'
+LogTwoLean4Web.lean:2166:16: error: (kernel) declaration type mismatch, 'OAI.PiExponent.JetGeometry.mem_rationalWeightedIdeal' has type
+  ∀ {σ : Type u_1} {R : Type u_2} [inst : CommRing R] (v : σ → ℚ) (hv : ∀ (i : σ), 0 ≤ v i) (H : ℚ)
+    (f : MvPowerSeries σ R), f ∈ rationalWeightedIdeal v hv H ↔ f ∈ rationalWeightedIdeal v hv H
+but it is expected to have type
+  ∀ {σ : Type u_1} {R : Type u_2} [inst : CommRing R] (v : σ → ℚ) (hv : ∀ (i : σ), 0 ≤ v i) (H : ℚ)
+    (f : MvPowerSeries σ R),
+    f ∈ rationalWeightedIdeal v hv H ↔ ∀ (d : σ →₀ ℕ), (Finsupp.weight v) d < H → (coeff d) f = 0
+LogTwoLean4Web.lean:2180:31: error: Type mismatch
+  Finset.mem_antidiagonal.mp ?m.89
+has type
+  ?m.86.1 ∈ ?m.81 ∧ ?m.86.2 ∈ ?m.82 ∧ ?m.86.1 + ?m.86.2 = ?m.85
+but is expected to have type
+  ij.1 + ij.2 = d
+LogTwoLean4Web.lean:2180:58: error: Application type mismatch: The argument
+  hij
+has type
+  ij ∈ Finset.HasAntidiagonal.antidiagonal d
+but is expected to have type
+  ?m.86 ∈ Finset.antidiagonal ?m.83 ?m.84 ?m.85
+in the application
+  Finset.mem_antidiagonal.mp hij
+LogTwoLean4Web.lean:2191:8: error: (kernel) application type mismatch
+  Nat.recAux fun ⦃f⦄ hf d hd =>
+    have hzero := rational_weight_nonneg v hv d;
+    False.elim
+      (not_lt_of_ge hzero
+        (Eq.mp
+          (congrArg (LT.lt ((Finsupp.weight v) d))
+            (Eq.trans (congrFun' (congrArg HMul.hMul Nat.cast_zero) H) (zero_mul H)))
+          hd))
+argument has type
+  ∀ ⦃f : MvPowerSeries σ R⦄, f ∈ I ^ 0 → ∀ (d : σ →₀ ℕ), (Finsupp.weight v) d < ↑0 * H → (coeff d) f = 0
+but function has type
+  (fun n => I ^ n ≤ rationalWeightedIdeal v hv (↑n * H)) 0 →
+    (∀ (n : ℕ),
+        (fun n => I ^ n ≤ rationalWeightedIdeal v hv (↑n * H)) n →
+          (fun n => I ^ n ≤ rationalWeightedIdeal v hv (↑n * H)) (n + 1)) →
+      ∀ (t : ℕ), (fun n => I ^ n ≤ rationalWeightedIdeal v hv (↑n * H)) t
+LogTwoLean4Web.lean:2208:8: error: (kernel) application type mismatch
+  @Eq.ndrec (MvPowerSeries σ R) ((fun i => X i ^ e i) i) (fun ⦃a⦄ => a ∈ ↑(rationalWeightedIdeal v hv H)) fun d hd =>
+    Eq.mpr (id (congrArg (fun _a => _a = 0) (coeff_X_pow d i (e i))))
+      (if h : d = fun₀ | i => e i then
+        Eq.mpr (id (congrFun' (congrArg Eq (ite_eq_left h)) 0))
+          (Eq.ndrec (motive := fun d => (Finsupp.weight v) d < H → 1 = 0)
+            (fun hd =>
+              False.elim
+                (not_lt_of_ge (he i)
+                  (Eq.mp (congrArg (fun _a => _a < H) (nsmul_eq_mul (e i) (v i)))
+                    (Eq.mp (congrArg (fun _a => _a < H) (Finsupp.weight_single v i (e i))) hd))))
+            (Eq.symm h) hd)
+      else Eq.mpr (id (congrFun' (congrArg Eq (ite_eq_right h)) 0)) (Eq.refl 0))
+argument has type
+  ∀ (d : σ →₀ ℕ), (Finsupp.weight v) d < H → (coeff d) ((fun i => X i ^ e i) i) = 0
+but function has type
+  (fun ⦃a⦄ => a ∈ ↑(rationalWeightedIdeal v hv H)) →
+    ∀ {b : MvPowerSeries σ R}, (fun i => X i ^ e i) i = b → fun ⦃a⦄ => a ∈ ↑(rationalWeightedIdeal v hv H)
+LogTwoLean4Web.lean:2229:8: error: (kernel) function expected
+  @hdiff ↑d
+LogTwoLean4Web.lean:2252:8: error: (kernel) function expected
+  @hdiff ↑d
+LogTwoLean4Web.lean:2294:8: error: (kernel) function expected
+  @hf (d + fun₀ | i => 1)
+LogTwoLean4Web.lean:3007:27: error: Application type mismatch: The argument
+  enatToIntegerOrder_monotone
+has type
+  Monotone ⇑enatToIntegerOrder
+of sort `Prop` but is expected to have type
+  A
+of sort `Type u_1` in the application
+  (AddValuation.map ?m.15 ?m.16 (addVal A)) enatToIntegerOrder_monotone
+LogTwoLean4Web.lean:3006:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  LinearOrderedAddCommMonoidWithTop (AddValuation A (WithTop ℤ))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4Web.lean:3007:4: error: Application type mismatch: The argument
+  enatToIntegerOrder_top
+has type
+  Eq.{1} (enatToIntegerOrder ⊤) ⊤
+but is expected to have type
+  Eq.{u_1 + 1} (?m.15 ⊤) ⊤
+in the application
+  AddValuation.map ?m.15 enatToIntegerOrder_top
+LogTwoLean4Web.lean:3009:0: error: Not a definitional equality: the left-hand side
+  DFunLike.coe.{u_1 + 1, u_1 + 1, 1} (localAddValuation A) a
+is not definitionally equal to the right-hand side
+  DFunLike.coe.{1, 1, 1} enatToIntegerOrder ((addVal A) a)
+LogTwoLean4Web.lean:3011:87: error: Type mismatch
+  rfl
+has type
+  ?m.15 = ?m.15
+but is expected to have type
+  (localAddValuation A) a = enatToIntegerOrder ((addVal A) a)
+LogTwoLean4Web.lean:4008:2: error: Tactic `rfl` failed: The left-hand side
+  DFunLike.coe.{u_1 + 1, u_1 + 1, 1} (CurveLocalOrder.localAddValuation A) ((algebraMap S A) a)
+is not definitionally equal to the right-hand side
+  DFunLike.coe.{1, 1, 1} CurveLocalOrder.enatToIntegerOrder
+    ((IsDiscreteValuationRing.addVal (Localization.AtPrime q.asIdeal))
+      ((algebraMap S (Localization.AtPrime q.asIdeal)) a))
+
+S : Type u_1
+E : Type u_2
+inst✝⁴ : CommRing S
+inst✝³ : IsDedekindDomain S
+inst✝² : Field E
+inst✝¹ : Algebra S E
+inst✝ : IsFractionRing S E
+q : IsDedekindDomain.HeightOneSpectrum S
+a : S
+A : Type u_1 := Localization.AtPrime q.asIdeal
+this✝² : Algebra A E := IsLocalization.localizationAlgebraOfSubmonoidLe A E q.asIdeal.primeCompl S⁰ ⋯
+this✝¹ : IsScalarTower S A E :=
+  IsLocalization.localization_isScalarTower_of_submonoid_le A E q.asIdeal.primeCompl S⁰
+    (Ideal.primeCompl_le_nonZeroDivisors q.asIdeal)
+this✝ : IsFractionRing A E := IsFractionRing.isFractionRing_of_isDomain_of_isLocalization q.asIdeal.primeCompl A E
+this : IsDiscreteValuationRing A := IsLocalization.AtPrime.isDiscreteValuationRing_of_dedekind_domain S q.ne_bot A
+⊢ (CurveLocalOrder.localAddValuation A) ((algebraMap S A) a) =
+    CurveLocalOrder.enatToIntegerOrder
+      ((IsDiscreteValuationRing.addVal (Localization.AtPrime q.asIdeal))
+        ((algebraMap S (Localization.AtPrime q.asIdeal)) a))
+LogTwoLean4Web.lean:4602:8: error: (kernel) application type mismatch
+  rational_order_subst_of_jet_vanishing v μ H hμ f a ha hf
+argument has type
+  f ∈ JetGeometry.rationalWeightedIdeal v hv H
+but function has type
+  (∀ (d : σ →₀ ℕ), (Finsupp.weight v) d < H → (coeff d) f = 0) →
+    (∀ (i : σ) (k : ℕ), (a i).order = ↑k → μ * v i ≤ ↑k) → ↑⌈μ * H⌉₊ ≤ (subst a f).order
+LogTwoLean4Web.lean:5257:8: error: (kernel) application type mismatch
+  Finset.induction_on (motive := fun s =>
+    (∀ i ∈ s, f i ∈ rationalWeightedIdeal v hv (c i)) → ∏ i ∈ s, f i ∈ rationalWeightedIdeal v hv (∑ i ∈ s, c i)) s
+    fun hf d hd => False.elim (not_lt_of_ge (rational_weight_nonneg v hv d) hd)
+argument has type
+  (∀ i ∈ ∅, f i ∈ rationalWeightedIdeal v hv (c i)) →
+    ∀ (d : σ →₀ ℕ), (Finsupp.weight v) d < ∑ i ∈ ∅, c i → (coeff d) (∏ i ∈ ∅, f i) = 0
+but function has type
+  (fun s =>
+        (∀ i ∈ s, f i ∈ rationalWeightedIdeal v hv (c i)) → ∏ i ∈ s, f i ∈ rationalWeightedIdeal v hv (∑ i ∈ s, c i))
+      ∅ →
+    (∀ (a : ι) (s : Finset ι),
+        a ∉ s →
+          (fun s =>
+                (∀ i ∈ s, f i ∈ rationalWeightedIdeal v hv (c i)) →
+                  ∏ i ∈ s, f i ∈ rationalWeightedIdeal v hv (∑ i ∈ s, c i))
+              s →
+            (fun s =>
+                (∀ i ∈ s, f i ∈ rationalWeightedIdeal v hv (c i)) →
+                  ∏ i ∈ s, f i ∈ rationalWeightedIdeal v hv (∑ i ∈ s, c i))
+              (insert a s)) →
+      (fun s =>
+          (∀ i ∈ s, f i ∈ rationalWeightedIdeal v hv (c i)) → ∏ i ∈ s, f i ∈ rationalWeightedIdeal v hv (∑ i ∈ s, c i))
+        s
+LogTwoLean4Web.lean:5273:8: error: (kernel) function expected
+  @hf e
+LogTwoLean4Web.lean:5298:8: error: (kernel) declaration type mismatch, 'OAI.PiExponent.FormalLogTruncation.X_mem_rationalWeightedIdeal' has type
+  ∀ {R : Type u_1} [inst : CommRing R] {σ : Type u_2} (v : σ → ℚ),
+    (∀ (i : σ), 0 ≤ v i) → ∀ (i : σ) (d : σ →₀ ℕ), (Finsupp.weight v) d < v i → (coeff d) (X i) = 0
+but it is expected to have type
+  ∀ {R : Type u_1} [inst : CommRing R] {σ : Type u_2} (v : σ → ℚ) (hv : ∀ (i : σ), 0 ≤ v i) (i : σ),
+    X i ∈ rationalWeightedIdeal v hv (v i)
+LogTwoLean4Web.lean:5323:8: error: (kernel) application type mismatch
+  Iff.intro fun h d hd => sub_eq_zero.mpr (congrFun h ⟨d, hd⟩)
+argument has type
+  rationalCoefficientPacket v H f = rationalCoefficientPacket v H g →
+    ∀ (d : σ →₀ ℕ), (Finsupp.weight v) d < H → f d - g d = 0
+but function has type
+  (rationalCoefficientPacket v H f = rationalCoefficientPacket v H g → f - g ∈ rationalWeightedIdeal v hv H) →
+    (f - g ∈ rationalWeightedIdeal v hv H → rationalCoefficientPacket v H f = rationalCoefficientPacket v H g) →
+      (rationalCoefficientPacket v H f = rationalCoefficientPacket v H g ↔ f - g ∈ rationalWeightedIdeal v hv H)
+LogTwoLean4Web.lean:5375:8: error: (kernel) function expected
+  @hweight i d
+LogTwoLean4Web.lean:5407:8: error: (kernel) declaration type mismatch, 'OAI.PiExponent.FormalLogTruncation.logTail_mem_rationalWeightedIdeal' has type
+  ∀ {m : ℕ} (v : Fin (m + 1) → ℚ),
+    (∀ (i : Fin (m + 1)), 0 ≤ v i) →
+      ∀ (T : ℕ),
+        ∀ H ≤ ↑T * v 0,
+          ∀ (d : Fin (m + 1) →₀ ℕ),
+            (Finsupp.weight v) d < H → (coeff d) ((PowerSeries.toMvPowerSeries 0) (logTail T)) = 0
+but it is expected to have type
+  ∀ {m : ℕ} (v : Fin (m + 1) → ℚ) (hv : ∀ (i : Fin (m + 1)), 0 ≤ v i) (T : ℕ),
+    ∀ H ≤ ↑T * v 0, (PowerSeries.toMvPowerSeries 0) (logTail T) ∈ rationalWeightedIdeal v hv H
+LogTwoLean4Web.lean:5784:4: error: Application type mismatch: The argument
+  Monotone.withTop_map
+    (have this := Int.cast_mono;
+    this)
+has type
+  Monotone (WithTop.map fun z => ↑z)
+of sort `Prop` but is expected to have type
+  K
+of sort `Type u_1` in the application
+  (AddValuation.map ?m.18 ?m.21 v) ⋯
+LogTwoLean4Web.lean:5783:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  LinearOrderedAddCommMonoidWithTop (AddValuation K (WithTop ℝ))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LogTwoLean4Web.lean:5783:38: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.20 = ?m.20
+but is expected to have type
+  ?m.18 ⊤ = ⊤
+in the application
+  AddValuation.map ?m.18 ⋯
+LogTwoLean4Web.lean:5786:0: error: Not a definitional equality: the left-hand side
+  (realValuation v) x
+is not definitionally equal to the right-hand side
+  WithTop.map (fun z => ↑z) (v x)
+LogTwoLean4Web.lean:5787:68: error: Type mismatch
+  rfl
+has type
+  ?m.13 = ?m.13
+but is expected to have type
+  (realValuation v) x = WithTop.map (fun z => ↑z) (v x)
+LogTwoLean4Web.lean:6129:2: error: Type mismatch
+  h
+has type
+  0 ≤ WithTop.map (fun z => ↑z) (p.valuation ((algebraMap ℂ E) c))
+but is expected to have type
+  0 ≤ (realValuation p.valuation) ((algebraMap ℂ E) c)
+LogTwoLean4Web.lean:7633:8: error: (kernel) application type mismatch
+  ⟨hw, fun j d hd =>
+    hv j d
+      (have hcast :=
+        cast
+          (Eq.symm
+            (Eq.trans
+              (congrArg (LT.lt ↑((Finsupp.weight V) d))
+                (Eq.trans (congrArg (HMul.hMul ↑a) (Eq.symm (Rat.cast_natCast N))) (Rat.cast_mul._simp_1 a ↑N)))
+              Rat.cast_lt._simp_1))
+          hd;
+      Eq.mpr
+        (id
+          (Eq.trans
+            (congrFun'
+              (congrArg LT.lt
+                (Eq.trans (Finsupp.weight_eq_sum (fun i => ↑(V i)) d)
+                  (Finset.sum_congr (Eq.refl Finset.univ) fun x a => nsmul_eq_mul (d x) ↑(V x))))
+              (↑a * ↑N))
+            gt_iff_lt._simp_1))
+        (Eq.mp
+          (congrFun'
+            (congrArg LT.lt
+              (Eq.trans
+                (Eq.trans
+                  (congrArg Rat.cast
+                    (Eq.trans (Finsupp.weight_eq_sum V d)
+                      (Finset.sum_congr (Eq.refl Finset.univ) fun x a => nsmul_eq_mul (d x) (V x))))
+                  (Rat.cast_sum Finset.univ fun i => ↑(d i) * V i))
+                (Finset.sum_congr (Eq.refl Finset.univ) fun x a =>
+                  Eq.trans (Rat.cast_mul (↑(d x)) (V x))
+                    (congrFun' (congrArg HMul.hMul (Rat.cast_natCast (d x))) ↑(V x)))))
+            (↑a * ↑N))
+          hcast))⟩
+argument has type
+  ∀ (j : Fin K) (d : Fin n →₀ ℕ), (Finsupp.weight V) d < a * ↑N → (MvPowerSeries.coeff d) ((formalJet (c j)) p) = 0
+but function has type
+  (∀ (j : Fin K), (formalJet (c j)) p ∈ JetGeometry.rationalWeightedIdeal V ⋯ (a * ↑N)) →
+    WeightedSliceDegree.SupportBound (fun i => ↑(W i)) (↑N) p ∧
+      ∀ (j : Fin K), (formalJet (c j)) p ∈ JetGeometry.rationalWeightedIdeal V ⋯ (a * ↑N)
+LogTwoLean4Web.lean:8111:8: error: (kernel) function expected
+  formalJet_word_vanishing n c v hv H p hp word d
+LogTwoLean4Web.lean:8663:32: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+LogTwoLean4Web.lean:8663:62: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+LogTwoLean4Web.lean:8943:8: error: (kernel) declaration type mismatch, 'OAI.PiExponent.CoordinateContactBound.X_mem_rationalWeightedIdeal' has type
+  ∀ {K : Type u_1} {ι : Type u_2} [inst : CommRing K] (V : ι → ℚ),
+    (∀ (i : ι), 0 ≤ V i) →
+      ∀ (i : ι) (d : ι →₀ ℕ), (Finsupp.weight V) d < V i → (MvPowerSeries.coeff d) (MvPowerSeries.X i) = 0
+but it is expected to have type
+  ∀ {K : Type u_1} {ι : Type u_2} [inst : CommRing K] (V : ι → ℚ) (hV : ∀ (i : ι), 0 ≤ V i) (i : ι),
+    MvPowerSeries.X i ∈ JetGeometry.rationalWeightedIdeal V hV (V i)
+LogTwoLean4Web.lean:9054:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+LogTwoLean4Web.lean:9102:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+LogTwoLean4Web.lean:9175:55: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [truncatedJetAt, truncatedFormalJet, frameMonomial, scaleY, map_prod, mul_pow,
+    MvPowerSeries.algebraMap_apply, add_comm, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LogTwoLean4Web.lean:9570:8: error: (kernel) application type mismatch
+  ⟨hw, fun j d hd =>
+    hv j d
+      (have hcast :=
+        cast
+          (Eq.symm
+            (Eq.trans
+              (congrArg (LT.lt ↑((Finsupp.weight V) d))
+                (Eq.trans (congrArg (HMul.hMul ↑a) (Eq.symm (Rat.cast_natCast N))) (Rat.cast_mul._simp_1 a ↑N)))
+              Rat.cast_lt._simp_1))
+          hd;
+      Eq.mpr
+        (id
+          (Eq.trans
+            (congrFun'
+              (congrArg LT.lt
+                (Eq.trans (Finsupp.weight_eq_sum (fun i => 

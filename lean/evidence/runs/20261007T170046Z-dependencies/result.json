@@ -1,0 +1,10 @@
+{
+  "status": "time_limit",
+  "exit_code": null,
+  "elapsed_seconds": 180.191,
+  "scope": "Dependency analysis of cached split proof, not a new rc4 check",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 180,
+  "source_sha256": "00eacf7a3e924958fcd28b3a36650019929b92498fdcf3dc3dc7905d36957e07"
+}

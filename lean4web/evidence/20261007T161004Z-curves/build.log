@@ -1,0 +1,35 @@
+evidence/20261007T161004Z-curves/Compatibility.lean:15730:14: error: Ambiguous term
+  tensorFrame
+Possible interpretations:
+  CartierPowerFrames.tensorFrame : (L M : Scheme.Modules ?m.530) →
+    (U : Scheme.Opens ?m.530) →
+      (L.restrict U.ι ≅ O ↑U) → (M.restrict U.ι ≅ O ↑U) → ((moduleTensor ?m.530 L M).restrict U.ι ≅ O ↑U)
+  
+  PiExponentSeshadri.Geometry.tensorFrame : (L M : LineBundle ?m.530) →
+    (U : Scheme.Opens ?m.530) →
+      (L.sheaf.restrict U.ι ≅ O ↑U) → (M.sheaf.restrict U.ι ≅ O ↑U) → ((L.tensor M).sheaf.restrict U.ι ≅ O ↑U)
+'OAI.PiExponent.CurveDegree.section_tensor_euler_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponent.SectionZeroStalk.zero_stalk_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponent.CurveSectionDegree.euler_difference_eq_sum_zero_orders' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponentSeshadri.Geometry.idealPowerInclusion_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponentSeshadri.InvertibleLocal.local_equation_on_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponent.NumericalAmpleness.section_coefficient_regular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponent.NumericalAmpleness.cartierPowerMultiply_mono_of_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponent.NumericalAmpleness.cartier_euler_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponent.NumericalAmpleness.cartierPower_zeroIdeal_frames' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponent.NumericalAmpleness.mixedCartierPower_zeroIdeal_frames' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.PiExponent.GeneralCartierDegreeLength.cartier_euler_difference_eq_sum_local_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

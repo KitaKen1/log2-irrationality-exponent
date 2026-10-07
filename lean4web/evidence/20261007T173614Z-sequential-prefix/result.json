@@ -1,0 +1,20 @@
+{
+  "scope": "Bounded rc4 check of the first 100 modules of the reduced source.\n\nThis covers the pruning/import regressions found in early full-file attempts.\nIt does not check the final log-two theorem or the rest of the source.",
+  "source_sha256": "bdbbce78ca421ba76c84924b43884b5c1646d8b4bd427183457869fe1da7671a",
+  "prefix_sha256": "c9d36cd9ee5e646a9dc1a713bee72c06c032a590da54c8258a64ea047c7ddac4",
+  "edition": "sequential",
+  "module_count": 100,
+  "source_lines_checked": 11446,
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 240,
+  "final_log_two_theorem_checked": false,
+  "browser_execution_performed": false,
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "status": "time_limit",
+  "exit_code": null,
+  "elapsed_seconds": 240.118,
+  "axiom_prints": {},
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,35 @@
+evidence/20261007T151202Z-browser/Compatibility.lean:301:26: error(lean.unknownIdentifier): Unknown identifier `IsConcreteLe.not_le_iff_exists.mp`
+evidence/20261007T151202Z-browser/Compatibility.lean:301:9: error: Tactic `rcases` failed: `x✝ : ?m.23` is not an inductive datatype
+evidence/20261007T151202Z-browser/Compatibility.lean:415:34: error(lean.unknownIdentifier): Unknown identifier `IsConcreteLe.lt_iff_le_and_exists.mp`
+evidence/20261007T151202Z-browser/Compatibility.lean:415:11: error: Tactic `rcases` failed: `x✝ : ?m.63` is not an inductive datatype
+evidence/20261007T151202Z-browser/Compatibility.lean:485:57: error: unsolved goals
+C : Type u
+inst✝¹ : Category.{v, u} C
+inst✝ : Abelian C
+P : ChainComplex C ℕ
+M : C
+ε : P.X 0 ⟶ M
+hε : P.d 1 0 ≫ ε = 0
+hzero : { X₁ := P.X 1, X₂ := P.X 0, X₃ := M, f := P.d 1 0, g := ε, zero := hε }.Exact
+hepi : Epi ε
+hexact : ∀ (n : ℕ), ExactAt P (n + 1)
+hproj : ∀ (n : ℕ), CategoryTheory.Projective (P.X n)
+⊢ 0 = 0
+evidence/20261007T151202Z-browser/Compatibility.lean:486:11: error: unsolved goals
+C : Type u
+inst✝¹ : Category.{v, u} C
+inst✝ : Abelian C
+P : ChainComplex C ℕ
+M : C
+ε : P.X 0 ⟶ M
+hε : P.d 1 0 ≫ ε = 0
+hzero : { X₁ := P.X 1, X₂ := P.X 0, X₃ := M, f := P.d 1 0, g := ε, zero := hε }.Exact
+hepi : Epi ε
+hexact : ∀ (n : ℕ), ExactAt P (n + 1)
+hproj : ∀ (n : ℕ), CategoryTheory.Projective (P.X n)
+⊢ 0 = 0
+'OAI.PiExponentJets.W27.prime_quotientSection_finrank_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponentSiegelAux.W31.projectiveResolutionOfExact' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,36 @@
+{
+  "status": "partial",
+  "run_id": "20261007T180132Z-bb01932a",
+  "edition": "local_rc4_checkpoints",
+  "manifest_sha256": "3869007f1c2fc8bedd7071545ed80c363aa043d6618ed9f1b65ef772af9a297c",
+  "parent_source_sha256": "7d2a3231096f4db1b926b9a09a23115410565e1d5c62463808b6abe3e679848a",
+  "resource_policy": {
+    "compilers": 1,
+    "threads": 1,
+    "lean_memory_mib": 4096,
+    "trust": 1,
+    "total_seconds": 60,
+    "chunk_seconds": 180
+  },
+  "fresh": [],
+  "reused": [
+    "LogTwoCheckpoints.Part000",
+    "LogTwoCheckpoints.Part001"
+  ],
+  "commands": [],
+  "final_log_two_theorem_checked": false,
+  "browser_execution_performed": false,
+  "elapsed_seconds": 11.872,
+  "environment": {
+    "compiler_sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+    "version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+    "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+    "lake_manifest_sha256": "f9123703f5eb3fd293e50c8287486db8e9996ebe2c6bb16c4a61d5eaf41d4515",
+    "flags": [
+      "--memory=4096",
+      "--threads=1",
+      "--trust=1"
+    ]
+  },
+  "stop_reason": "requested_prefix_complete"
+}

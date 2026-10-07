@@ -1,0 +1,28 @@
+{
+  "scope": "Bounded rc4 check of a complete-module prefix of the reduced source.\n\nThis covers pruning/import regressions in their actual preceding source context.\nIt does not check the final log-two theorem or the rest of the source.",
+  "source_sha256": "0720586a6483e28b1b3bc0f46a6f9373f95c5dab9992db346f3507f6fb717ca7",
+  "prefix_sha256": "38540b7b724a90beaec1d55cff274c29082bab93374bc9504229d1b3c78f718e",
+  "edition": "paste",
+  "module_count": 325,
+  "source_lines_checked": 36292,
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 360,
+  "final_log_two_theorem_checked": false,
+  "browser_execution_performed": false,
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "status": "passed",
+  "exit_code": 0,
+  "elapsed_seconds": 238.783,
+  "axiom_prints": {
+    "OAI.PiExponent.irrationalityExponent_eq_two_of_eventualLowerBound": "propext,\n Classical.choice,\n Quot.sound",
+    "LogTwo.Geometry.coordinateKernel_height_le": "propext, Classical.choice, Quot.sound",
+    "OAI.PiExponent.derivation_mem_polynomialTangent": "propext, Classical.choice, Quot.sound",
+    "OAI.PiExponentSeshadri.ModuleGrothendieck.presheafAB5": "propext, Classical.choice, Quot.sound",
+    "OAI.PiExponentSeshadri.ModuleGrothendieck.sheafGrothendieck": "propext, Classical.choice, Quot.sound",
+    "OAI.PiExponentSeshadri.ModuleGrothendieck.enoughInjectives": "propext, Classical.choice, Quot.sound",
+    "OAI.PiExponentSeshadri.Geometry.modulePresheafTensorRestrict": "propext,\n Classical.choice,\n Quot.sound"
+  },
+  "log_sha256": "cfb014c6791157e389664f6f7254525861957b0124a2ec308edc8a0512be0374"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "not_checked",
+  "source_sha256": "7d2a3231096f4db1b926b9a09a23115410565e1d5c62463808b6abe3e679848a",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "scope": "Current reduced file has a passed 100-module prefix check; no full rc4 or browser verification of this hash.",
+  "partial_checks": [
+    {
+      "status": "passed",
+      "module_count": 100,
+      "source_lines_checked": 11436,
+      "elapsed_seconds": 211.674,
+      "result": "evidence/20261007T171752Z-lite-prefix/result.json",
+      "final_log_two_theorem_checked": false
+    }
+  ],
+  "previous_full_attempt": "evidence/20261007T171156Z-9a7c31a1/result.json",
+  "browser_report": {
+    "status": "user_reported_connection_lost",
+    "report": "evidence/20261008T022952JST-browser-report/report.json",
+    "browser_source_hash_verified": false
+  }
+}

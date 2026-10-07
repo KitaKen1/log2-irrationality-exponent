@@ -1,0 +1,31 @@
+{
+  "run_id": "20261007T171156Z-9a7c31a1",
+  "started_at_utc": "2026-10-07T17:11:56.217061+00:00",
+  "status": "failed",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 300,
+  "browser_execution_performed": false,
+  "scope": "Local CLI build of the selected single-file edition, not a browser/server run.",
+  "edition": "lite",
+  "source": "LogTwoLean4WebLite.lean",
+  "source_sha256": "1e8bfefc8505f403da7490c1a520b6317859b123c2813d685b775df3dfe0c35d",
+  "log": "evidence/20261007T171156Z-9a7c31a1/build.log",
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "LogTwoLean4WebLite.lean"
+  ],
+  "exit_code": -15,
+  "first_error": "LogTwoLean4WebLite.lean:9247:4: error: Type mismatch: After simplification, term",
+  "stop_reason": "first_compiler_error",
+  "compiler_cpu_seconds": 120.714,
+  "elapsed_seconds": 226.835,
+  "completed_at_utc": "2026-10-07T17:15:43.060344+00:00",
+  "log_sha256": "07f03b23a2d60e5dfd8f959f1c9a35a00206b4775fe3e82e21c40f4553131eaf"
+}

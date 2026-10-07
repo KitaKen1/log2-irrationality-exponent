@@ -1,0 +1,28 @@
+{
+  "run_id": "20261007T144641Z-f2e81a2c",
+  "started_at_utc": "2026-10-07T14:46:41.030845+00:00",
+  "status": "failed",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 600,
+  "browser_execution_performed": false,
+  "scope": "Local CLI build of the complete single-file edition, not a browser/server run.",
+  "source_sha256": "3baf1f469e78d26c30051496d6e98791472f98a2b925947fd3214b51aad469e7",
+  "log": "evidence/20261007T144641Z-f2e81a2c/build.log",
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "LogTwoLean4Web.lean"
+  ],
+  "exit_code": -15,
+  "first_error": null,
+  "stop_reason": "time_limit",
+  "elapsed_seconds": 600.986,
+  "completed_at_utc": "2026-10-07T14:56:42.028554+00:00",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

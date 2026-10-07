@@ -1,0 +1,51 @@
+{
+  "scope": "Measure pinned source import closures without starting Lean.\n\nThese counts describe packaged source volume, not CPU time or the minimal\ndeclaration dependencies of a proof. Mathlib and Lean sources are excluded.\nClosures overlap and must not be added together.",
+  "source_manifest_sha256": "384d04e294b504cc90d2efd61c720f458a3941c783a347ee945d8e1d0e2b66a2",
+  "flattened_source_sha256": "b490eeee8f28bfbcf942b8c5c8742b26255f5f88238ecb62e3c024348b80f52e",
+  "flattened_source_lines": 104875,
+  "entries": [
+    {
+      "entry": "LogTwo",
+      "modules": 885,
+      "raw_source_lines": 105520,
+      "omitted_module_count_vs_LogTwo": 0,
+      "omitted_raw_source_lines_vs_LogTwo": 0
+    },
+    {
+      "entry": "LogTwo.Target",
+      "modules": 883,
+      "raw_source_lines": 105347,
+      "omitted_module_count_vs_LogTwo": 2,
+      "omitted_raw_source_lines_vs_LogTwo": 173
+    },
+    {
+      "entry": "LogTwo.Main",
+      "modules": 881,
+      "raw_source_lines": 105279,
+      "omitted_module_count_vs_LogTwo": 4,
+      "omitted_raw_source_lines_vs_LogTwo": 241
+    },
+    {
+      "entry": "LogTwo.Geometry.MatrixInterpolation",
+      "modules": 846,
+      "raw_source_lines": 100945,
+      "omitted_module_count_vs_LogTwo": 39,
+      "omitted_raw_source_lines_vs_LogTwo": 4575
+    },
+    {
+      "entry": "LogTwo.Geometry.IntrinsicContactBound",
+      "modules": 292,
+      "raw_source_lines": 34337,
+      "omitted_module_count_vs_LogTwo": 593,
+      "omitted_raw_source_lines_vs_LogTwo": 71183
+    },
+    {
+      "entry": "LogTwo.Analysis.AnalyticUpper",
+      "modules": 39,
+      "raw_source_lines": 5169,
+      "omitted_module_count_vs_LogTwo": 846,
+      "omitted_raw_source_lines_vs_LogTwo": 100351
+    }
+  ],
+  "lean_compiler_started": false
+}

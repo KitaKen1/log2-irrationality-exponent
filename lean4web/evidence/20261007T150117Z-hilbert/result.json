@@ -1,0 +1,25 @@
+{
+  "scope": "Three-module compatibility check; not a complete proof build",
+  "modules": [
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDegree"
+  ],
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "source_sha256": "aeb9ec61e7fe8ddbc56737c048b1689de1254da98b68356e6097d3610fe4f694",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "evidence/20261007T150117Z-hilbert/PrimeHilbertDegree.lean"
+  ],
+  "timeout_seconds": 300,
+  "browser_execution_performed": false,
+  "status": "passed",
+  "exit_code": 0,
+  "elapsed_seconds": 32.31,
+  "completed_at_utc": "2026-10-07T15:01:57.168645+00:00",
+  "log_sha256": "086cf0ff71221631751b1204935189e38855c483272a0347a394b369c92c4c52"
+}

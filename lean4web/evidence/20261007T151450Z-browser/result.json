@@ -1,0 +1,29 @@
+{
+  "scope": "7-module compatibility check; not a complete proof build",
+  "modules": [
+    "OAI.NumberTheory.PiExponent.Polynomials.HomogeneousSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.QuotientSections",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDegree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiltrationLength",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.LocalComponentDegree",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.PrimeHilbertDimension",
+    "OAI.NumberTheory.PiExponent.LocalAlgebra.FiniteFreeResolutionExt"
+  ],
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "source_sha256": "bfb11c9899bb1a62c300e564ae2481efbc3e456446a942b1c9d388906873984d",
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "evidence/20261007T151450Z-browser/Compatibility.lean"
+  ],
+  "timeout_seconds": 300,
+  "browser_execution_performed": false,
+  "status": "passed",
+  "exit_code": 0,
+  "elapsed_seconds": 33.37,
+  "completed_at_utc": "2026-10-07T15:15:30.924872+00:00",
+  "log_sha256": "3f569f8e80fd91fb1ee4a12d97e03a29190f1dac5462108d1833c4874c889f49"
+}

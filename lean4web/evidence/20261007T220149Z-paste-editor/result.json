@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "scope": "Check browser metadata controls through the exact rc4 language server.\n\nThis deliberately includes one invalid proof, which MUST be rejected. It does\nnot check the log-two theorem. Only one file worker is opened, under the shared\ncompiler lock, with a 4 GiB allocator limit and a bounded lifetime.",
+  "source_sha256": "a5be37e0a7b2a25b84fdf381b9e350b2016da4def681c90106ddcdc317dcff74",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 90,
+  "final_log_two_theorem_checked": false,
+  "browser_execution_performed": false,
+  "language_server_execution_performed": true,
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "error": "Dependency hover was not disabled, or final hover not restored",
+  "elapsed_seconds": 9.351
+}

@@ -1,0 +1,25 @@
+{
+  "status": "failed",
+  "scope": "Check complete selected source modules with the paste edition's actual imports.\n\nThis is a focused regression check, not a full log-two proof build. Selected\nmodules include their pinned local import closure and retain source order.",
+  "source_sha256": "88a6c8be2aadb08086ea824049c00444f693d88249b102ef650b87e155f5ec81",
+  "harness_sha256": "ee8f724291c0ece4343867803b65d1bbc47b33e0c50e01c6ed9b39b4459d997e",
+  "header_sha256": "b1ae57dd005e95968d8ce73fe845897d4acffcd74f539f72eefcb7b5052b7237",
+  "modules": [
+    "OAI.NumberTheory.PiExponent.Cohomology.FiniteCoverCohomology"
+  ],
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 180,
+  "browser_execution_performed": false,
+  "final_log_two_theorem_checked": false,
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "exit_code": 1,
+  "axiom_prints": {
+    "OAI.PiExponentSeshadri.ModuleGrothendieck.presheafAB5": "propext,\n sorryAx,\n Classical.choice,\n Quot.sound",
+    "OAI.PiExponentSeshadri.ModuleGrothendieck.sheafGrothendieck": "propext,\n sorryAx,\n Classical.choice,\n Quot.sound",
+    "OAI.PiExponentSeshadri.ModuleGrothendieck.enoughInjectives": "propext,\n sorryAx,\n Classical.choice,\n Quot.sound"
+  },
+  "elapsed_seconds": 39.522,
+  "log_sha256": "0323b8465a710f709473480163770d104886f20eeb43a9629cc8bad221b3ab4c"
+}

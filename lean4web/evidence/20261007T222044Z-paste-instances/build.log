@@ -1,0 +1,22 @@
+evidence/20261007T222044Z-paste-instances/Modules.lean:49:0: warning: 
+'Mathlib.Data.ENat.SuccOrder' has been deprecated: please replace this import by
+
+import Mathlib.Order.SuccPred.ENat
+evidence/20261007T222044Z-paste-instances/Modules.lean:50:0: warning: 
+'Mathlib.Data.FunLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.FunLike.Basic
+evidence/20261007T222044Z-paste-instances/Modules.lean:51:0: warning: 
+'Mathlib.Data.Opposite' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Opposite
+evidence/20261007T222044Z-paste-instances/Modules.lean:52:0: warning: 
+'Mathlib.Data.SetLike.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.SetLike.Basic
+'OAI.PiExponentSeshadri.ModuleGrothendieck.presheafAB5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponentSeshadri.ModuleGrothendieck.sheafGrothendieck' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponentSeshadri.ModuleGrothendieck.enoughInjectives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponentSeshadri.Geometry.modulePresheafTensorRestrict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

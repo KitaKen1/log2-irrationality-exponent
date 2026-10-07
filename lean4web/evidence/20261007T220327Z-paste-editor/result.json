@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "scope": "Check browser metadata controls through the exact rc4 language server.\n\nThis deliberately includes one invalid proof, which MUST be rejected. It does\nnot check the log-two theorem. Only one file worker is opened, under the shared\ncompiler lock, with a 4 GiB allocator limit and a bounded lifetime.",
+  "source_sha256": "a684e5833878c65104b19f0c53293b87ccbbe395e4425eccf241fed73e743651",
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 90,
+  "final_log_two_theorem_checked": false,
+  "browser_execution_performed": false,
+  "language_server_execution_performed": true,
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "invalid_proof_rejected": true,
+  "hidden_and_visible_proofs_axiom_free": true,
+  "editor_state_restored": true,
+  "dependency_term_hover_absent": true,
+  "final_hover_present": true,
+  "hover_results": {
+    "paste_hidden": {
+      "contents": {
+        "kind": "markdown",
+        "value": "`exact e` closes the main goal if its target type matches that of `e`.\n"
+      },
+      "range": {
+        "end": {
+          "character": 24,
+          "line": 18
+        },
+        "start": {
+          "character": 2,
+          "line": 18
+        }
+      }
+    },
+    "paste_visible": {
+      "contents": {
+        "kind": "markdown",
+        "value": "```lean\nNat.add_comm (n m : Nat) : n + m = m + n\n```\n***\n*import Init.Data.Nat.Basic*"
+      },
+      "range": {
+        "end": {
+          "character": 20,
+          "line": 26
+        },
+        "start": {
+          "character": 8,
+          "line": 26
+        }
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 51,
+          "line": 19
+        },
+        "start": {
+          "character": 35,
+          "line": 19
+        }
+      },
+      "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+      "range": {
+        "end": {
+          "character": 51,
+          "line": 19
+        },
+        "start": {
+          "character": 35,
+          "line": 19
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 7,
+          "line": 24
+        },
+        "start": {
+          "character": 0,
+          "line": 24
+        }
+      },
+      "message": "PASTE_OUTER_INFO=true",
+      "range": {
+        "end": {
+          "character": 7,
+          "line": 24
+        },
+        "start": {
+          "character": 0,
+          "line": 24
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 27
+        },
+        "start": {
+          "character": 0,
+          "line": 27
+        }
+      },
+      "message": "'paste_hidden' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 27
+        },
+        "start": {
+          "character": 0,
+          "line": 27
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 28
+        },
+        "start": {
+          "character": 0,
+          "line": 28
+        }
+      },
+      "message": "'paste_visible' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 28
+        },
+        "start": {
+          "character": 0,
+          "line": 28
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 7,
+          "line": 29
+        },
+        "start": {
+          "character": 0,
+          "line": 29
+        }
+      },
+      "message": "PASTE_EDITOR_DONE",
+      "range": {
+        "end": {
+          "character": 7,
+          "line": 29
+        },
+        "start": {
+          "character": 0,
+          "line": 29
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ],
+  "elapsed_seconds": 5.821
+}

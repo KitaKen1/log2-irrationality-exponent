@@ -1,0 +1,2 @@
+'OAI.PiExponentJets.W27.prime_quotientSection_finrank_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PiExponentSiegelAux.W31.projectiveResolutionOfExact' depends on axioms: [propext, Classical.choice, Quot.sound]

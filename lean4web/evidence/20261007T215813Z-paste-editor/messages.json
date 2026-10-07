@@ -1,0 +1,8644 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "capabilities": {
+        "callHierarchyProvider": true,
+        "codeActionProvider": {
+          "codeActionKinds": [
+            "quickfix",
+            "refactor",
+            "source.organizeImports"
+          ],
+          "resolveProvider": true,
+          "workDoneProgress": false
+        },
+        "colorProvider": {
+          "workDoneProgress": false
+        },
+        "completionProvider": {
+          "resolveProvider": true,
+          "triggerCharacters": [
+            "."
+          ]
+        },
+        "declarationProvider": true,
+        "definitionProvider": true,
+        "documentHighlightProvider": true,
+        "documentSymbolProvider": true,
+        "experimental": {
+          "moduleHierarchyProvider": {},
+          "rpcProvider": {
+            "highlightMatchesProvider": {},
+            "rpcWireFormat": "v1"
+          }
+        },
+        "foldingRangeProvider": true,
+        "hoverProvider": true,
+        "inlayHintProvider": {
+          "resolveProvider": false,
+          "workDoneProgress": false
+        },
+        "referencesProvider": true,
+        "renameProvider": {
+          "prepareProvider": true
+        },
+        "semanticTokensProvider": {
+          "full": true,
+          "legend": {
+            "tokenModifiers": [
+              "declaration",
+              "definition",
+              "readonly",
+              "static",
+              "deprecated",
+              "abstract",
+              "async",
+              "modification",
+              "documentation",
+              "defaultLibrary"
+            ],
+            "tokenTypes": [
+              "keyword",
+              "variable",
+              "property",
+              "function",
+              "namespace",
+              "type",
+              "class",
+              "enum",
+              "interface",
+              "struct",
+              "typeParameter",
+              "parameter",
+              "enumMember",
+              "event",
+              "method",
+              "macro",
+              "modifier",
+              "comment",
+              "string",
+              "number",
+              "regexp",
+              "operator",
+              "decorator",
+              "leanSorryLike"
+            ]
+          },
+          "range": true
+        },
+        "signatureHelpProvider": {
+          "triggerCharacters": [
+            " "
+          ],
+          "workDoneProgress": false
+        },
+        "textDocumentSync": {
+          "change": 2,
+          "openClose": true,
+          "save": {
+            "includeText": true
+          },
+          "willSave": false,
+          "willSaveWaitUntil": false
+        },
+        "typeDefinitionProvider": true,
+        "workspaceSymbolProvider": true
+      },
+      "serverInfo": {
+        "name": "Lean 4 Server",
+        "version": "0.3.0"
+      }
+    }
+  },
+  {
+    "id": "register_lean_watcher",
+    "jsonrpc": "2.0",
+    "method": "client/registerCapability",
+    "params": {
+      "registrations": [
+        {
+          "id": "lean_watcher",
+          "method": "workspace/didChangeWatchedFiles",
+          "registerOptions": {
+            "watchers": [
+              {
+                "globPattern": "**/*.lean"
+              },
+              {
+                "globPattern": "**/*.ilean"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 0
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 0
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "id": 0,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 2,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 3,
+    "jsonrpc": "2.0",
+    "method": "workspace/semanticTokens/refresh"
+  },
+  {
+    "id": 4,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "id": 5,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 6,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 7,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 8,
+    "jsonrpc": "2.0",
+    "method": "workspace/semanticTokens/refresh"
+  },
+  {
+    "id": 9,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 10,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 24,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 27,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 27,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 76,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 42,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 42,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 42,
+              "line": 13
+            },
+            "start": {
+              "character": 39,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 42,
+              "line": 13
+            },
+            "start": {
+              "character": 39,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 35,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 35,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 35,
+              "line": 14
+            },
+            "start": {
+              "character": 23,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "severity": 1,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 37,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 75,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "severity": 1,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "message": "PASTE_INFO_ON=true",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 43,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 43,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 43,
+              "line": 21
+            },
+            "start": {
+              "character": 40,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 43,
+              "line": 21
+            },
+            "start": {
+              "character": 40,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 36,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 36,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 36,
+              "line": 22
+            },
+            "start": {
+              "character": 23,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 26,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "severity": 1,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "message": "PASTE_INFO_ON=true",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "message": "'paste_hidden' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "severity": 1,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "message": "PASTE_INFO_ON=true",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "message": "'paste_hidden' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          },
+          "message": "'paste_visible' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 40,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "severity": 1,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "message": "PASTE_INFO_ON=true",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "message": "'paste_hidden' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          },
+          "message": "'paste_visible' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          },
+          "message": "PASTE_EDITOR_DONE",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 8
+            },
+            "start": {
+              "character": 0,
+              "line": 8
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 9
+            },
+            "start": {
+              "character": 0,
+              "line": 9
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 10
+            },
+            "start": {
+              "character": 0,
+              "line": 10
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 4
+            },
+            "start": {
+              "character": 0,
+              "line": 4
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 14
+            },
+            "start": {
+              "character": 0,
+              "line": 14
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 15
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 21
+            },
+            "start": {
+              "character": 0,
+              "line": 21
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 22
+            },
+            "start": {
+              "character": 0,
+              "line": 22
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "message": "PASTE_INFO_OFF=false",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 12
+            },
+            "start": {
+              "character": 0,
+              "line": 12
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "message": "Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 15
+            },
+            "start": {
+              "character": 22,
+              "line": 15
+            }
+          },
+          "severity": 1,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "message": "PASTE_INFO_ON=true",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "message": "'paste_hidden' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 23
+            },
+            "start": {
+              "character": 0,
+              "line": 23
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          },
+          "message": "'paste_visible' does not depend on any axioms",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 24
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 7,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          },
+          "message": "PASTE_EDITOR_DONE",
+          "range": {
+            "end": {
+              "character": 7,
+              "line": 25
+            },
+            "start": {
+              "character": 0,
+              "line": 25
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "id": 10,
+    "jsonrpc": "2.0",
+    "result": null
+  },
+  {
+    "id": 11,
+    "jsonrpc": "2.0",
+    "result": {
+      "contents": {
+        "kind": "markdown",
+        "value": "```lean\npaste_visible : 2 + 2 = 4\n```"
+      },
+      "range": {
+        "end": {
+          "character": 36,
+          "line": 22
+        },
+        "start": {
+          "character": 23,
+          "line": 22
+        }
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Users/kenta/Dropbox/Intellectual%20Moonshine/%3FAI%E6%95%B0%E5%AD%A6/Log2/forgithub/lean4web/evidence/20261007T215813Z-paste-editor/EditorProbe.lean",
+      "version": 1
+    }
+  },
+  {
+    "id": 20,
+    "jsonrpc": "2.0",
+    "result": null
+  }
+]

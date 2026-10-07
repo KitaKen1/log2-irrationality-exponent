@@ -1,0 +1,1354 @@
+'LogTwo.Analysis.column_y_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.log_center_factor_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.leibniz_center_growth_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.center_growth_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.logTwoExponentTwo_of_sequentialLowerBound (h : LogTwo.SequentialLowerBound (Real.log 2)) :
+  LogTwo.LogTwoExponentTwo
+LogTwo.Interpolation.FullRowMinor {m : ℕ} (w : LogTwo.Interpolation.Weights m) (H : ℚ) (r : Fin m → ℚ) (T : Fin m → ℕ) :
+  Type
+'LogTwo.sequentialLowerBound_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.irrational_of_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.exponent_eq_two_of_sequentialLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.logTwoExponentTwo_of_sequentialLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.explicit_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.gap_before_eta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.gap_after_eta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.epsilon_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.nu_div_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.scalarConditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.growth_ratios' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.dimension_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.volume_ratio_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.complex_centerY_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logTwo_constant_fiber_card_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.sum_contact_le_of_constant_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Interpolation.coefficient_oneColumn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Interpolation.coefficient_yColumn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Interpolation.FullRowMinor.matrix_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Determinant.det_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Determinant.scaled_integer_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Determinant.scaled_integer_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Determinant.contradiction_of_scaled_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Arithmetic.fullRowMinor_bound_of_ceilLogWeights {m : ℕ} {w : LogTwo.Interpolation.Weights m} {H F : ℚ}
+  (p : Fin m → ℤ) (q : Fin m → ℕ) (hq : ∀ (i : Fin m), 2 ≤ q i)
+  (hw : ∀ (i : Fin m), w.w i = LogTwo.Arithmetic.ceilLogWeight (q i)) (hK : 0 < w.K) (hH : 0 < H) (hF : 0 ≤ F)
+  (wmin : ℝ) (hmin : 0 < wmin) (hweights : ∀ (i : Fin m), wmin ≤ ↑(w.w i))
+  (minor :
+    LogTwo.Interpolation.FullRowMinor w H (LogTwo.Arithmetic.rationalPoint p q)
+      (LogTwo.Arithmetic.truncationOrders w F)) :
+  -(1 - LogTwo.Arithmetic.averageRowWeight minor) - LogTwo.Arithmetic.arithmeticError w F wmin ≤
+    Real.log |↑minor.matrix.det| / (↑minor.size * ↑H)
+'LogTwo.Polynomial.coeff_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.lcmBelow_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.map_integerLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.map_integerFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.map_integerColumnExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.integerMatrix_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.fullRowMinor_arithmetic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.fullRowMinor_logarithmic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.alpha_le_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.fullRowMinor_uniform_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.log_lcmBelow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.truncation_denominatorBudget_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.ceilLogWeight_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.rowLogSaving_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.averageRowWeight_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.fullRowMinor_normalized_arithmetic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.fullRowMinor_bound_of_ceilLogWeights' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.exists_small_arithmetic_parameters (n : ℕ) (hn : 1 ≤ n) {x ν : ℝ} (hbad : LogTwo.UnboundedApproximations x ν)
+  (ε : ℝ) (hε : 0 < ε) (threshold : ℕ → (i : ℕ) → (Fin i → ℕ) → ℝ) :
+  ∃ m p q,
+    ∃ (hq : ∀ (i : ℕ), 2 ≤ q i),
+      ∃ W,
+        1 ≤ m ∧
+          0 < W ∧
+            (∀ (i : ℕ), W ≤ ↑(LogTwo.Arithmetic.ceilLogWeight (q i))) ∧
+              (∀ (i : ℕ), (threshold m i fun j => q ↑j) < Real.log ↑(q i)) ∧
+                (∀ (i : ℕ), |x - ↑(p i) / ↑(q i)| ≤ ↑(q i) ^ (-ν)) ∧
+                  LogTwo.Arithmetic.arithmeticError (LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯)
+                      (LogTwo.Parameters.truncationFactor n) W <
+                    ε
+'LogTwo.exists_unbounded_of_not_sequential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.centerCount_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.count_over_horizontal_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.verticalWeight_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.dimension_over_vertical_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.exists_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Parameters.chosen_volume_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.exists_large_log_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.exists_sequential_approximations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.arithmeticError_le_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.exists_small_arithmetic_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.logWord_order_lower_at.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E]
+  (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E)
+  [Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p))] {m : ℕ} (y : ℂ)
+  (hy : y ≠ 0) (z : Fin (m + 1) → E) (c : Fin m → ℂ)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint y c) p)
+  (hnc : ∃ i, z i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint y c i)) (v : Fin (m + 1) → ℚ)
+  (hv : ∀ (i : Fin (m + 1)), 0 < v i) (H : ℚ) (F : OAI.PiExponentApprox.FramePolynomial m)
+  (hF : (LogTwo.Geometry.formalJetAt y c) F ∈ OAI.PiExponent.JetGeometry.rationalWeightedIdeal v ⋯ H)
+  (word : List (Fin (m + 1))) (hne : (MvPolynomial.aeval z) (OAI.PiExponentApprox.polynomialFrameWord m word F) ≠ 0) :
+  LogTwo.Geometry.logContactAt p y hy z c hc hnc v * (H - (List.map v word).sum) ≤
+    ↑(OAI.PiExponent.WeightedPolynomialPole.coordinateOrder p.valuation
+        ((MvPolynomial.aeval z) (OAI.PiExponentApprox.polynomialFrameWord m word F)))
+'LogTwo.Geometry.coeff_scaleY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.scaleY_preserves_weightedDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.scaleY_polynomialFrameWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.aeval_normalizeY_scaled_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logTwo_formalJet_frameMonomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_polynomialFrameWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_word_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coordinateOrder_div_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coordinatePole_normalizeY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.weightedDegree_normalizeY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.valuation_normalizeY_sub_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.normalized_centered_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.normalized_nonconstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logContactAt_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logWord_order_lower_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logContactAt_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.shiftMap_truncatedJetAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_surjective_iff_truncated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Arithmetic.truncation_weight_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.center_index_unique_of_constantY' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.constant_fiber_family_contact_sum_le.{u_1, u_2} {E : Type u_1} [Field E] [Algebra ℂ E] {m : ℕ}
+  {J : Type u_2} (hfinite : ∀ (f : E), Transcendental ℂ f → FiniteDimensional (↥ℂ⟮f⟯) E) (a : ℂ) (x : Fin m → E)
+  (y : J → ℂ) (hy : Function.Injective y) (hy0 : ∀ (j : J), y j ≠ 0) (c : J → Fin m → ℂ) (w v : Fin (m + 1) → ℚ)
+  (hw : ∀ (i : Fin (m + 1)), 0 < w i) (hv : ∀ (i : Fin (m + 1)), 0 < v i) (theta : ℚ) (htheta : 0 ≤ theta)
+  (hratio : ∀ (i : Fin m), w i.succ = theta * v i.succ)
+  (S : Finset (OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E))
+  (j : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E → J)
+  (hc :
+    ∀ p ∈ S,
+      OAI.PiExponent.CurveCenters.Centered (fun i => Fin.cases ((algebraMap ℂ E) a) x i)
+        (LogTwo.Geometry.centerPoint (y (j p)) (c (j p))) p)
+  (hres : ∀ p ∈ S, Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hnc :
+    ∀ (k : J),
+      ∃ i,
+        (fun i => Fin.cases ((algebraMap ℂ E) a) x i) i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint (y k) (c k) i))
+  (μ : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E → ℝ)
+  (hμ :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) (hp : p ∈ S),
+      μ p =
+        ↑(LogTwo.Geometry.logContactAt p (y (j p)) ⋯ (fun i => Fin.cases ((algebraMap ℂ E) a) x i) (c (j p)) ⋯ ⋯ v)) :
+  ∑ p ∈ S, μ p ≤
+    ↑theta * OAI.PiExponent.CurveContactSum.weightedDegree hfinite (fun i => Fin.cases ((algebraMap ℂ E) a) x i) w
+LogTwo.Geometry.coefficientMatrix_eq_truncatedJetAt {m : ℕ} (r : Fin m → ℚ) (T : Fin m → ℕ)
+  (row : LogTwo.Interpolation.Row m) (col : LogTwo.Interpolation.Column m) :
+  ↑(LogTwo.Interpolation.coefficientMatrix r T row col) =
+    (MvPowerSeries.coeff (Finsupp.mapDomain (⇑(finSuccEquiv m).symm) (LogTwo.Interpolation.rowExponent row)))
+      ((LogTwo.Geometry.truncatedJetAt (2 ^ row.j) (fun i => ↑row.j * ↑(r i)) T)
+        (LogTwo.Geometry.frameMonomial col.h col.alpha))
+'LogTwo.Geometry.weightedDegree_constant_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.constant_fiber_contact_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.constant_fiber_family_contact_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rationalJetEmbedding_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rationalJetEmbedding_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coeff_rationalJetEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rationalJetEmbedding_truncatedLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.truncatedJetAt_frameMonomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rationalJetEmbedding_columnExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coefficientMatrix_eq_truncatedJetAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.fullRowMinor_of_formal_packets.{u_1} {m : ℕ} {α : Type u_1} (w : LogTwo.Interpolation.Weights m) (H : ℚ)
+  (r : Fin m → ℚ) (T : Fin m → ℕ) (hT : ∀ (i : Fin m), w.w i / w.theta ≤ ↑(T i) * w.v0)
+  (P : α → OAI.PiExponentApprox.FramePolynomial m)
+  (hdegree : ∀ (a : α), OAI.PiExponentApprox.HasWeightedDegreeLE (LogTwo.Geometry.columnWeight w) (↑H) (P a))
+  (hpacket :
+    Function.Surjective fun a j =>
+      OAI.PiExponent.JetGeometry.rationalCoefficientPacket (LogTwo.Geometry.jetWeight w) H
+        ((LogTwo.Geometry.formalJetAt (2 ^ ↑j) fun i => ↑↑j * ↑(r i)) (P a))) :
+  Nonempty (LogTwo.Interpolation.FullRowMinor w H r T)
+LogTwo.Geometry.eventually_exists_auxiliary_words_at_centers {m : ℕ} (W V : Fin (m + 1) → ℚ)
+  (hW : ∀ (i : Fin (m + 1)), 0 < W i) (hV : ∀ (i : Fin (m + 1)), 0 < V i) (K : ℕ) {a : ℚ} (ha : 0 < a)
+  (hvol : (↑K * ↑a ^ (m + 1) * ∏ i, ↑(W i)) / ∏ i, ↑(V i) < 1) (y : Fin K → ℂ) (c : Fin K → Fin m → ℂ) :
+  ∀ᶠ (N : ℕ) in Filter.atTop,
+    ∃ P,
+      P ≠ 0 ∧
+        OAI.PiExponentApprox.HasWeightedDegreeLE (fun i => ↑(W i)) (↑N) P ∧
+          ∀ (j : Fin K) (word : List (Fin (m + 1))),
+            (LogTwo.Geometry.formalJetAt (y j) (c j)) (OAI.PiExponentApprox.polynomialFrameWord m word P) ∈
+              OAI.PiExponent.JetGeometry.rationalWeightedIdeal V ⋯ (a * ↑N - (List.map V word).sum)
+'LogTwo.Geometry.columnWeight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.jetWeight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.cast_jetWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.columnOfIndex_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rowOfIndex_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.columnOfIndex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rowOfIndex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.exists_rowIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rowExponent_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.monomial_eq_C_mul_frameMonomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.indexedMatrix_mulVec_eq_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.indexedMatrix_surjective_of_truncated_packets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.indexedMatrix_surjective_of_formal_packets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.fullRowMinor_of_indexedMatrix_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.fullRowMinor_of_formal_packets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.eventually_exists_auxiliary_at_centers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.eventually_exists_auxiliary_at_centers_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.eventually_exists_auxiliary_words_at_centers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.curve_words_vanish_of_excess.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E] {m K : ℕ}
+  (hfinite : ∀ (f : E), Transcendental ℂ f → FiniteDimensional (↥ℂ⟮f⟯) E) (z : Fin (m + 1) → E) (y : Fin K → ℂ)
+  (hy : ∀ (j : Fin K), y j ≠ 0) (c : Fin K → Fin m → ℂ)
+  (hnc : ∀ (j : Fin K), ∃ i, z i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint (y j) (c j) i)) (w v : Fin (m + 1) → ℚ)
+  (hw : ∀ (i : Fin (m + 1)), 0 < w i) (hv : ∀ (i : Fin (m + 1)), 0 < v i)
+  (S : Finset (OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E))
+  (center : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E → Fin K)
+  (hc : ∀ p ∈ S, OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y (center p)) (c (center p))) p)
+  (hres : ∀ p ∈ S, Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (μ : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E → ℝ)
+  (hμ :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) (hp : p ∈ S),
+      μ p = ↑(LogTwo.Geometry.logContactAt p (y (center p)) ⋯ z (c (center p)) ⋯ ⋯ v))
+  (sigma : ℚ) (hsigma : 0 < sigma) (N : ℕ) (hN : 0 < N) (F : OAI.PiExponentApprox.FramePolynomial m)
+  (hF : OAI.PiExponentApprox.HasWeightedDegreeLE (fun i => ↑(w i)) (↑N) F)
+  (hjet :
+    ∀ (j : Fin K),
+      (LogTwo.Geometry.formalJetAt (y j) (c j)) F ∈
+        OAI.PiExponent.JetGeometry.rationalWeightedIdeal v ⋯ ((1 + 3 * sigma) * ↑N))
+  (hexcess : OAI.PiExponent.CurveContactSum.weightedDegree hfinite z w < (1 + ↑sigma) * ∑ p ∈ S, μ p)
+  (word : List (Fin (m + 1))) :
+  (List.map v word).sum ≤ sigma * ↑N → (MvPolynomial.aeval z) (OAI.PiExponentApprox.polynomialFrameWord m word F) = 0
+'LogTwo.Geometry.curve_words_vanish_of_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.chosenWeights_geometric_margins (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : Fin m → ℕ)
+  (hq : ∀ (i : Fin m), 2 ≤ q i) :
+  have w := LogTwo.chosenWeights n hn m q hq;
+  have sigma := LogTwo.Geometry.curveSigma w.theta m;
+  0 < sigma ∧
+    (1 + sigma) * w.theta < 1 ∧
+      (↑w.K * (1 + 3 * ↑sigma) ^ (m + 1) * ∏ i, ↑(LogTwo.Geometry.rationalColumnWeight w i)) /
+          ∏ i, ↑(LogTwo.Geometry.jetWeight w i) <
+        1
+LogTwo.Geometry.rigidity_data_of_excess.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E] {m K : ℕ}
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hfinite : ∀ (f : E), Transcendental ℂ f → FiniteDimensional (↥ℂ⟮f⟯) E) (z : Fin (m + 1) → E) (y : Fin K → ℂ)
+  (hy : ∀ (j : Fin K), y j ≠ 0) (c : Fin K → Fin m → ℂ) (hz : ∃ i, Transcendental ℂ (z i)) (hK : 0 < K)
+  (w v : Fin (m + 1) → ℚ) (hw : ∀ (i : Fin (m + 1)), 0 < w i) (hv : ∀ (i : Fin (m + 1)), 0 < v i) (sigma : ℚ)
+  (hsigma : 0 < sigma) (hvol : (↑K * (1 + 3 * ↑sigma) ^ (m + 1) * ∏ i, ↑(w i)) / ∏ i, ↑(v i) < 1)
+  (hexcess :
+    OAI.PiExponent.CurveContactSum.weightedDegree hfinite z w <
+      (1 + ↑sigma) *
+        ∑ p ∈ LogTwo.Geometry.ContactFamilyAt.places hfinite z y c hz,
+          ↑(LogTwo.Geometry.ContactFamilyAt.contact hres hfinite z y hy c hz hK v p)) :
+  (LogTwo.Geometry.coordinateKernel z).height ≤ ↑m ∧
+    MvPolynomial.X 0 ∉ LogTwo.Geometry.coordinateKernel z ∧
+      ∀ᶠ (N : ℕ) in Filter.atTop,
+        ∃ F,
+          F ≠ 0 ∧
+            OAI.PiExponentApprox.HasWeightedDegreeLE (fun i => ↑(w i)) (↑N) F ∧
+              ∀ (word : List (Fin (m + 1))),
+                (List.map (fun i => ↑(v i)) word).sum ≤ ↑sigma * ↑N →
+                  OAI.PiExponentApprox.polynomialFrameWord m word F ∈ LogTwo.Geometry.coordinateKernel z
+'LogTwo.Geometry.ContactFamilyAt.mem_places' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.nonconstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.contact_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.contact_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.contact_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.words_vanish_of_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.eventually_exists_annihilator_of_excess' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.rationalColumnWeight_pos' depends on axioms: [propext, Quot.sound]
+'LogTwo.Geometry.cast_rationalColumnWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.weighted_volume_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.curveSigma_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.curveSigma_contact_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.pow_mul_one_sub_mul_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.curveSigma_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.curveSigma_volume_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_half_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_geometric_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.contact_sum_le_of_constantY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.ContactFamilyAt.no_excess_of_constantY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.weights_no_excess_of_constantY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_annihilator_of_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.mem_coordinateKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.eval_center_eq_zero_of_aeval_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coordinateKernel_lt_pointKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coordinateKernel_height_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coordinateKernel_X_zero_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.cast_word_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.rigidity_data_of_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.EventualKernelComparison.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E] {m : ℕ} (z : Fin (m + 1) → E)
+  (w cost : Fin (m + 1) → ℝ) (M sigma : ℝ) : Prop
+'LogTwo.Geometry.separatedProducts_of_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.normalizedLogWeights_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.normalizedLogWeights_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_separatedProducts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.exists_small_arithmetic_separated_parameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.rigidityComparisonConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.eventually_uniformRectangles_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.coordinate_constant_of_persistent_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.coordinate_eq_center_of_persistent_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.constantY_of_excess_of_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.contact_bound_of_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_contact_bound_of_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.exists_small_arithmetic_separated_parameters (n : ℕ) (hn : 1 ≤ n) {x ν : ℝ}
+  (hbad : LogTwo.UnboundedApproximations x ν) (ε : ℝ) (hε : 0 < ε) (M : ℕ → ℝ) (hM : ∀ (m : ℕ), 0 < M m)
+  (threshold : ℕ → (i : ℕ) → (Fin i → ℕ) → ℝ) :
+  ∃ m p q,
+    ∃ (hq : ∀ (i : ℕ), 2 ≤ q i),
+      ∃ W,
+        1 ≤ m ∧
+          0 < W ∧
+            (∀ (i : ℕ), W ≤ ↑(LogTwo.Arithmetic.ceilLogWeight (q i))) ∧
+              (∀ (i : ℕ), (threshold m i fun j => q ↑j) < Real.log ↑(q i)) ∧
+                (∀ (i : ℕ), |x - ↑(p i) / ↑(q i)| ≤ ↑(q i) ^ (-ν)) ∧
+                  (∀ i < m,
+                      LogTwo.Geometry.denominatorSeparationFactor n m (M m) *
+                          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+                        ↑(LogTwo.Arithmetic.ceilLogWeight (q i))) ∧
+                    LogTwo.Arithmetic.arithmeticError (LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯)
+                          (LogTwo.Parameters.truncationFactor n) W <
+                        ε ∧
+                      LogTwo.Geometry.SeparatedProducts
+                        (LogTwo.Geometry.columnWeight (LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯))
+                        (fun i => ↑(LogTwo.Geometry.jetWeight (LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯) i)) (M m)
+LogTwo.Geometry.chosenWeights_contact_bound_of_comparison.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E]
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hfinite : ∀ (f : E), Transcendental ℂ f → FiniteDimensional (↥ℂ⟮f⟯) E) (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i) (M : ℝ) (hM : 0 < M)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m M * ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (z : Fin (m + 1) → E) (hz : ∃ i, Transcendental ℂ (z i)) :
+  let w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  have hK := ⋯;
+  ∀ (y : Fin w.K → ℂ) (hy : ∀ (j : Fin w.K), y j ≠ 0),
+    Function.Injective y →
+      ∀ (c : Fin w.K → Fin m → ℂ),
+        LogTwo.Geometry.EventualKernelComparison z (LogTwo.Geometry.columnWeight w)
+            (fun i => ↑(LogTwo.Geometry.jetWeight w i)) M ↑(LogTwo.Geometry.curveSigma w.theta m) →
+          (1 + ↑(LogTwo.Geometry.curveSigma w.theta m)) *
+              ∑ p ∈ LogTwo.Geometry.ContactFamilyAt.places hfinite z y c hz,
+                ↑(LogTwo.Geometry.ContactFamilyAt.contact hres hfinite z y hy c hz hK (LogTwo.Geometry.jetWeight w) p) ≤
+            OAI.PiExponent.CurveContactSum.weightedDegree hfinite z (LogTwo.Geometry.rationalColumnWeight w)
+'LogTwo.Geometry.logarithmic_normal_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logarithmic_persistent_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.eventualKernelComparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.contact_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenComparisonConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_contact_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.nonconstant_coordinates_of_trdeg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosenWeights_intrinsic_contact_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logTwo_intrinsic_contact_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.eventualKernelComparison.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E] {m : ℕ} (z : Fin (m + 1) → E)
+  (rho : Fin (m + 1) → ℚ) (hrho : ∀ (i : Fin (m + 1)), 0 < rho i) (cost : Fin (m + 1) → ℝ)
+  (hcost : ∀ (i : Fin (m + 1)), 0 < cost i) (sigma : ℝ) (hsigma : 0 < sigma) :
+  LogTwo.Geometry.EventualKernelComparison z (fun i => ↑(rho i)) cost
+    (LogTwo.Geometry.rigidityComparisonConstant m sigma) sigma
+LogTwo.Geometry.logTwo_intrinsic_contact_bound.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E] [Algebra.EssFiniteType ℂ E]
+  (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ) (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (z : Fin (m + 1) → E) (hgen : IntermediateField.adjoin ℂ (Set.range z) = ⊤) (htrdeg : Algebra.trdeg ℂ E = 1)
+  (r : Fin m → ℚ) :
+  have hres := ⋯;
+  have hfinite := ⋯;
+  have hz := ⋯;
+  let w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  have hK := ⋯;
+  let y := fun j => 2 ^ ↑j;
+  have hy := ⋯;
+  have c := fun j i => ↑↑j * ↑(r i);
+  (1 + ↑(LogTwo.Geometry.curveSigma w.theta m)) *
+      ∑ p ∈ LogTwo.Geometry.ContactFamilyAt.places hfinite z y c hz,
+        ↑(LogTwo.Geometry.ContactFamilyAt.contact hres hfinite z y hy c hz hK (LogTwo.Geometry.jetWeight w) p) ≤
+    OAI.PiExponent.CurveContactSum.weightedDegree hfinite z (LogTwo.Geometry.rationalColumnWeight w)
+'LogTwo.Analysis.scaled_log_monomial_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.exp_logTwo_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.logTwo_scaled_log_monomial_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.scaleY_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.scaleY_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.aeval_comp_scaleY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.jetIdealAt_eq_map_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.radical_jetIdealAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.zeroLocus_jetIdealAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.centerPrime_injective_of_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.logTwo_centerPrime_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.zeroLocus_finset_prod_jetIdealAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.zeroLocus_jetProductIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_mem_weighted_of_mem_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.jetProductIdeal_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_packet_zero_of_mem_product_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.map_jetIdealAt_aeval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.lift_normalizeY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.localJetIdealAt_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.localJetIdealAt_colength_eq_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.localJetIdealAt_colength_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.jetIdealAt_pairwise_coprime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.jetIdealAt_residue_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.localJetIdealAt_colength_eq_contact.{u_1} {E : Type u_1} [Field E] [Algebra ℂ E]
+  (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) {m : ℕ}
+  [Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p))] (y : ℂ) (hy : y ≠ 0)
+  (z : Fin (m + 1) → E) (c : Fin m → ℂ)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint y c) p)
+  (hnc : ∃ i, z i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint y c i)) (v : Fin (m + 1) → ℚ)
+  (hv : ∀ (i : Fin (m + 1)), 0 < v i) (T : Fin m → ℕ) (hT : ∀ (i : Fin m), v i.succ < ↑(T i) * v 0) (R : ℚ)
+  (e : Fin (m + 1) → ℕ) (he : ∀ (i : Fin (m + 1)), v i * ↑(e i) = R) :
+  ↑(Module.length (↥(OAI.PiExponent.PlaceValuationRing.ring p))
+          (↥(OAI.PiExponent.PlaceValuationRing.ring p) ⧸ LogTwo.Geometry.localJetIdealAt p y z c hc T e)).toNat =
+    R * LogTwo.Geometry.logContactAt p y hy z c hc hnc v
+LogTwo.Geometry.formalJetAt_packet_zero_of_mem_product_pow.{u_1} {m : ℕ} {J : Type u_1} [Fintype J] (y : J → ℂ)
+  (c : J → Fin m → ℂ) (T : Fin m → ℕ) (e : Fin (m + 1) → ℕ) (v : Fin (m + 1) → ℚ) (hv : ∀ (i : Fin (m + 1)), 0 ≤ v i)
+  (hT : ∀ (i : Fin m), v i.succ ≤ ↑(T i) * v 0) (R : ℚ) (he : ∀ (i : Fin (m + 1)), R ≤ ↑(e i) * v i) (n : ℕ)
+  (P : OAI.PiExponentApprox.FramePolynomial m) (hP : P ∈ LogTwo.Geometry.jetProductIdeal y c T e ^ n) (j : J) :
+  OAI.PiExponent.JetGeometry.rationalCoefficientPacket v (↑n * R) ((LogTwo.Geometry.formalJetAt (y j) (c j)) P) =
+    fun x => 0
+LogTwo.Geometry.jetIdealAt_residue_surjective.{u_1} {m : ℕ} {J : Type u_1} [Fintype J] (y : J → ℂ)
+  (hy : Function.Injective y) (c : J → Fin m → ℂ) (T : Fin m → ℕ) (e : Fin (m + 1) → ℕ)
+  (he : ∀ (i : Fin (m + 1)), 0 < e i) (n : ℕ) :
+  Function.Surjective fun P j => (Ideal.Quotient.mk (LogTwo.Geometry.jetIdealAt (y j) (c j) T e ^ n)) P
+'LogTwo.Geometry.isUnit_of_residueAugmentation_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.map_jetIdealAt_eq_top_of_residue_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.map_jetProductIdeal_eq_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.localJetProductIdeal_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.localJetProductIdeal_colength_eq_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.localJetProductIdeal_colength_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.point_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.range_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.support_affineIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.restrict_compactIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.comap_compactIdeal_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.support_compactIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.compactIdeal_isFinitePresentation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.CompactJetIdealAt.comap_compactIdeal_eq_top_of_avoids_centers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.truncation_weight_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.chosen_truncation_weight_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.localJetProductIdeal_colength_eq_contact.{u_1, u_2} {m : ℕ} {E : Type u_1} [Field E] [Algebra ℂ E]
+  (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E)
+  [Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p))] {J : Type u_2}
+  [Fintype J] (y : J → ℂ) (hy : Function.Injective y) (hy0 : ∀ (j : J), y j ≠ 0) (c : J → Fin m → ℂ)
+  (z : Fin (m + 1) → E) (j : J)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y j) (c j)) p)
+  (hnc : ∃ i, z i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint (y j) (c j) i)) (v : Fin (m + 1) → ℚ)
+  (hv : ∀ (i : Fin (m + 1)), 0 < v i) (T : Fin m → ℕ) (hT : ∀ (i : Fin m), v i.succ < ↑(T i) * v 0) (R : ℚ)
+  (e : Fin (m + 1) → ℕ) (he : ∀ (i : Fin (m + 1)), 0 < e i) (hbalance : ∀ (i : Fin (m + 1)), v i * ↑(e i) = R) :
+  ↑(Module.length (↥(OAI.PiExponent.PlaceValuationRing.ring p))
+          (↥(OAI.PiExponent.PlaceValuationRing.ring p) ⧸ LogTwo.Geometry.localJetProductIdeal p y c z j hc T e)).toNat =
+    R * LogTwo.Geometry.logContactAt p (y j) ⋯ z (c j) hc hnc v
+LogTwo.Geometry.CompactJetIdealAt.comap_compactIdeal_spec.{u_1} {m : ℕ} {J : Type u_1} [Fintype J] (y : J → ℂ)
+  (c : J → Fin m → ℂ) (T : Fin m → ℕ) (e : Fin (m + 1) → ℕ) {X : AlgebraicGeometry.Scheme}
+  (j : OAI.PiExponent.CompactLogJetIdeal.affineSpace m ⟶ X) [AlgebraicGeometry.IsOpenImmersion j]
+  [AlgebraicGeometry.QuasiCompact j] {A : Type} [CommRing A]
+  (f : OAI.PiExponent.CompactLogJetIdeal.coordinateRing m →+* A) :
+  (LogTwo.Geometry.CompactJetIdealAt.compactIdeal y c T e j).comap
+      (CategoryTheory.CategoryStruct.comp (AlgebraicGeometry.Spec.map (CommRingCat.ofHom f)) j) =
+    OAI.PiExponentSeshadri.IdealPullback.specIdeal (Ideal.map f (LogTwo.Geometry.jetProductIdeal y c T e))
+LogTwo.Geometry.CompactJetIdealAt.support_compactIdeal.{u_1} {m : ℕ} {J : Type u_1} [Fintype J] (y : J → ℂ)
+  (c : J → Fin m → ℂ) (T : Fin m → ℕ) (e : Fin (m + 1) → ℕ) (he : ∀ (i : Fin (m + 1)), 0 < e i)
+  {X : AlgebraicGeometry.Scheme} (j : OAI.PiExponent.CompactLogJetIdeal.affineSpace m ⟶ X)
+  [AlgebraicGeometry.QuasiCompact j] (π : X ⟶ OAI.PiExponent.CompactLogJetIdeal.base) [AlgebraicGeometry.IsSeparated π]
+  (hπ : CategoryTheory.CategoryStruct.comp j π = OAI.PiExponent.CompactLogJetIdeal.structureMap m) :
+  ↑(LogTwo.Geometry.CompactJetIdealAt.compactIdeal y c T e j).support =
+    ⋃ a, Set.range ⇑(CategoryTheory.CategoryStruct.comp (LogTwo.Geometry.CompactJetIdealAt.point (y a) (c a)) j)
+LogTwo.Geometry.chosen_truncation_weight_strict (n : ℕ) (hn : 1 ≤ n) {m : ℕ} (q : Fin m → ℕ)
+  (hq : ∀ (i : Fin m), 2 ≤ q i) (i : Fin m) :
+  have w := LogTwo.chosenWeights n hn m q hq;
+  LogTwo.Geometry.jetWeight w i.succ <
+    ↑(LogTwo.Arithmetic.truncationOrders w (LogTwo.Parameters.truncationFactor n) i) * LogTwo.Geometry.jetWeight w 0
+'LogTwo.Geometry.IntegralProj.homogeneous_isReduced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.IntegralProj.proj_isReduced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.IntegralProj.genericPoint_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.IntegralProj.proj_irreducible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.IntegralProj.proj_isIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.index_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.structureMap_proper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.affineChart_isOpenImmersion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.space_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.space_isIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.space_isLocallyNoetherian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.space_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.space_isNoetherian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.affineChart_quasiCompact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.affineChart_over' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.affineChart_denseRange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.degree_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.jet_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.monomial_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_support_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_support_subset_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_coherent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_affine_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.center_points_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.origin_ne_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.origin_avoids_centers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_support_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.formalJet_packet_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.logTwoIdeal_support_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.logTwoIdeal_support_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.logTwo_centers_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.branchMap_over' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.branchMap_generic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.centerIdeal_branch_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.branchIdeal_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.branch_colength_eq_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.branch_colength_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixCompactification.structureMap_proper {m : ℕ} (w : LogTwo.Interpolation.Weights m) :
+  AlgebraicGeometry.IsProper (LogTwo.Geometry.MatrixCompactification.structureMap w)
+LogTwo.Geometry.MatrixCompactification.centerIdeal_coherent.{u_1} {m : ℕ} (w : LogTwo.Interpolation.Weights m)
+  {J : Type u_1} [Fintype J] (y : J → ℂ) (c : J → Fin m → ℂ) (T : Fin m → ℕ) :
+  SheafOfModules.IsFinitePresentation
+    (OAI.PiExponentSeshadri.IdealModule.closedModule (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c T))
+LogTwo.Geometry.MatrixCompactification.centerIdeal_branch_pullback.{u_1} {m : ℕ} (w : LogTwo.Interpolation.Weights m)
+  {E : Type} [Field E] [Algebra ℂ E] (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) {J : Type u_1}
+  [Fintype J] (y : J → ℂ) (c : J → Fin m → ℂ) (z : Fin (m + 1) → E) (j : J)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y j) (c j)) p) (T : Fin m → ℕ) :
+  (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c T).comap
+      (LogTwo.Geometry.MatrixCompactification.branchMap w p y c z j hc) =
+    OAI.PiExponentSeshadri.IdealPullback.specIdeal
+      (LogTwo.Geometry.localJetProductIdeal p y c z j hc T (LogTwo.Geometry.MatrixCompactification.scale w).jetPowers)
+LogTwo.Geometry.MatrixCompactification.branch_colength_eq_contact.{u_1} {m : ℕ} (w : LogTwo.Interpolation.Weights m)
+  {E : Type} [Field E] [Algebra ℂ E] (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E)
+  [Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p))] {J : Type u_1}
+  [Fintype J] (y : J → ℂ) (hy : Function.Injective y) (hy0 : ∀ (j : J), y j ≠ 0) (c : J → Fin m → ℂ)
+  (z : Fin (m + 1) → E) (j : J)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y j) (c j)) p)
+  (hnc : ∃ i, z i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint (y j) (c j) i)) (F : ℚ) (hF : 1 / w.theta < F) :
+  ↑(Module.length (↥(OAI.PiExponent.PlaceValuationRing.ring p))
+          (↥(OAI.PiExponent.PlaceValuationRing.ring p) ⧸
+            LogTwo.Geometry.MatrixCompactification.branchIdeal w p y c z j hc
+              (LogTwo.Arithmetic.truncationOrders w F))).toNat =
+    ↑(LogTwo.Geometry.MatrixCompactification.scale w).radius *
+      LogTwo.Geometry.logContactAt p (y j) ⋯ z (c j) hc hnc (LogTwo.Geometry.jetWeight w)
+LogTwo.Geometry.MatrixCompactification.branchMap_generic.{u_1} {m : ℕ} (w : LogTwo.Interpolation.Weights m) {E : Type}
+  [Field E] [Algebra ℂ E] (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) {J : Type u_1} (y : J → ℂ)
+  (c : J → Fin m → ℂ) (z : Fin (m + 1) → E) (j : J)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y j) (c j)) p) :
+  CategoryTheory.CategoryStruct.comp
+      (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (algebraMap (↥(OAI.PiExponent.PlaceValuationRing.ring p)) E)))
+      (LogTwo.Geometry.MatrixCompactification.branchMap w p y c z j hc) =
+    CategoryTheory.CategoryStruct.comp (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+      (LogTwo.Geometry.MatrixCompactification.affineChart w)
+'LogTwo.Geometry.MatrixCompactification.space_isSeparated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.exists_curveMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveMap_over' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveMap_generic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveMap_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curve_center_stalk_isIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveMap_stalk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveIdeal_center_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_eq_branchIdeal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_eq_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixCompactification.exists_curveMap {m : ℕ} (w : LogTwo.Interpolation.Weights m) {E : Type} [Field E]
+  [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] (z : Fin (m + 1) → E) :
+  ∃ g,
+    CategoryTheory.CategoryStruct.comp g (LogTwo.Geometry.MatrixCompactification.structureMap w) =
+        OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf ∧
+      CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf) g =
+        CategoryTheory.CategoryStruct.comp
+          (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+          (LogTwo.Geometry.MatrixCompactification.affineChart w)
+LogTwo.Geometry.MatrixCompactification.curveMap_stalk.{u_1} {m : ℕ} (w : LogTwo.Interpolation.Weights m) {E : Type}
+  [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E]
+  (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) {J : Type u_1} (y : J → ℂ) (c : J → Fin m → ℂ)
+  (z : Fin (m + 1) → E) (j : J)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y j) (c j)) p) :
+  CategoryTheory.CategoryStruct.comp
+      (AlgebraicGeometry.Spec.map
+        (AlgebraicGeometry.Scheme.stalkClosedPointTo (OAI.PiExponent.CurvePlaceCenter.centerMorphism f hf p)))
+      (CategoryTheory.CategoryStruct.comp
+        ((OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf).fromSpecStalk
+          ((OAI.PiExponent.CurvePlaceCenter.centerMorphism f hf p)
+            (IsLocalRing.closedPoint ↥(OAI.PiExponent.PlaceValuationRing.ring p))))
+        (LogTwo.Geometry.MatrixCompactification.curveMap w f hf z)) =
+    LogTwo.Geometry.MatrixCompactification.branchMap w p y c z j hc
+LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_eq_contact.{u_1} {m : ℕ}
+  (w : LogTwo.Interpolation.Weights m) {E : Type} [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f)
+  [FiniteDimensional (↥ℂ⟮f⟯) E] (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E)
+  [Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p))] {J : Type u_1}
+  [Fintype J] (y : J → ℂ) (hy : Function.Injective y) (hy0 : ∀ (j : J), y j ≠ 0) (c : J → Fin m → ℂ)
+  (z : Fin (m + 1) → E) (j : J)
+  (hc : OAI.PiExponent.CurveCenters.Centered z (LogTwo.Geometry.centerPoint (y j) (c j)) p)
+  (hnc : ∃ i, z i ≠ (algebraMap ℂ E) (LogTwo.Geometry.centerPoint (y j) (c j) i)) (F : ℚ) (hF : 1 / w.theta < F) :
+  ↑(Module.length (↥(OAI.PiExponent.PlaceValuationRing.ring p))
+          (↥(OAI.PiExponent.PlaceValuationRing.ring p) ⧸
+            LogTwo.Geometry.MatrixCompactification.curveLocalIdeal w f hf p y c z
+              (LogTwo.Arithmetic.truncationOrders w F))).toNat =
+    ↑(LogTwo.Geometry.MatrixCompactification.scale w).radius *
+      LogTwo.Geometry.logContactAt p (y j) ⋯ z (c j) hc hnc (LogTwo.Geometry.jetWeight w)
+'LogTwo.Geometry.centeredAt_of_closedPoint_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.map_jetIdealAt_eq_top_of_nonconstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.map_jetProductIdeal_eq_top_of_transcendental' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveIdeal_generic_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveIdeal_ne_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveMap_centered_of_mem_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_eq_top_of_not_mem_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_eq_top_of_not_mem_places' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_zero_off_places' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveColengthCycle_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveColengthCycle_support_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_finite_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveColengthCycle_eq_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveColengthCycle_sum_eq_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveColengthCycle_natCast_eq_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveColengthCycle_support_eq_places' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixCompactification.curveIdeal_ne_bot.{u_1} {m : ℕ} {E : Type} [Field E] [Algebra ℂ E]
+  (w : LogTwo.Interpolation.Weights m) (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] {J : Type u_1}
+  [Fintype J] (y : J → ℂ) (c : J → Fin m → ℂ) (T : Fin m → ℕ) (z : Fin (m + 1) → E) (hz : ∃ i, Transcendental ℂ (z i)) :
+  (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c T).comap
+      (LogTwo.Geometry.MatrixCompactification.curveMap w f hf z) ≠
+    ⊥
+LogTwo.Geometry.MatrixCompactification.curveLocalIdeal_colength_finite_all {m : ℕ} {E : Type} [Field E] [Algebra ℂ E]
+  (w : LogTwo.Interpolation.Weights m) (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] {K : ℕ}
+  (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E) (z : Fin (m + 1) → E) (y : Fin K → ℂ)
+  (c : Fin K → Fin m → ℂ) (hz : ∃ i, Transcendental ℂ (z i))
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hy : Function.Injective y) (hy0 : ∀ (j : Fin K), y j ≠ 0) (hK : 0 < K) (F : ℚ) (hF : 1 / w.theta < F)
+  (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) :
+  Module.length (↥(OAI.PiExponent.PlaceValuationRing.ring p))
+      (↥(OAI.PiExponent.PlaceValuationRing.ring p) ⧸
+        LogTwo.Geometry.MatrixCompactification.curveLocalIdeal w f hf p y c z
+          (LogTwo.Arithmetic.truncationOrders w F)) ≠
+    ⊤
+LogTwo.Geometry.MatrixCompactification.curveColengthCycle_natCast_eq_length {m : ℕ} {E : Type} [Field E] [Algebra ℂ E]
+  (w : LogTwo.Interpolation.Weights m) (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] {K : ℕ}
+  (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E) (z : Fin (m + 1) → E) (y : Fin K → ℂ)
+  (c : Fin K → Fin m → ℂ) (hz : ∃ i, Transcendental ℂ (z i))
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hy : Function.Injective y) (hy0 : ∀ (j : Fin K), y j ≠ 0) (hK : 0 < K) (F : ℚ) (hF : 1 / w.theta < F)
+  (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E) :
+  ↑((LogTwo.Geometry.MatrixCompactification.curveColengthCycle w f hf hfinite z y c hz
+          (LogTwo.Arithmetic.truncationOrders w F))
+        p) =
+    Module.length (↥(OAI.PiExponent.PlaceValuationRing.ring p))
+      (↥(OAI.PiExponent.PlaceValuationRing.ring p) ⧸
+        LogTwo.Geometry.MatrixCompactification.curveLocalIdeal w f hf p y c z (LogTwo.Arithmetic.truncationOrders w F))
+LogTwo.Geometry.MatrixCompactification.curveColengthCycle_sum_eq_contact {m : ℕ} {E : Type} [Field E] [Algebra ℂ E]
+  (w : LogTwo.Interpolation.Weights m) (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] {K : ℕ}
+  (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E) (z : Fin (m + 1) → E) (y : Fin K → ℂ)
+  (c : Fin K → Fin m → ℂ) (hz : ∃ i, Transcendental ℂ (z i))
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hy : Function.Injective y) (hy0 : ∀ (j : Fin K), y j ≠ 0) (hK : 0 < K) (F : ℚ) (hF : 1 / w.theta < F) :
+  ((LogTwo.Geometry.MatrixCompactification.curveColengthCycle w f hf hfinite z y c hz
+          (LogTwo.Arithmetic.truncationOrders w F)).sum
+      fun x n => ↑n) =
+    ↑(LogTwo.Geometry.MatrixCompactification.scale w).radius *
+      ∑ p ∈ LogTwo.Geometry.ContactFamilyAt.places hfinite z y c hz,
+        LogTwo.Geometry.ContactFamilyAt.contact hres hfinite z y hy0 c hz hK (LogTwo.Geometry.jetWeight w) p
+'LogTwo.Geometry.SectionIdealBridge.inverseSection_zeroIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.inverseSection_zeroIdeal_eq_comap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.zeroIdeal_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.zeroIdeal_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.pullback_inverseSection_zeroIdeal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.pullback_inverseSection_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.zeroIdeal_spec_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.divisor_eq_localIdeal_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.idealDivisor_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.SectionIdealBridge.degree_eq_neg_idealDivisor_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.parameterCurveGenericPoint_isDominant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.curveMap_eq_of_generic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.presented_curveIdeal_ne_bot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.presentedDivisor_eq_curveColengthCycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.euler_degree_eq_neg_curveColengthCycle_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.euler_degree_eq_neg_contact_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixCompactification.curveMap_eq_of_generic {m : ℕ} (w : LogTwo.Interpolation.Weights m) {E : Type}
+  [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] (z : Fin (m + 1) → E)
+  (g : OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶ LogTwo.Geometry.MatrixCompactification.space w)
+  (hgeneric :
+    CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf) g =
+      CategoryTheory.CategoryStruct.comp
+        (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+        (LogTwo.Geometry.MatrixCompactification.affineChart w)) :
+  g = LogTwo.Geometry.MatrixCompactification.curveMap w f hf z
+LogTwo.Geometry.MatrixCompactification.presentedDivisor_eq_curveColengthCycle {m : ℕ}
+  (w : LogTwo.Interpolation.Weights m) {E : Type} [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f)
+  [FiniteDimensional (↥ℂ⟮f⟯) E] {K : ℕ} (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E)
+  (z : Fin (m + 1) → E) (y : Fin K → ℂ) (c : Fin K → Fin m → ℂ) (hz : ∃ i, Transcendental ℂ (z i))
+  {Y : AlgebraicGeometry.Scheme} (π : Y ⟶ LogTwo.Geometry.MatrixCompactification.space w)
+  (J : OAI.PiExponentSeshadri.Geometry.LineBundle Y) (ι : J.sheaf ⟶ OAI.PiExponentSeshadri.Frames.O Y)
+  (g : OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶ Y)
+  (hgeneric :
+    CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf)
+        (CategoryTheory.CategoryStruct.comp g π) =
+      CategoryTheory.CategoryStruct.comp
+        (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+        (LogTwo.Geometry.MatrixCompactification.affineChart w))
+  (T : Fin m → ℕ)
+  (hJ :
+    OAI.PiExponentSeshadri.Geometry.PresentsPullbackIdeal (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c T) π
+      J ι) :
+  LogTwo.Geometry.SectionIdealBridge.idealDivisor f hf (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c T) π J
+      ι hJ g ⋯ =
+    LogTwo.Geometry.MatrixCompactification.curveColengthCycle w f hf hfinite z y c hz T
+LogTwo.Geometry.MatrixCompactification.euler_degree_eq_neg_contact_sum {m : ℕ} (w : LogTwo.Interpolation.Weights m)
+  {E : Type} [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] {K : ℕ}
+  (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E) (z : Fin (m + 1) → E) (y : Fin K → ℂ)
+  (c : Fin K → Fin m → ℂ) (hz : ∃ i, Transcendental ℂ (z i)) {Y : AlgebraicGeometry.Scheme}
+  (π : Y ⟶ LogTwo.Geometry.MatrixCompactification.space w) (J : OAI.PiExponentSeshadri.Geometry.LineBundle Y)
+  (ι : J.sheaf ⟶ OAI.PiExponentSeshadri.Frames.O Y) (g : OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶ Y)
+  (hgeneric :
+    CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf)
+        (CategoryTheory.CategoryStruct.comp g π) =
+      CategoryTheory.CategoryStruct.comp
+        (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+        (LogTwo.Geometry.MatrixCompactification.affineChart w))
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hy : Function.Injective y) (hy0 : ∀ (j : Fin K), y j ≠ 0) (hK : 0 < K) (F : ℚ) (hF : 1 / w.theta < F)
+  (hJ :
+    OAI.PiExponentSeshadri.Geometry.PresentsPullbackIdeal
+      (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c (LogTwo.Arithmetic.truncationOrders w F)) π J ι) :
+  ↑(OAI.PiExponentSeshadri.Geometry.eulerCharacteristic
+          (OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf) 1 (J.pullback g).sheaf -
+        OAI.PiExponentSeshadri.Geometry.eulerCharacteristic
+          (OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf) 1
+          (OAI.PiExponentSeshadri.Geometry.structureSheaf
+            (OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf))) =
+    -↑(LogTwo.Geometry.MatrixCompactification.scale w).radius *
+      ∑ p ∈ LogTwo.Geometry.ContactFamilyAt.places hfinite z y c hz,
+        LogTwo.Geometry.ContactFamilyAt.contact hres hfinite z y hy0 c hz hK (LogTwo.Geometry.jetWeight w) p
+'LogTwo.Geometry.MatrixBlowup.hyperplane_ample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.projection_proper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.structureMap_proper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.space_isIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.space_isLocallyNoetherian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.space_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.space_isNoetherian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.exceptional_presents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.isBlowup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.exceptional_degree_eq_neg_contact_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.hyperplane_degree_eq_weightedDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.curveMap_hyperplane_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.A_degree_eq_weightedDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.chosenWeights_degree_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.logTwo_degree_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Geometry.MatrixBlowup.exceptional_presents {m : ℕ} (w : LogTwo.Interpolation.Weights m) {K : ℕ} (y : Fin K → ℂ)
+  (c : Fin K → Fin m → ℂ) (T : Fin m → ℕ) :
+  OAI.PiExponentSeshadri.Geometry.PresentsPullbackIdeal (LogTwo.Geometry.MatrixCompactification.centerIdeal w y c T)
+    (LogTwo.Geometry.MatrixBlowup.projection w y c T) (LogTwo.Geometry.MatrixBlowup.J w y c T)
+    (LogTwo.Geometry.MatrixBlowup.exceptionalInclusion w y c T)
+LogTwo.Geometry.MatrixBlowup.exceptional_degree_eq_neg_contact_sum {m : ℕ} (w : LogTwo.Interpolation.Weights m) {K : ℕ}
+  (y : Fin K → ℂ) (c : Fin K → Fin m → ℂ) {E : Type} [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f)
+  [FiniteDimensional (↥ℂ⟮f⟯) E] (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E)
+  (z : Fin (m + 1) → E) (hz : ∃ i, Transcendental ℂ (z i))
+  (hres :
+    ∀ (p : OAI.PiExponent.CurveValuationCenter.NormalizedPlace ℂ E),
+      Algebra.IsIntegral ℂ (IsLocalRing.ResidueField ↥(OAI.PiExponent.PlaceValuationRing.ring p)))
+  (hy : Function.Injective y) (hy0 : ∀ (j : Fin K), y j ≠ 0) (hK : 0 < K) (F : ℚ) (hF : 1 / w.theta < F)
+  (g :
+    OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶
+      LogTwo.Geometry.MatrixBlowup.space w y c (LogTwo.Arithmetic.truncationOrders w F))
+  (hgeneric :
+    CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf)
+        (CategoryTheory.CategoryStruct.comp g
+          (LogTwo.Geometry.MatrixBlowup.projection w y c (LogTwo.Arithmetic.truncationOrders w F))) =
+      CategoryTheory.CategoryStruct.comp
+        (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+        (LogTwo.Geometry.MatrixCompactification.affineChart w)) :
+  ↑(OAI.PiExponentSeshadri.Geometry.eulerCharacteristic
+          (OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf) 1
+          ((LogTwo.Geometry.MatrixBlowup.J w y c (LogTwo.Arithmetic.truncationOrders w F)).pullback g).sheaf -
+        OAI.PiExponentSeshadri.Geometry.eulerCharacteristic
+          (OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf) 1
+          (OAI.PiExponentSeshadri.Geometry.structureSheaf
+            (OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf))) =
+    -↑(LogTwo.Geometry.MatrixCompactification.scale w).radius *
+      ∑ p ∈ LogTwo.Geometry.ContactFamilyAt.places hfinite z y c hz,
+        LogTwo.Geometry.ContactFamilyAt.contact hres hfinite z y hy0 c hz hK (LogTwo.Geometry.jetWeight w) p
+LogTwo.Geometry.MatrixBlowup.A_degree_eq_weightedDegree {m : ℕ} (w : LogTwo.Interpolation.Weights m) {E : Type}
+  [Field E] [Algebra ℂ E] (f : E) (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E]
+  (hfinite : ∀ (t : E), Transcendental ℂ t → FiniteDimensional (↥ℂ⟮t⟯) E) (z : Fin (m + 1) → E) {K : ℕ} (y : Fin K → ℂ)
+  (c : Fin K → Fin m → ℂ) (T : Fin m → ℕ)
+  (g : OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶ LogTwo.Geometry.MatrixBlowup.space w y c T)
+  (hgeneric :
+    CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf)
+        (CategoryTheory.CategoryStruct.comp g (LogTwo.Geometry.MatrixBlowup.projection w y c T)) =
+      CategoryTheory.CategoryStruct.comp
+        (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+        (LogTwo.Geometry.MatrixCompactification.affineChart w)) :
+  ↑(OAI.PiExponentSeshadri.Geometry.eulerCharacteristic
+          (OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf) 1
+          ((LogTwo.Geometry.MatrixBlowup.A w y c T).pullback g).sheaf -
+        OAI.PiExponentSeshadri.Geometry.eulerCharacteristic
+          (OAI.PiExponent.CurveNormalizationModel.parameterCurveStructureMap f hf) 1
+          (OAI.PiExponentSeshadri.Geometry.structureSheaf
+            (OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf))) =
+    ↑(LogTwo.Geometry.MatrixCompactification.scale w).radius *
+      OAI.PiExponent.CurveContactSum.weightedDegree hfinite z (LogTwo.Geometry.rationalColumnWeight w)
+LogTwo.Geometry.MatrixBlowup.chosenWeights_degree_nonnegative {E : Type} [Field E] [Algebra ℂ E] (f : E)
+  (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] [Algebra.EssFiniteType ℂ E] (n : ℕ) (hn : 1 ≤ n) (m : ℕ)
+  (q : ℕ → ℕ) (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (z : Fin (m + 1) → E) (hgen : IntermediateField.adjoin ℂ (Set.range z) = ⊤) (htrdeg : Algebra.trdeg ℂ E = 1) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  ∀ (y : Fin w.K → ℂ),
+    (∀ (j : Fin w.K), y j ≠ 0) →
+      Function.Injective y →
+        ∀ (c : Fin w.K → Fin m → ℂ) (F : ℚ),
+          1 / w.theta < F →
+            ∀
+              (g :
+                OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶
+                  LogTwo.Geometry.MatrixBlowup.space w y c (LogTwo.Arithmetic.truncationOrders w F)),
+              CategoryTheory.CategoryStruct.comp
+                    (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf)
+                    (CategoryTheory.CategoryStruct.comp g
+                      (LogTwo.Geometry.MatrixBlowup.projection w y c (LogTwo.Arithmetic.truncationOrders w F))) =
+                  CategoryTheory.CategoryStruct.comp
+                    (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+                    (LogTwo.Geometry.MatrixCompactification.affineChart w) →
+                0 ≤
+                  LogTwo.Geometry.MatrixBlowup.normalizationDegree f hf g
+                      (LogTwo.Geometry.MatrixBlowup.A w y c (LogTwo.Arithmetic.truncationOrders w F)) +
+                    (1 + ↑(LogTwo.Geometry.curveSigma w.theta m)) *
+                      LogTwo.Geometry.MatrixBlowup.normalizationDegree f hf g
+                        (LogTwo.Geometry.MatrixBlowup.J w y c (LogTwo.Arithmetic.truncationOrders w F))
+LogTwo.Geometry.MatrixBlowup.logTwo_degree_nonnegative {E : Type} [Field E] [Algebra ℂ E] (f : E)
+  (hf : Transcendental ℂ f) [FiniteDimensional (↥ℂ⟮f⟯) E] [Algebra.EssFiniteType ℂ E] (n : ℕ) (hn : 1 ≤ n) (m : ℕ)
+  (q : ℕ → ℕ) (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (z : Fin (m + 1) → E) (hgen : IntermediateField.adjoin ℂ (Set.range z) = ⊤) (htrdeg : Algebra.trdeg ℂ E = 1)
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  have y := fun j => 2 ^ ↑j;
+  have c := fun j i => ↑↑j * ↑(r i);
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      ∀
+        (g :
+          OAI.PiExponent.CurveNormalizationModel.parameterCurve f hf ⟶
+            LogTwo.Geometry.MatrixBlowup.space w y c (LogTwo.Arithmetic.truncationOrders w F)),
+        CategoryTheory.CategoryStruct.comp (OAI.PiExponent.CurveNormalizationModel.parameterCurveGenericPoint f hf)
+              (CategoryTheory.CategoryStruct.comp g
+                (LogTwo.Geometry.MatrixBlowup.projection w y c (LogTwo.Arithmetic.truncationOrders w F))) =
+            CategoryTheory.CategoryStruct.comp
+              (AlgebraicGeometry.Spec.map (CommRingCat.ofHom (MvPolynomial.aeval z).toRingHom))
+              (LogTwo.Geometry.MatrixCompactification.affineChart w) →
+          0 ≤
+            LogTwo.Geometry.MatrixBlowup.normalizationDegree f hf g
+                (LogTwo.Geometry.MatrixBlowup.A w y c (LogTwo.Arithmetic.truncationOrders w F)) +
+              (1 + ↑(LogTwo.Geometry.curveSigma w.theta m)) *
+                LogTwo.Geometry.MatrixBlowup.normalizationDegree f hf g
+                  (LogTwo.Geometry.MatrixBlowup.J w y c (LogTwo.Arithmetic.truncationOrders w F))
+'LogTwo.Geometry.MatrixBlowup.exists_ampleExponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.ampleExponent_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.H_ample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Image.center_point_isClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Image.meets_center_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Image.projection_restrict_isIso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Image.functionFieldIso_generic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Image.image_meets_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Coordinates.chart_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Coordinates.field_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.Coordinates.coordinates_generic_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.CurveModel.existsModelData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.curveDegree_eq_modelDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.chosenWeights_integralCurve_degree_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.logTwo_integralCurve_degree_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixBlowup.H_ample {m K : ℕ} (w : LogTwo.Interpolation.Weights m) (y : Fin K → ℂ)
+  (hy0 : ∀ (j : Fin K), y j ≠ 0) (a : Fin K → Fin m → ℂ) (T : Fin m → ℕ) :
+  OAI.PiExponentSeshadri.Geometry.LineBundle.IsAmple (LogTwo.Geometry.MatrixBlowup.space w y a T)
+    (LogTwo.Geometry.MatrixBlowup.H w y hy0 a T)
+LogTwo.Geometry.MatrixBlowup.CurveModel.existsModelData {m K : ℕ} (w : LogTwo.Interpolation.Weights m) (y : Fin K → ℂ)
+  (a : Fin K → Fin m → ℂ) (T : Fin m → ℕ)
+  (C : OAI.PiExponent.NumericalAmpleness.IntegralCurve (LogTwo.Geometry.MatrixBlowup.space w y a T))
+  (hn :
+    ¬∃ t,
+        Set.range ⇑(CategoryTheory.CategoryStruct.comp C.embedding (LogTwo.Geometry.MatrixBlowup.projection w y a T)) ⊆
+          {t})
+  (hm :
+    ∃ c,
+      (CategoryTheory.CategoryStruct.comp C.embedding (LogTwo.Geometry.MatrixBlowup.projection w y a T)) c ∈
+        AlgebraicGeometry.Scheme.Hom.opensRange (LogTwo.Geometry.MatrixCompactification.affineChart w)) :
+  Nonempty (LogTwo.Geometry.MatrixBlowup.CurveModel.ModelData w y a T C)
+LogTwo.Geometry.MatrixBlowup.curveDegree_eq_modelDegree {m K : ℕ} (w : LogTwo.Interpolation.Weights m) (y : Fin K → ℂ)
+  (hy0 : ∀ (j : Fin K), y j ≠ 0) (a : Fin K → Fin m → ℂ) (T : Fin m → ℕ)
+  (C : OAI.PiExponent.NumericalAmpleness.IntegralCurve (LogTwo.Geometry.MatrixBlowup.space w y a T))
+  (r : LogTwo.Geometry.MatrixBlowup.CurveModel.ModelData w y a T C)
+  (L : OAI.PiExponentSeshadri.Geometry.LineBundle (LogTwo.Geometry.MatrixBlowup.space w y a T)) :
+  ↑(OAI.PiExponent.NumericalAmpleness.curveDegree (LogTwo.Geometry.MatrixBlowup.structureMap w y a T) L C) =
+    LogTwo.Geometry.MatrixBlowup.normalizationDegree r.parameter ⋯
+      (CategoryTheory.CategoryStruct.comp r.normalization C.embedding) L
+LogTwo.Geometry.MatrixBlowup.logTwo_integralCurve_degree_nonnegative (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  have y := fun j => 2 ^ ↑j;
+  have a := fun j i => ↑↑j * ↑(r i);
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      ∀
+        (C :
+          OAI.PiExponent.NumericalAmpleness.IntegralCurve
+            (LogTwo.Geometry.MatrixBlowup.space w y a (LogTwo.Arithmetic.truncationOrders w F))),
+        (¬∃ x,
+              Set.range
+                  ⇑(CategoryTheory.CategoryStruct.comp C.embedding
+                      (LogTwo.Geometry.MatrixBlowup.projection w y a (LogTwo.Arithmetic.truncationOrders w F))) ⊆
+                {x}) →
+          (∃ p,
+              (CategoryTheory.CategoryStruct.comp C.embedding
+                    (LogTwo.Geometry.MatrixBlowup.projection w y a (LogTwo.Arithmetic.truncationOrders w F)))
+                  p ∈
+                AlgebraicGeometry.Scheme.Hom.opensRange (LogTwo.Geometry.MatrixCompactification.affineChart w)) →
+            0 ≤
+              ↑(OAI.PiExponent.NumericalAmpleness.curveDegree
+                    (LogTwo.Geometry.MatrixBlowup.structureMap w y a (LogTwo.Arithmetic.truncationOrders w F))
+                    (LogTwo.Geometry.MatrixBlowup.A w y a (LogTwo.Arithmetic.truncationOrders w F)) C) +
+                (1 + ↑(LogTwo.Geometry.curveSigma w.theta m)) *
+                  ↑(OAI.PiExponent.NumericalAmpleness.curveDegree
+                      (LogTwo.Geometry.MatrixBlowup.structureMap w y a (LogTwo.Arithmetic.truncationOrders w F))
+                      (LogTwo.Geometry.MatrixBlowup.J w y a (LogTwo.Arithmetic.truncationOrders w F)) C)
+'LogTwo.Geometry.CurveMarginLemmas.curve_degree_laws' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.marginCoefficient_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.margin_of_nonnegative_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.curveDegree_zero_of_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.margin_of_exceptional_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.margin_of_avoids_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.margin_of_image_outside_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.CurveMarginLemmas.margin_of_contracted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.degreeMargin_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.contracted_curve_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.outside_chart_curve_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.chosenWeights_uniform_curve_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.logTwo_exists_positive_uniform_curve_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.chosenWeights_interpolationBundle_ample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.logTwo_interpolationBundle_ample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixBlowup.degreeMargin_pos {m K : ℕ} (w : LogTwo.Interpolation.Weights m) (y : Fin K → ℂ)
+  (hy0 : ∀ (j : Fin K), y j ≠ 0) (a : Fin K → Fin m → ℂ) (T : Fin m → ℕ) :
+  0 < LogTwo.Geometry.MatrixBlowup.degreeMargin w y hy0 a T
+LogTwo.Geometry.MatrixBlowup.logTwo_exists_positive_uniform_curve_margin (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  let y := fun j => 2 ^ ↑j;
+  have a := fun j i => ↑↑j * ↑(r i);
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      ∃ ε,
+        0 < ε ∧
+          ∀
+            (C :
+              OAI.PiExponent.NumericalAmpleness.IntegralCurve
+                (LogTwo.Geometry.MatrixBlowup.space w y a (LogTwo.Arithmetic.truncationOrders w F))),
+            ε *
+                ↑(OAI.PiExponent.NumericalAmpleness.curveDegree
+                    (LogTwo.Geometry.MatrixBlowup.structureMap w y a (LogTwo.Arithmetic.truncationOrders w F))
+                    (LogTwo.Geometry.MatrixBlowup.H w y ⋯ a (LogTwo.Arithmetic.truncationOrders w F)) C) ≤
+              ↑(OAI.PiExponent.NumericalAmpleness.curveDegree
+                  (LogTwo.Geometry.MatrixBlowup.structureMap w y a (LogTwo.Arithmetic.truncationOrders w F))
+                  (LogTwo.Geometry.MatrixBlowup.interpolationBundle w y a (LogTwo.Arithmetic.truncationOrders w F)) C)
+LogTwo.Geometry.MatrixBlowup.logTwo_interpolationBundle_ample (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  have y := fun j => 2 ^ ↑j;
+  have a := fun j i => ↑↑j * ↑(r i);
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      OAI.PiExponentSeshadri.Geometry.LineBundle.IsAmple
+        (LogTwo.Geometry.MatrixBlowup.space w y a (LogTwo.Arithmetic.truncationOrders w F))
+        (LogTwo.Geometry.MatrixBlowup.interpolationBundle w y a (LogTwo.Arithmetic.truncationOrders w F))
+'LogTwo.Geometry.MatrixBlowup.blowupBundle_ample_of_interpolationBundle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.chosenWeights_eventual_jetRestriction_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixBlowup.logTwo_eventual_jetRestriction_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.WeightedAffineFrame.frame_nonempty_of_isoOpen_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.WeightedAffineFrame.affineChart_isoOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.WeightedAffineFrame.affineFrame_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.WeightedHomogeneousSubstitution.supportBound_substitution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.WeightedHomogeneousSubstitution.dehomogenize_substitution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.WeightedPullbackDegree.pullback_supportBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.WeightedGlobalSectionBound.eventual_supportBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.formalJetAt_packet_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_packet_eq_of_sub_mem_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_packets_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.formalJetAt_packets_surjective_of_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.frame_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.exponent_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.eventual_supportBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.formalPackets_surjective_of_jetRestriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.logTwo_eventual_fullRowMinor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LogTwo.Geometry.MatrixCompactification.logTwo_cofinally_fullRowMinor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LogTwo.Geometry.MatrixBlowup.logTwo_eventual_jetRestriction_surjective (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      ∃ N,
+        ∀ (k : ℕ),
+          N ≤ k →
+            Function.Surjective
+              (OAI.PiExponent.BlowupJetSurjectivity.jetRestriction
+                (LogTwo.Geometry.MatrixCompactification.logTwoIdeal w r (LogTwo.Arithmetic.truncationOrders w F))
+                (LogTwo.Geometry.MatrixBlowup.hyperplane w) k)
+LogTwo.Geometry.MatrixCompactification.logTwo_eventual_fullRowMinor (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      ∃ N,
+        ∀ (k : ℕ),
+          N ≤ k →
+            Nonempty
+              (LogTwo.Interpolation.FullRowMinor w (↑k * ↑(LogTwo.Geometry.MatrixCompactification.scale w).radius) r
+                (LogTwo.Arithmetic.truncationOrders w F))
+LogTwo.Geometry.MatrixCompactification.logTwo_cofinally_fullRowMinor (n : ℕ) (hn : 1 ≤ n) (m : ℕ) (q : ℕ → ℕ)
+  (hq : ∀ (i : ℕ), 2 ≤ q i)
+  (hgrowth :
+    ∀ i < m,
+      LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+          ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+        ↑(LogTwo.Arithmetic.ceilLogWeight (q i)))
+  (r : Fin m → ℚ) :
+  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+  ∀ (F : ℚ),
+    1 / w.theta < F →
+      ∀ (B : ℚ),
+        ∃ H, B < H ∧ Nonempty (LogTwo.Interpolation.FullRowMinor w H r (LogTwo.Arithmetic.truncationOrders w F))
+'LogTwo.Analysis.rowTest_logTwo_exponentialMonomial_eq_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.scaled_periodMonomial_coeff_eq_rowTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.logTwo_center_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.hasSum_logTwo_column_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.norm_logTwo_rowTest_power_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_taylor_coefficient_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.optionEquivRight_monomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.optionEquivRight_coeff_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.splitRationalPolynomial_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.splitRationalPolynomial_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.splitRationalPolynomial_truncatedLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.splitRationalPolynomial_columnExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.coefficientMatrix_eq_scaled_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.coefficientMatrix_eq_analytic_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_analytic_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_support_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_analytic_expansion_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_row_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Analysis.coefficientMatrix_eq_scaled_entry {m : ℕ} (r : Fin m → ℚ) (T : Fin m → ℕ)
+  (row : LogTwo.Interpolation.Row m) (col : LogTwo.Interpolation.Column m) :
+  ↑(LogTwo.Interpolation.coefficientMatrix r T row col) =
+    2 ^ (row.j * col.h) *
+      OAI.PiExponent.InterpolationMatrix.entry (fun i => ↑(r i))
+        (fun i => OAI.PiExponent.InterpolationMatrix.truncatedLog (T i)) row.j row.s row.beta col.h col.alpha
+LogTwo.Analysis.actual_minor_analytic_expansion_weighted {m : ℕ} {w : LogTwo.Interpolation.Weights m} {H : ℚ}
+  {r : Fin m → ℚ} {T : Fin m → ℕ} (minor : LogTwo.Interpolation.FullRowMinor w H r T) :
+  have S := OAI.PiExponent.MatrixTranslation.transverseIndices (fun k => ↑(w.w k)) ↑H;
+  (Matrix.det fun i c => ↑(minor.matrix i c)) =
+    ∑ f,
+      (∏ i, LogTwo.Analysis.actualRowScalar r T (minor.rows i) S (f i)) *
+        Matrix.det fun i c => LogTwo.Analysis.actualAnalyticRow (minor.rows i) S (f i) (minor.columns c)
+LogTwo.Analysis.actual_minor_row_hasSum {m : ℕ} {w : LogTwo.Interpolation.Weights m} {H : ℚ} {r : Fin m → ℚ}
+  {T : Fin m → ℕ} (minor : LogTwo.Interpolation.FullRowMinor w H r T) (hH : 0 ≤ H) {wstar : ℝ} (hws : 0 < wstar)
+  (hw : ∀ (k : Fin m), wstar ≤ ↑(w.w k)) (S : Finset (Fin m →₀ ℕ)) (i c : Fin minor.size)
+  (t :
+    OAI.PiExponent.RowTranslation.RowChoices S (OAI.PiExponent.InterpolationMatrix.exponentVector (minor.rows i).beta)
+      (minor.rows i).s) :
+  HasSum
+    (fun d =>
+      (OAI.PiExponent.AnalyticCollision.rowTest ((minor.rows i).s - ↑t.snd.2) fun z =>
+          ((↑(minor.rows i).j * ↑(Real.log 2) + Complex.log (1 + z)) / (100 * ↑w.K)) ^ d) *
+        OAI.PiExponent.AnalyticCollision.normalizedTaylorCoeff
+          (OAI.PiExponent.PeriodAnalytic.columnFunction (minor.columns c).h (minor.columns c).alpha ↑t.fst) (100 * ↑w.K)
+          d)
+    (LogTwo.Analysis.actualAnalyticRow (minor.rows i) S t (minor.columns c))
+'LogTwo.Analysis.actual_analytic_summand_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.norm_logTwo_center_error_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.truncationOrders_analytic_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_row_order_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.norm_actualRowScalar_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actualRowScalar_ne_zero_beta_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.norm_choiceScalar_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.lowIndexCount_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.low_transverse_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.choiceScalar_ne_zero_weight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.norm_analyticSummand_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.card_minorChoice_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_complex_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_log_analytic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_log_bound_of_approximations' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.Analysis.actual_analytic_summand_exp_bound {m : ℕ} {w : LogTwo.Interpolation.Weights m} {H : ℚ} {r : Fin m → ℚ}
+  {T : Fin m → ℕ} (minor : LogTwo.Interpolation.FullRowMinor w H r T) (hK : 0 < w.K) (hH : 0 < H) {wstar : ℝ}
+  (hws : 0 < wstar) (hw : ∀ (k : Fin m), wstar ≤ ↑(w.w k))
+  (f :
+    (i : Fin minor.size) →
+      OAI.PiExponent.RowTranslation.RowChoices
+        (OAI.PiExponent.MatrixTranslation.transverseIndices (fun k => ↑(w.w k)) ↑H)
+        (OAI.PiExponent.InterpolationMatrix.exponentVector (minor.rows i).beta) (minor.rows i).s) :
+  let S := OAI.PiExponent.MatrixTranslation.transverseIndices (fun k => ↑(w.w k)) ↑H;
+  ‖Matrix.det fun i c => LogTwo.Analysis.actualAnalyticRow (minor.rows i) S (f i) (minor.columns c)‖ ≤
+    Real.exp
+      (-(Real.log 2 / 4) * ∑ a, ↑(OAI.PiExponent.Collision.multiplicity Finset.univ (fun i => (f i).fst) a) ^ 2 +
+        ↑minor.size * ↑H *
+          (100 * ↑w.K / ↑w.w0 + Real.log (200 * ↑w.K) / wstar + Real.log 2 / ↑w.v0 +
+            OAI.PiExponent.Collision.collisionRemainder minor.size ↑H))
+LogTwo.Analysis.norm_choiceScalar_le {m : ℕ} {w : LogTwo.Interpolation.Weights m} {H : ℚ} {r : Fin m → ℚ}
+  {T : Fin m → ℕ} (minor : LogTwo.Interpolation.FullRowMinor w H r T) (hK : 0 < w.K) (hH : 0 < H) {C ν F ws : ℝ}
+  (hC : 0 ≤ C) (hν : 0 ≤ ν) (hF : 0 < F) (hws : 0 < ws) (hw : ∀ (k : Fin m), ws ≤ ↑(w.w k))
+  (hT : ∀ (k : Fin m), 1 ≤ T k) (hTw : ∀ (k : Fin m), F * ↑(w.w k) ≤ ↑w.v0 * ↑(T k))
+  (he :
+    ∀ (i : Fin minor.size) (k : Fin m), ‖↑(minor.rows i).j * (↑(r k) - ↑(Real.log 2))‖ ≤ Real.exp (C - ν * ↑(w.w k)))
+  (f : LogTwo.Analysis.MinorChoice minor) :
+  ‖LogTwo.Analysis.choiceScalar minor f‖ ≤
+    Real.exp
+      (-ν *
+          (∑ i, LogTwo.Analysis.indexWeight w ↑(f i).fst -
+            ↑minor.size * ↑H * LogTwo.Arithmetic.averageRowWeight minor) +
+        ↑minor.size * ↑H * LogTwo.Analysis.translationBudget w C ν F ws)
+LogTwo.Analysis.actual_minor_log_bound_of_approximations {m : ℕ} {w : LogTwo.Interpolation.Weights m} {H F : ℚ}
+  (r : Fin m → ℚ) (q : Fin m → ℕ)
+  (minor : LogTwo.Interpolation.FullRowMinor w H r (LogTwo.Arithmetic.truncationOrders w F)) (hK : 0 < w.K) (hH : 0 < H)
+  (hF : 0 < F) {ν ws A η : ℝ} (hν : 0 ≤ ν) (hws : 0 < ws) (hA : 0 ≤ A) (hη : 0 ≤ η) (hq : ∀ (k : Fin m), 2 ≤ q k)
+  (hwq : ∀ (k : Fin m), w.w k = LogTwo.Arithmetic.ceilLogWeight (q k)) (hw : ∀ (k : Fin m), ws ≤ ↑(w.w k))
+  (happrox : ∀ (k : Fin m), |Real.log 2 - ↑(r k)| ≤ ↑(q k) ^ (-ν)) :
+  Real.log |↑minor.matrix.det| / (↑minor.size * ↑H) ≤
+    LogTwo.Analysis.combinedAnalyticBudget minor (Real.log ↑w.K + ν) ν (↑F) ws A η +
+      Real.log ↑(LogTwo.Analysis.rowChoiceCount w H) / ↑H
+'LogTwo.Analysis.fullRowMinor_size_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.fullRowMinor_size_eq_rowCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.rowDensity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.lowDensity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.tendsto_rowCount_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.tendsto_lowCount_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.tendsto_collisionRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.tendsto_analyticRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.combinedAnalyticBudget_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.actual_minor_log_bound_with_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.eventual_analytic_errors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.eventual_actual_minor_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.normalized_bounds_inconsistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.eventual_no_fullRowMinor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.Analysis.logTwo_contradiction_of_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.totalError_le_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.chosen_collisionLimit_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.exists_dimension_total_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.exists_small_total_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.not_unbounded_logTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.logTwo_sequentialLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.logTwo_eventualLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.logTwo_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LogTwo.logTwo_exponent_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+LogTwo.logTwo_exponent_eq_two : LogTwo.LogTwoExponentTwo
+LogTwo.logTwo_sequentialLowerBound : LogTwo.SequentialLowerBound (Real.log 2)
+LogTwo.exists_small_total_parameters (n : ℕ) (hn : 1 ≤ n) {x : ℝ}
+  (hbad : LogTwo.UnboundedApproximations x ↑(LogTwo.Parameters.nu n)) :
+  ∃ m p q,
+    ∃ (hq : ∀ (i : ℕ), 2 ≤ q i),
+      ∃ W,
+        1 ≤ m ∧
+          0 < W ∧
+            (∀ (i : ℕ), W ≤ ↑(LogTwo.Arithmetic.ceilLogWeight (q i))) ∧
+              (∀ i < m,
+                  LogTwo.Geometry.denominatorSeparationFactor n m (LogTwo.Geometry.chosenComparisonConstant n m) *
+                      ∏ j, ↑(LogTwo.Arithmetic.ceilLogWeight (q ↑j)) <
+                    ↑(LogTwo.Arithmetic.ceilLogWeight (q i))) ∧
+                (∀ (i : ℕ), |x - ↑(p i) / ↑(q i)| ≤ ↑(q i) ^ (-↑(LogTwo.Parameters.nu n))) ∧
+                  have w := LogTwo.chosenWeights n hn m (fun i => q ↑i) ⋯;
+                  LogTwo.Arithmetic.arithmeticError w (LogTwo.Parameters.truncationFactor n) W +
+                        LogTwo.Analysis.fixedAnalyticError w (↑(LogTwo.Parameters.nu n))
+                          (↑(LogTwo.Parameters.truncationFactor n)) W <
+                      ↑(LogTwo.Parameters.epsilon n) ∧
+                    2 <
+                      LogTwo.Analysis.collisionLimit w ↑(LogTwo.Parameters.a (LogTwo.Parameters.delta n))
+                        ↑(LogTwo.Parameters.eta n)

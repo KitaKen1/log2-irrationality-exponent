@@ -1,0 +1,23 @@
+{
+  "scope": "Bounded rc4 check of the first 100 modules of the reduced source.\n\nThis covers the pruning/import regressions found in early full-file attempts.\nIt does not check the final log-two theorem or the rest of the source.",
+  "source_sha256": "7d2a3231096f4db1b926b9a09a23115410565e1d5c62463808b6abe3e679848a",
+  "prefix_sha256": "daf8ce7a9a2683e7bae46d7d5a4bfe02b244ab7425b2a0b536c4c015aca221db",
+  "module_count": 100,
+  "source_lines_checked": 11436,
+  "memory_mib": 4096,
+  "threads": 1,
+  "timeout_seconds": 240,
+  "final_log_two_theorem_checked": false,
+  "browser_execution_performed": false,
+  "compiler_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+  "status": "passed",
+  "exit_code": 0,
+  "elapsed_seconds": 211.674,
+  "axiom_prints": {
+    "OAI.PiExponent.irrationalityExponent_eq_two_of_eventualLowerBound": "propext,\n Classical.choice,\n Quot.sound",
+    "LogTwo.Geometry.coordinateKernel_height_le": "propext, Classical.choice, Quot.sound",
+    "OAI.PiExponent.derivation_mem_polynomialTangent": "propext, Classical.choice, Quot.sound"
+  },
+  "log_sha256": "9c6ed9fc6ed143f1d8891562c727761178b82bd369dbabcd7cb6eee540dc43ad"
+}

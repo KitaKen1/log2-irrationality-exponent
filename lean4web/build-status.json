@@ -1,0 +1,8 @@
+{
+  "status": "not_checked",
+  "source_sha256": "b490eeee8f28bfbcf942b8c5c8742b26255f5f88238ecb62e3c024348b80f52e",
+  "requested_lean": "leanprover/lean4:v4.35.0-rc4",
+  "browser_execution_performed": false,
+  "scope": "Regenerated current source; previous full attempts apply to earlier hashes.",
+  "previous_full_attempt": "evidence/20261007T150219Z-d3fe54ac/result.json"
+}

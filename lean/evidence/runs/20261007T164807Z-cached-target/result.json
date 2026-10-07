@@ -1,0 +1,17 @@
+{
+  "scope": "Cached split target type and axioms; no source dependency rebuild; not an rc4 or browser check",
+  "lean": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "status": "time_limit",
+  "exit_code": null,
+  "elapsed_seconds": 90.21,
+  "command": [
+    "lean",
+    "--memory=4096",
+    "--threads=1",
+    "--trust=1",
+    "audit/FCType.lean"
+  ],
+  "source_sha256": "5d263fd48d41d3d72ec8f6f2463ece6857d3ec46b5b87b6e17bafe94fffa132c",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "previous_split_audit": "evidence/runs/20261007T145810Z-be5e3f41/result.json"
+}

@@ -1,0 +1,16 @@
+{
+  "observed_at_jst": "2026-10-08T02:29:52+09:00",
+  "reported_by": "user",
+  "reported_elapsed_seconds_approx": 900,
+  "message": "Error updating: Error fetching goals: No connection to Lean. Try again.",
+  "displayed_lean": "v4.35.0-rc4",
+  "visible_last_line": 94779,
+  "candidate_local_source": "LogTwoLean4WebLite.lean",
+  "candidate_local_source_sha256": "7d2a3231096f4db1b926b9a09a23115410565e1d5c62463808b6abe3e679848a",
+  "browser_source_hash_verified": false,
+  "source_identity_basis": "Screenshot line count and visible final target match the local reduced edition; browser bytes were not obtained.",
+  "last_completed_module": null,
+  "cause": "unknown",
+  "screenshot_path": "/Users/kenta/Desktop/スクリーンショット 2026-10-08 2.29.52.png",
+  "final_axiom_output_visible": false
+}
