@@ -2,7 +2,10 @@ name: FC6923 final theorem verification (public)
 
 on:
   push:
-    branches: [fc-6923-public-verification-20261024]
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'leanWithComparator/receipts/**'
   workflow_dispatch:
 
 permissions:
