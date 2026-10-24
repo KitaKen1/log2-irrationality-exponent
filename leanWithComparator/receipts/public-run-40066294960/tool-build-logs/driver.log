@@ -1,0 +1,12 @@
+✔ [3/13] Built Comparator.Util (289ms)
+✔ [4/13] Built Comparator.Util:c.o (155ms)
+✔ [5/13] Built Export.Parse (1.5s)
+✔ [6/13] Built Comparator.Axioms (503ms)
+✔ [7/13] Built Comparator.Axioms:c.o (348ms)
+✔ [8/13] Built Comparator.Compare (589ms)
+✔ [9/13] Built Comparator.Compare:c.o (463ms)
+✔ [10/13] Built CompareFC (454ms)
+✔ [11/13] Built CompareFC:c.o (206ms)
+✔ [12/13] Built Export.Parse:c.o (3.0s)
+✔ [13/13] Built fccompare:exe (724ms)
+Build completed successfully (13 jobs).

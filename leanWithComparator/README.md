@@ -12,7 +12,7 @@ The first run builds the proof from source on a new Linux runner, using the fixe
 
 Seven controls exercise valid proofs and rejection of `sorryAx`, an extra axiom, a changed definition, a changed target, a missing target, and a malformed exported proof. Evidence is uploaded even if a stage fails.
 
-Scope: this uses the same Comparator-core driver and independent nanoda approach as the Funk verification. It does not run Comparator's separate landrun CLI pipeline, perform an adversarial build sandbox test, rebuild all Mathlib dependencies from scratch, or constitute human mathematical review. The workflow requires the public `KitaKen1/log2-irrationality-exponent` repository. It runs on pushes to `fc-6923-public-verification-20261024` and supports manual dispatch on that branch.
+Scope: this uses the same Comparator-core driver and independent nanoda approach as the Funk verification. It does not run Comparator's separate landrun CLI pipeline, perform an adversarial build sandbox test, rebuild all Mathlib dependencies from scratch, or constitute human mathematical review. The workflow requires the public `KitaKen1/log2-irrationality-exponent` repository. It runs on pushes to `fc-6923-public-verification-20261024`.
 
 
 ## Existing source warnings
@@ -33,3 +33,9 @@ python3 leanWithComparator/scripts/verify.py
 ```
 
 Use a clean checkout with no `leanWithComparator/evidence/` directory. A successful run writes `evidence/result.json`; the workflow publishes logs and receipts as an Actions artifact. The receipt records the CI source commit, original proof and FC statement commits, export hashes, tool revisions, definition agreement, axiom report and all seven controls.
+
+## Public verification result
+
+[Run 40066294960](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40066294960) passed on 2026-10-24 at verification commit `2303de25fb0d06866563ee62d2f8759dd7333b62`. The original pinned proof was built from source using the fixed Mathlib cache, without restoring a proof build cache. Comparator core matched the exact target and its reachable definitions, nanoda checked 117,647 declarations, and all seven controls passed. The reported axioms are exactly `propext`, `Classical.choice`, and `Quot.sound`.
+
+[Permanent receipt and logs](receipts/public-run-40066294960/README.txt) include the unchanged CI result JSON and a file-hash manifest. The receipt commit adds evidence and documentation to the tested source commit; it is not a separate verification run.
