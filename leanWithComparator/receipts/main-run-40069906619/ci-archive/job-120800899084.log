@@ -1,0 +1,542 @@
+﻿2026-10-24T06:21:54.8279118Z Current runner version: '2.338.0'
+2026-10-24T06:21:54.8303844Z ##[group]Runner Image Provisioner
+2026-10-24T06:21:54.8304770Z Hosted Compute Agent
+2026-10-24T06:21:54.8305375Z Version: 20261012.601
+2026-10-24T06:21:54.8306083Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-24T06:21:54.8306867Z Build Date: 2026-10-12T17:48:21Z
+2026-10-24T06:21:54.8307943Z Worker ID: {31740aa1-1215-47d8-b6e9-f091d530f3b5}
+2026-10-24T06:21:54.8308695Z Region: westus3
+2026-10-24T06:21:54.8309255Z Cloud: Azure
+2026-10-24T06:21:54.8309834Z ##[endgroup]
+2026-10-24T06:21:54.8311402Z ##[group]Operating System
+2026-10-24T06:21:54.8312102Z Ubuntu
+2026-10-24T06:21:54.8312763Z 24.04.5
+2026-10-24T06:21:54.8313280Z LTS
+2026-10-24T06:21:54.8313827Z ##[endgroup]
+2026-10-24T06:21:54.8314427Z ##[group]Runner Image
+2026-10-24T06:21:54.8315040Z Image: ubuntu-24.04
+2026-10-24T06:21:54.8315691Z Version: 20261012.334.1
+2026-10-24T06:21:54.8316937Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-24T06:21:54.8318964Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-24T06:21:54.8319984Z ##[endgroup]
+2026-10-24T06:21:54.8321144Z ##[group]GITHUB_TOKEN Permissions
+2026-10-24T06:21:54.8323024Z Contents: read
+2026-10-24T06:21:54.8323744Z Metadata: read
+2026-10-24T06:21:54.8324318Z ##[endgroup]
+2026-10-24T06:21:54.8326440Z Secret source: Actions
+2026-10-24T06:21:54.8327803Z Cache mode: write
+2026-10-24T06:21:54.8328584Z Prepare workflow directory
+2026-10-24T06:21:54.8790246Z Prepare all required actions
+2026-10-24T06:21:54.8837519Z Getting action download info
+2026-10-24T06:21:55.1923798Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-24T06:21:55.2983385Z Download action repository 'actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-10-24T06:21:55.3897692Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-24T06:21:55.6081432Z Complete job name: verify
+2026-10-24T06:21:55.6880881Z ##[group]Run test "$GITHUB_REPOSITORY" = KitaKen1/log2-irrationality-exponent
+2026-10-24T06:21:55.6882045Z [36;1mtest "$GITHUB_REPOSITORY" = KitaKen1/log2-irrationality-exponent[0m
+2026-10-24T06:21:55.6882836Z [36;1mtest "$REPOSITORY_PRIVATE" = false[0m
+2026-10-24T06:21:55.7126415Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:21:55.7127810Z env:
+2026-10-24T06:21:55.7128267Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:21:55.7128786Z   REPOSITORY_PRIVATE: false
+2026-10-24T06:21:55.7129310Z ##[endgroup]
+2026-10-24T06:21:55.7481949Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-24T06:21:55.7482732Z with:
+2026-10-24T06:21:55.7483202Z   persist-credentials: false
+2026-10-24T06:21:55.7483814Z   repository: KitaKen1/log2-irrationality-exponent
+2026-10-24T06:21:55.7487924Z   token: ***
+2026-10-24T06:21:55.7488402Z   ssh-strict: true
+2026-10-24T06:21:55.7488871Z   ssh-user: git
+2026-10-24T06:21:55.7489315Z   clean: true
+2026-10-24T06:21:55.7489784Z   sparse-checkout-cone-mode: true
+2026-10-24T06:21:55.7490345Z   fetch-depth: 1
+2026-10-24T06:21:55.7490799Z   fetch-tags: false
+2026-10-24T06:21:55.7491272Z   show-progress: true
+2026-10-24T06:21:55.7491745Z   lfs: false
+2026-10-24T06:21:55.7492185Z   submodules: false
+2026-10-24T06:21:55.7492658Z   set-safe-directory: true
+2026-10-24T06:21:55.7493194Z   allow-unsafe-pr-checkout: false
+2026-10-24T06:21:55.7493731Z env:
+2026-10-24T06:21:55.7494174Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:21:55.7494651Z ##[endgroup]
+2026-10-24T06:21:55.8670875Z Syncing repository: KitaKen1/log2-irrationality-exponent
+2026-10-24T06:21:55.8672726Z ##[group]Getting Git version info
+2026-10-24T06:21:55.8673692Z Working directory is '/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent'
+2026-10-24T06:21:55.8674931Z [command]/usr/bin/git version
+2026-10-24T06:21:55.8675776Z git version 2.55.0
+2026-10-24T06:21:55.8704108Z ##[endgroup]
+2026-10-24T06:21:55.8719328Z Temporarily overriding HOME='/home/runner/work/_temp/7cc71ea3-faeb-4b27-865f-5c28d77ac69a' before making global git config changes
+2026-10-24T06:21:55.8721615Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-24T06:21:55.8724432Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent
+2026-10-24T06:21:55.8777877Z Deleting the contents of '/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent'
+2026-10-24T06:21:55.8783822Z ##[group]Initializing the repository
+2026-10-24T06:21:55.8789019Z [command]/usr/bin/git init /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent
+2026-10-24T06:21:55.8901993Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-24T06:21:55.8904129Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-24T06:21:55.8906221Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-24T06:21:55.8908190Z hint: call:
+2026-10-24T06:21:55.8909273Z hint:
+2026-10-24T06:21:55.8910539Z hint: 	git config --global init.defaultBranch <name>
+2026-10-24T06:21:55.8911990Z hint:
+2026-10-24T06:21:55.8913351Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-24T06:21:55.8915319Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-24T06:21:55.8917320Z hint:
+2026-10-24T06:21:55.8918358Z hint: 	git branch -m <name>
+2026-10-24T06:21:55.8919397Z hint:
+2026-10-24T06:21:55.8920767Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-24T06:21:55.8923673Z Initialized empty Git repository in /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/.git/
+2026-10-24T06:21:55.8928170Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/log2-irrationality-exponent
+2026-10-24T06:21:55.8962779Z ##[endgroup]
+2026-10-24T06:21:55.8964227Z ##[group]Disabling automatic garbage collection
+2026-10-24T06:21:55.8967876Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-24T06:21:55.8999991Z ##[endgroup]
+2026-10-24T06:21:55.9001385Z ##[group]Setting up auth
+2026-10-24T06:21:55.9006535Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T06:21:55.9038465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T06:21:55.9393471Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T06:21:55.9422584Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T06:21:55.9639511Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T06:21:55.9669913Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T06:21:55.9883174Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-24T06:21:55.9920502Z ##[endgroup]
+2026-10-24T06:21:55.9921893Z ##[group]Fetching the repository
+2026-10-24T06:21:55.9931208Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5d606b4adbc451061271f89636f9fc0187b64bd4:refs/remotes/origin/main
+2026-10-24T06:21:57.1135875Z From https://github.com/KitaKen1/log2-irrationality-exponent
+2026-10-24T06:21:57.1137342Z  * [new ref]         5d606b4adbc451061271f89636f9fc0187b64bd4 -> origin/main
+2026-10-24T06:21:57.1140667Z ##[endgroup]
+2026-10-24T06:21:57.1141636Z ##[group]Determining the checkout info
+2026-10-24T06:21:57.1143923Z ##[endgroup]
+2026-10-24T06:21:57.1151268Z [command]/usr/bin/git sparse-checkout disable
+2026-10-24T06:21:57.1197505Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-24T06:21:57.1222956Z ##[group]Checking out the ref
+2026-10-24T06:21:57.1228853Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-24T06:21:57.2869371Z Switched to a new branch 'main'
+2026-10-24T06:21:57.2871853Z branch 'main' set up to track 'origin/main'.
+2026-10-24T06:21:57.2886895Z ##[endgroup]
+2026-10-24T06:21:57.2932905Z [command]/usr/bin/git log -1 --format=%H
+2026-10-24T06:21:57.2956462Z 5d606b4adbc451061271f89636f9fc0187b64bd4
+2026-10-24T06:21:57.2965906Z ##[group]Removing auth
+2026-10-24T06:21:57.2969454Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T06:21:57.2999752Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T06:21:57.3234019Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T06:21:57.3258071Z http.https://github.com/.extraheader
+2026-10-24T06:21:57.3265561Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-24T06:21:57.3296336Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T06:21:57.3508373Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T06:21:57.3536296Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T06:21:57.3744413Z ##[endgroup]
+2026-10-24T06:21:57.3871842Z ##[group]Run test "$GITHUB_ACTIONS" = true
+2026-10-24T06:21:57.3872287Z [36;1mtest "$GITHUB_ACTIONS" = true[0m
+2026-10-24T06:21:57.3872656Z [36;1mtest "$RUNNER_ENVIRONMENT" = github-hosted[0m
+2026-10-24T06:21:57.3873015Z [36;1mtest "$RUNNER_OS" = Linux[0m
+2026-10-24T06:21:57.3873499Z [36;1msudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup[0m
+2026-10-24T06:21:57.3874020Z [36;1msudo fallocate -l 12G /fc6923-swap[0m
+2026-10-24T06:21:57.3874380Z [36;1msudo chmod 600 /fc6923-swap[0m
+2026-10-24T06:21:57.3874693Z [36;1msudo mkswap /fc6923-swap[0m
+2026-10-24T06:21:57.3874997Z [36;1msudo swapon /fc6923-swap[0m
+2026-10-24T06:21:57.3875283Z [36;1mfree -h[0m
+2026-10-24T06:21:57.3875533Z [36;1mdf -h /[0m
+2026-10-24T06:21:57.3940049Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:21:57.3940448Z env:
+2026-10-24T06:21:57.3940690Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:21:57.3940956Z ##[endgroup]
+2026-10-24T06:22:39.0999342Z Setting up swapspace version 1, size = 12 GiB (12884897792 bytes)
+2026-10-24T06:22:39.1000152Z no label, UUID=69f64ccd-bfcd-40a4-9fbd-8aaf17455f42
+2026-10-24T06:22:39.1110214Z                total        used        free      shared  buff/cache   available
+2026-10-24T06:22:39.1110811Z Mem:            15Gi       927Mi        12Gi        43Mi       2.9Gi        14Gi
+2026-10-24T06:22:39.1111463Z Swap:           14Gi          0B        14Gi
+2026-10-24T06:22:39.1129180Z Filesystem      Size  Used Avail Use% Mounted on
+2026-10-24T06:22:39.1129893Z /dev/root       145G   51G   95G  35% /
+2026-10-24T06:22:39.1176528Z ##[group]Run curl -sSfL https://github.com/leanprover/elan/releases/download/v4.1.2/elan-x86_64-unknown-linux-gnu.tar.gz -o "$RUNNER_TEMP/elan.tar.gz"
+2026-10-24T06:22:39.1178011Z [36;1mcurl -sSfL https://github.com/leanprover/elan/releases/download/v4.1.2/elan-x86_64-unknown-linux-gnu.tar.gz -o "$RUNNER_TEMP/elan.tar.gz"[0m
+2026-10-24T06:22:39.1178790Z [36;1m# The release archive digest is checked before executing it.[0m
+2026-10-24T06:22:39.1179449Z [36;1mecho "f81c2e48c1588d4612cd2c8851947898a45ac8d72748a07dff3a5694f1cf589b  $RUNNER_TEMP/elan.tar.gz" | sha256sum -c -[0m
+2026-10-24T06:22:39.1180330Z [36;1mtar -xzf "$RUNNER_TEMP/elan.tar.gz" -C "$RUNNER_TEMP"[0m
+2026-10-24T06:22:39.1180755Z [36;1m"$RUNNER_TEMP/elan-init" -y --default-toolchain none[0m
+2026-10-24T06:22:39.1181124Z [36;1mecho "$HOME/.elan/bin" >> "$GITHUB_PATH"[0m
+2026-10-24T06:22:39.1181462Z [36;1mecho "$HOME/.cargo/bin" >> "$GITHUB_PATH"[0m
+2026-10-24T06:22:39.1181867Z [36;1mrustup toolchain install 1.90.0 --profile minimal[0m
+2026-10-24T06:22:39.1182339Z [36;1m# Fetch the exact official release without the release.lean-lang.org redirect.[0m
+2026-10-24T06:22:39.1183312Z [36;1mcurl --retry 5 --retry-all-errors --retry-delay 5 -sSfL https://github.com/leanprover/lean4/releases/download/v4.34.1/lean-4.34.1-linux.tar.zst -o "$RUNNER_TEMP/lean-4.34.1-linux.tar.zst"[0m
+2026-10-24T06:22:39.1184441Z [36;1mecho "47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4  $RUNNER_TEMP/lean-4.34.1-linux.tar.zst" | sha256sum -c -[0m
+2026-10-24T06:22:39.1185176Z [36;1mFC_LEAN_DIR="$HOME/.elan/toolchains/leanprover--lean4---v4.34.1"[0m
+2026-10-24T06:22:39.1185565Z [36;1mmkdir -p "$FC_LEAN_DIR"[0m
+2026-10-24T06:22:39.1186017Z [36;1mtar --zstd -xf "$RUNNER_TEMP/lean-4.34.1-linux.tar.zst" -C "$FC_LEAN_DIR" --strip-components=1[0m
+2026-10-24T06:22:39.1186513Z [36;1m"$FC_LEAN_DIR/bin/lean" --version[0m
+2026-10-24T06:22:39.1248342Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:22:39.1248713Z env:
+2026-10-24T06:22:39.1248913Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:22:39.1249139Z ##[endgroup]
+2026-10-24T06:22:39.4873114Z /home/runner/work/_temp/elan.tar.gz: OK
+2026-10-24T06:22:39.6406380Z info: syncing channel updates for 1.90.0-x86_64-unknown-linux-gnu
+2026-10-24T06:22:39.8220447Z info: latest update on 2025-09-18 for version 1.90.0 (1159e78c4 2025-09-14)
+2026-10-24T06:22:39.8221482Z info: downloading 3 components
+2026-10-24T06:22:47.1484653Z 
+2026-10-24T06:22:47.1558869Z   1.90.0-x86_64-unknown-linux-gnu installed - rustc 1.90.0 (1159e78c4 2025-09-14)
+2026-10-24T06:22:47.1559291Z 
+2026-10-24T06:22:49.3353989Z /home/runner/work/_temp/lean-4.34.1-linux.tar.zst: OK
+2026-10-24T06:22:54.7956856Z Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+2026-10-24T06:22:54.8375628Z ##[group]Run test -z "$(find lean leanWithComparator -name '*.olean' -print -quit)"
+2026-10-24T06:22:54.8376519Z [36;1mtest -z "$(find lean leanWithComparator -name '*.olean' -print -quit)"[0m
+2026-10-24T06:22:54.8377430Z [36;1mpython3 leanWithComparator/scripts/make_challenge.py --check[0m
+2026-10-24T06:22:54.8443004Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:22:54.8443356Z env:
+2026-10-24T06:22:54.8443547Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:22:54.8443762Z ##[endgroup]
+2026-10-24T06:22:55.0097183Z {'namespace_body_verbatim': True, 'namespace_body_sha256': '75e063a1712c56f19bdb99a7b06f8048fb11352e8629d82ab1f6b90ee4440bf6', 'changes': ['replace FC module/public import/public section wrapper with 4.34.1 imports'], 'raw_pr_variant': 'RawPRFC.lean; identical to ChallengeFC.lean', 'answer': 'answer(2), unchanged', 'placeholder': 'one intentional Challenge sorry'}
+2026-10-24T06:22:55.0273238Z ##[group]Run mkdir -p bootstrap-logs
+2026-10-24T06:22:55.0273592Z [36;1mmkdir -p bootstrap-logs[0m
+2026-10-24T06:22:55.0273889Z [36;1mfor attempt in 1 2 3; do[0m
+2026-10-24T06:22:55.0274290Z [36;1m  if lake exe cache get 2>&1 | tee -a bootstrap-logs/dependencies.log; then[0m
+2026-10-24T06:22:55.0274706Z [36;1m    exit 0[0m
+2026-10-24T06:22:55.0274921Z [36;1m  fi[0m
+2026-10-24T06:22:55.0275120Z [36;1m  sleep 5[0m
+2026-10-24T06:22:55.0275331Z [36;1mdone[0m
+2026-10-24T06:22:55.0275526Z [36;1mexit 1[0m
+2026-10-24T06:22:55.0334501Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:22:55.0334851Z env:
+2026-10-24T06:22:55.0335040Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:22:55.0335252Z ##[endgroup]
+2026-10-24T06:22:55.2302043Z info: mathlib: cloning https://github.com/leanprover-community/mathlib4.git
+2026-10-24T06:23:27.5586169Z info: mathlib: checking out revision 'd13f23b723b8a846827a245b89c10fc7d3f11612'
+2026-10-24T06:23:29.7119636Z info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-10-24T06:23:30.2451447Z info: plausible: checking out revision '118aa17ee84656b8bd727fef7c458ee8c833385c'
+2026-10-24T06:23:30.2574275Z info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-10-24T06:23:30.7462217Z info: LeanSearchClient: checking out revision 'ddf04cf3949fa556442341e87d47f9f6e6074707'
+2026-10-24T06:23:30.7581037Z info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-10-24T06:23:31.4865407Z info: importGraph: checking out revision 'e928b72544873815af278d38681b31c0293588e3'
+2026-10-24T06:23:31.5057830Z info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-10-24T06:23:32.6654852Z info: proofwidgets: checking out revision '106ff4fafc74ef4ac99d81dbf3ab399118f497a5'
+2026-10-24T06:23:33.2991122Z info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-10-24T06:23:34.4743356Z info: aesop: checking out revision '355695d523e41d0554926416cba2a2b3544fbbc9'
+2026-10-24T06:23:34.4933830Z info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-10-24T06:23:35.1455080Z info: Qq: checking out revision '6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259'
+2026-10-24T06:23:35.1580819Z info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-10-24T06:23:37.9219707Z info: batteries: checking out revision 'f2effa3d803fda822b1f97b806c47cf2adfbcbc2'
+2026-10-24T06:23:37.9582927Z info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-10-24T06:23:38.5114111Z info: Cli: checking out revision 'e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204'
+2026-10-24T06:23:38.8241667Z ✔ [1/5] Built Cache.Cli (283ms)
+2026-10-24T06:23:39.2247622Z ✔ [4/12] Built Cache.Lean (377ms)
+2026-10-24T06:23:39.5250976Z ✔ [5/12] Built Cache.Env (329ms)
+2026-10-24T06:23:39.9298949Z ✔ [7/42] Built Batteries.Tactic.OpenPrivate (924ms)
+2026-10-24T06:23:39.9300176Z ✔ [8/42] Built Cache.Infra (405ms)
+2026-10-24T06:23:40.1294572Z ✔ [9/42] Built Cache.Cli:c.o (139ms)
+2026-10-24T06:23:40.2298855Z ✔ [10/42] Built Cache.Lean:c.o (159ms)
+2026-10-24T06:23:41.4305175Z ✔ [11/42] Built Cache.IO (1.5s)
+2026-10-24T06:23:41.6309006Z ✔ [12/42] Built Batteries.Tactic.OpenPrivate:c.o (1.4s)
+2026-10-24T06:23:41.6310255Z ✔ [13/42] Built Cache.Env:c.o (164ms)
+2026-10-24T06:23:41.8301714Z ✔ [14/42] Built Cache.Infra:c.o (240ms)
+2026-10-24T06:23:42.6315422Z ✔ [15/42] Built Cache.Hashing (773ms)
+2026-10-24T06:23:43.0310774Z ✔ [16/42] Built Cache.Hashing:c.o (444ms)
+2026-10-24T06:23:43.2312812Z ✔ [17/42] Built Cache.IO:c.o (1.6s)
+2026-10-24T06:23:44.7329490Z ✔ [18/42] Built Cache.Requests (1.7s)
+2026-10-24T06:23:45.2326140Z ✔ [19/42] Built Cache.Marker (529ms)
+2026-10-24T06:23:45.4329493Z ✔ [20/42] Built Cache.Marker:c.o (115ms)
+2026-10-24T06:23:46.0327821Z ✔ [21/42] Built Cache.Query (686ms)
+2026-10-24T06:23:46.6335025Z ✔ [22/42] Built Cache.Upload.Dest (568ms)
+2026-10-24T06:23:46.9339146Z ✔ [23/42] Built Cache.Query:c.o (325ms)
+2026-10-24T06:23:47.1332743Z ✔ [24/42] Built Cache.Upload.Dest:c.o (131ms)
+2026-10-24T06:23:47.5368527Z ✔ [25/42] Built Cache.Requests:c.o (2.8s)
+2026-10-24T06:23:47.7343957Z ✔ [26/42] Built Cache.Warning (657ms)
+2026-10-24T06:23:48.1348914Z ✔ [27/42] Built Cache.Upload.Rclone (637ms)
+2026-10-24T06:23:48.3351396Z ✔ [28/42] Built Cache.Upload.Curl (614ms)
+2026-10-24T06:23:48.4353303Z ✔ [29/42] Built Cache.Warning:c.o (284ms)
+2026-10-24T06:23:48.5354394Z ✔ [30/42] Built Cache.Upload.Rclone:c.o (190ms)
+2026-10-24T06:23:48.6356454Z ✔ [31/42] Built Cache.Upload.Curl:c.o (201ms)
+2026-10-24T06:23:49.1362647Z ✔ [32/42] Built Cache.Upload.Azure (549ms)
+2026-10-24T06:23:49.3365376Z ✔ [33/42] Built Cache.Upload.S3 (707ms)
+2026-10-24T06:23:49.3366141Z ✔ [34/42] Built Cache.Upload.Azure:c.o (183ms)
+2026-10-24T06:23:49.7360448Z ✔ [35/42] Built Cache.Upload.S3:c.o (343ms)
+2026-10-24T06:23:49.9363442Z ✔ [36/42] Built Cache.Upload.Defs (562ms)
+2026-10-24T06:23:50.0363672Z ✔ [37/42] Built Cache.Upload.Defs:c.o (158ms)
+2026-10-24T06:23:50.4369223Z ✔ [38/42] Built Cache.Upload (512ms)
+2026-10-24T06:23:50.5359441Z ✔ [39/42] Built Cache.Upload:c.o (124ms)
+2026-10-24T06:23:51.5369802Z ✔ [40/42] Built Cache.Main (1.1s)
+2026-10-24T06:23:52.5370668Z ✔ [41/42] Built Cache.Main:c.o (968ms)
+2026-10-24T06:23:53.2392144Z ✔ [42/42] Built cache:exe (729ms)
+2026-10-24T06:23:56.0595746Z Current branch: HEAD
+2026-10-24T06:23:56.0596325Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-10-24T06:23:56.0597544Z Attempting to download 8908 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+2026-10-24T06:23:56.3885987Z 
+2026-10-24T06:23:56.4917290Z Downloaded: 1 file(s) [attempted 1/8908 = 0%, 137 KB/s], Decompressed: 0
+2026-10-24T06:23:56.5910359Z Downloaded: 82 file(s) [attempted 82/8908 = 0%, 366 KB/s], Decompressed: 22
+2026-10-24T06:23:56.6968961Z Downloaded: 190 file(s) [attempted 190/8908 = 2%, 814 KB/s], Decompressed: 22
+2026-10-24T06:23:56.7962417Z Downloaded: 313 file(s) [attempted 313/8908 = 3%, 470 KB/s], Decompressed: 77
+2026-10-24T06:23:56.9019753Z Downloaded: 460 file(s) [attempted 460/8908 = 5%, 501 KB/s], Decompressed: 77
+2026-10-24T06:23:57.0003516Z Downloaded: 547 file(s) [attempted 547/8908 = 6%, 1695 KB/s], Decompressed: 77
+2026-10-24T06:23:57.1008246Z Downloaded: 669 file(s) [attempted 669/8908 = 7%, 4619 KB/s], Decompressed: 77
+2026-10-24T06:23:57.2038450Z Downloaded: 778 file(s) [attempted 778/8908 = 8%, 1037 KB/s], Decompressed: 77
+2026-10-24T06:23:57.3183793Z Downloaded: 898 file(s) [attempted 898/8908 = 10%, 133 KB/s], Decompressed: 77
+2026-10-24T06:23:57.4382809Z Downloaded: 1016 file(s) [attempted 1016/8908 = 11%, 788 KB/s], Decompressed: 77
+2026-10-24T06:23:57.5403607Z Downloaded: 1120 file(s) [attempted 1120/8908 = 12%, 64 KB/s], Decompressed: 77
+2026-10-24T06:23:57.6453014Z Downloaded: 1221 file(s) [attempted 1221/8908 = 13%, 1043 KB/s], Decompressed: 77
+2026-10-24T06:23:57.7613212Z Downloaded: 1322 file(s) [attempted 1322/8908 = 14%, 3889 KB/s], Decompressed: 292
+2026-10-24T06:23:57.8848343Z Downloaded: 1427 file(s) [attempted 1427/8908 = 16%, 682 KB/s], Decompressed: 292
+2026-10-24T06:23:57.9846192Z Downloaded: 1528 file(s) [attempted 1528/8908 = 17%, 348 KB/s], Decompressed: 292
+2026-10-24T06:23:58.0988638Z Downloaded: 1665 file(s) [attempted 1665/8908 = 18%, 1806 KB/s], Decompressed: 292
+2026-10-24T06:23:58.2038243Z Downloaded: 1783 file(s) [attempted 1783/8908 = 20%, 1163 KB/s], Decompressed: 292
+2026-10-24T06:23:58.3038867Z Downloaded: 1911 file(s) [attempted 1911/8908 = 21%, 2963 KB/s], Decompressed: 292
+2026-10-24T06:23:58.4028691Z Downloaded: 2009 file(s) [attempted 2009/8908 = 22%, 237 KB/s], Decompressed: 292
+2026-10-24T06:23:58.5379173Z Downloaded: 2141 file(s) [attempted 2141/8908 = 24%, 674 KB/s], Decompressed: 292
+2026-10-24T06:23:58.6463378Z Downloaded: 2266 file(s) [attempted 2266/8908 = 25%, 597 KB/s], Decompressed: 292
+2026-10-24T06:23:58.7498344Z Downloaded: 2375 file(s) [attempted 2375/8908 = 26%, 1568 KB/s], Decompressed: 292
+2026-10-24T06:23:58.8478539Z Downloaded: 2514 file(s) [attempted 2514/8908 = 28%, 338 KB/s], Decompressed: 292
+2026-10-24T06:23:58.9559900Z Downloaded: 2598 file(s) [attempted 2598/8908 = 29%, 1769 KB/s], Decompressed: 292
+2026-10-24T06:23:59.0560317Z Downloaded: 2695 file(s) [attempted 2695/8908 = 30%, 2322 KB/s], Decompressed: 292
+2026-10-24T06:23:59.1648285Z Downloaded: 2836 file(s) [attempted 2836/8908 = 31%, 197 KB/s], Decompressed: 292
+2026-10-24T06:23:59.2599357Z Downloaded: 2969 file(s) [attempted 2969/8908 = 33%, 182 KB/s], Decompressed: 292
+2026-10-24T06:23:59.3638876Z Downloaded: 3114 file(s) [attempted 3114/8908 = 34%, 1709 KB/s], Decompressed: 292
+2026-10-24T06:23:59.4675866Z Downloaded: 3231 file(s) [attempted 3231/8908 = 36%, 1231 KB/s], Decompressed: 292
+2026-10-24T06:23:59.5744786Z Downloaded: 3361 file(s) [attempted 3361/8908 = 37%, 2222 KB/s], Decompressed: 292
+2026-10-24T06:23:59.6735871Z Downloaded: 3522 file(s) [attempted 3522/8908 = 39%, 128 KB/s], Decompressed: 292
+2026-10-24T06:23:59.7828340Z Downloaded: 3680 file(s) [attempted 3680/8908 = 41%, 181 KB/s], Decompressed: 292
+2026-10-24T06:23:59.8898124Z Downloaded: 3793 file(s) [attempted 3793/8908 = 42%, 3273 KB/s], Decompressed: 292
+2026-10-24T06:23:59.9889754Z Downloaded: 3935 file(s) [attempted 3935/8908 = 44%, 1856 KB/s], Decompressed: 292
+2026-10-24T06:24:00.1163112Z Downloaded: 4041 file(s) [attempted 4041/8908 = 45%, 1314 KB/s], Decompressed: 292
+2026-10-24T06:24:00.2139572Z Downloaded: 4195 file(s) [attempted 4195/8908 = 47%, 9370 KB/s], Decompressed: 292
+2026-10-24T06:24:00.3300401Z Downloaded: 4327 file(s) [attempted 4327/8908 = 48%, 738 KB/s], Decompressed: 292
+2026-10-24T06:24:00.4404185Z Downloaded: 4445 file(s) [attempted 4445/8908 = 49%, 3472 KB/s], Decompressed: 292
+2026-10-24T06:24:00.5404068Z Downloaded: 4548 file(s) [attempted 4548/8908 = 51%, 506 KB/s], Decompressed: 292
+2026-10-24T06:24:00.6419977Z Downloaded: 4657 file(s) [attempted 4657/8908 = 52%, 603 KB/s], Decompressed: 292
+2026-10-24T06:24:00.7528328Z Downloaded: 4808 file(s) [attempted 4808/8908 = 53%, 214 KB/s], Decompressed: 292
+2026-10-24T06:24:00.8526154Z Downloaded: 4923 file(s) [attempted 4923/8908 = 55%, 1494 KB/s], Decompressed: 292
+2026-10-24T06:24:00.9519938Z Downloaded: 5075 file(s) [attempted 5075/8908 = 56%, 448 KB/s], Decompressed: 292
+2026-10-24T06:24:01.0569018Z Downloaded: 5149 file(s) [attempted 5149/8908 = 57%, 637 KB/s], Decompressed: 292
+2026-10-24T06:24:01.1851604Z Downloaded: 5231 file(s) [attempted 5231/8908 = 58%, 831 KB/s], Decompressed: 292
+2026-10-24T06:24:01.2850046Z Downloaded: 5332 file(s) [attempted 5332/8908 = 59%, 413 KB/s], Decompressed: 292
+2026-10-24T06:24:01.3908205Z Downloaded: 5454 file(s) [attempted 5454/8908 = 61%, 6120 KB/s], Decompressed: 292
+2026-10-24T06:24:01.4878470Z Downloaded: 5545 file(s) [attempted 5545/8908 = 62%, 1397 KB/s], Decompressed: 292
+2026-10-24T06:24:01.6003933Z Downloaded: 5660 file(s) [attempted 5660/8908 = 63%, 772 KB/s], Decompressed: 292
+2026-10-24T06:24:01.7058482Z Downloaded: 5746 file(s) [attempted 5746/8908 = 64%, 560 KB/s], Decompressed: 292
+2026-10-24T06:24:01.8188846Z Downloaded: 5847 file(s) [attempted 5847/8908 = 65%, 59 KB/s], Decompressed: 292
+2026-10-24T06:24:01.9175800Z Downloaded: 5950 file(s) [attempted 5950/8908 = 66%, 133 KB/s], Decompressed: 292
+2026-10-24T06:24:02.0145667Z Downloaded: 6044 file(s) [attempted 6044/8908 = 67%, 750 KB/s], Decompressed: 292
+2026-10-24T06:24:02.1207897Z Downloaded: 6153 file(s) [attempted 6153/8908 = 69%, 473 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.2247847Z Downloaded: 6246 file(s) [attempted 6246/8908 = 70%, 182 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.3256766Z Downloaded: 6330 file(s) [attempted 6330/8908 = 71%, 668 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.4309876Z Downloaded: 6431 file(s) [attempted 6431/8908 = 72%, 240 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.5326431Z Downloaded: 6532 file(s) [attempted 6532/8908 = 73%, 1077 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.6664809Z Downloaded: 6600 file(s) [attempted 6600/8908 = 74%, 169 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.7696470Z Downloaded: 6655 file(s) [attempted 6655/8908 = 74%, 697 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.8738946Z Downloaded: 6741 file(s) [attempted 6741/8908 = 75%, 229 KB/s], Decompressed: 1319
+2026-10-24T06:24:02.9738527Z Downloaded: 6867 file(s) [attempted 6867/8908 = 77%, 433 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.0750708Z Downloaded: 6972 file(s) [attempted 6972/8908 = 78%, 218 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.2011037Z Downloaded: 7088 file(s) [attempted 7088/8908 = 79%, 689 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.3011193Z Downloaded: 7218 file(s) [attempted 7218/8908 = 81%, 4603 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.4020484Z Downloaded: 7326 file(s) [attempted 7326/8908 = 82%, 1483 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.5024184Z Downloaded: 7441 file(s) [attempted 7441/8908 = 83%, 942 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.6123020Z Downloaded: 7545 file(s) [attempted 7545/8908 = 84%, 453 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.7088614Z Downloaded: 7650 file(s) [attempted 7650/8908 = 85%, 645 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.8110254Z Downloaded: 7793 file(s) [attempted 7793/8908 = 87%, 1454 KB/s], Decompressed: 1319
+2026-10-24T06:24:03.9227488Z Downloaded: 7935 file(s) [attempted 7935/8908 = 89%, 417 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.0224648Z Downloaded: 8028 file(s) [attempted 8028/8908 = 90%, 100 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.1356087Z Downloaded: 8148 file(s) [attempted 8148/8908 = 91%, 1352 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.2361213Z Downloaded: 8297 file(s) [attempted 8297/8908 = 93%, 142 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.3428323Z Downloaded: 8437 file(s) [attempted 8437/8908 = 94%, 501 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.4525589Z Downloaded: 8559 file(s) [attempted 8559/8908 = 96%, 3144 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.5519913Z Downloaded: 8701 file(s) [attempted 8701/8908 = 97%, 338 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.6163458Z Downloaded: 8815 file(s) [attempted 8815/8908 = 98%, 491 KB/s], Decompressed: 1319
+2026-10-24T06:24:04.6168216Z Downloaded: 8908 file(s) [attempted 8908/8908 = 100%, 491 KB/s], Decompressed: 1319
+2026-10-24T06:24:25.0164164Z Decompressed 8908 file(s)
+2026-10-24T06:24:25.0164602Z Already decompressed 8908 file(s)
+2026-10-24T06:24:25.0845769Z ##[group]Run python3 leanWithComparator/scripts/setup_tools.py
+2026-10-24T06:24:25.0846267Z [36;1mpython3 leanWithComparator/scripts/setup_tools.py[0m
+2026-10-24T06:24:25.0970069Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:24:25.0970413Z env:
+2026-10-24T06:24:25.0970602Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:24:25.0970821Z ##[endgroup]
+2026-10-24T06:24:25.1396886Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-24T06:24:25.1397830Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-24T06:24:25.1398347Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-24T06:24:25.1398849Z hint: call:
+2026-10-24T06:24:25.1399157Z hint:
+2026-10-24T06:24:25.1399418Z hint: 	git config --global init.defaultBranch <name>
+2026-10-24T06:24:25.1399703Z hint:
+2026-10-24T06:24:25.1399978Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-24T06:24:25.1400525Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-24T06:24:25.1401023Z hint:
+2026-10-24T06:24:25.1401366Z hint: 	git branch -m <name>
+2026-10-24T06:24:25.1401776Z hint:
+2026-10-24T06:24:25.1402348Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-24T06:24:25.1403951Z Initialized empty Git repository in /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/comparator/.git/
+2026-10-24T06:24:25.5851435Z From https://github.com/leanprover/comparator
+2026-10-24T06:24:25.5852199Z  * branch            d03acab154d269c06e60e4de7e4cc85deebff94b -> FETCH_HEAD
+2026-10-24T06:24:25.5957807Z HEAD is now at d03acab chore: bump toolchain to v4.34.0 (#90)
+2026-10-24T06:24:25.6035941Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-24T06:24:25.6038295Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-24T06:24:25.6039288Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-24T06:24:25.6039830Z hint: call:
+2026-10-24T06:24:25.6040047Z hint:
+2026-10-24T06:24:25.6040330Z hint: 	git config --global init.defaultBranch <name>
+2026-10-24T06:24:25.6040969Z hint:
+2026-10-24T06:24:25.6041652Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-24T06:24:25.6042794Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-24T06:24:25.6044045Z hint:
+2026-10-24T06:24:25.6044501Z hint: 	git branch -m <name>
+2026-10-24T06:24:25.6045010Z hint:
+2026-10-24T06:24:25.6045660Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-24T06:24:25.6046751Z Initialized empty Git repository in /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/lean4export/.git/
+2026-10-24T06:24:26.0276233Z From https://github.com/leanprover/lean4export
+2026-10-24T06:24:26.0277222Z  * branch            076e8e57707e813375e8f9da8bf989799ace9680 -> FETCH_HEAD
+2026-10-24T06:24:26.0333347Z HEAD is now at 076e8e5 chore: bump toolchain to v4.34.0 (#49)
+2026-10-24T06:24:26.0406447Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-24T06:24:26.0407626Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-24T06:24:26.0408532Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-24T06:24:26.0409225Z hint: call:
+2026-10-24T06:24:26.0409534Z hint:
+2026-10-24T06:24:26.0409940Z hint: 	git config --global init.defaultBranch <name>
+2026-10-24T06:24:26.0410457Z hint:
+2026-10-24T06:24:26.0410961Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-24T06:24:26.0411509Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-24T06:24:26.0411888Z hint:
+2026-10-24T06:24:26.0412077Z hint: 	git branch -m <name>
+2026-10-24T06:24:26.0412299Z hint:
+2026-10-24T06:24:26.0412815Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-24T06:24:26.0413634Z Initialized empty Git repository in /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda/.git/
+2026-10-24T06:24:26.5393754Z From https://github.com/robsimmons/nanoda_lib
+2026-10-24T06:24:26.5394323Z  * branch            68d5ca9db226849b41a6fff59d796ff19d0a8840 -> FETCH_HEAD
+2026-10-24T06:24:26.5471023Z HEAD is now at 68d5ca9 chore: even more misc. bounds checks
+2026-10-24T06:25:16.1592328Z {"tools": "passed", "binaries": {"exporter": {"path": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/lean4export/.lake/build/bin/lean4export", "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"}, "nanoda": {"path": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda/target/release/nanoda_bin", "sha256": "fb5c026599d3dcdfbae26000d6d4335e74e1e5fe4f0b28495f44ac26a309b759"}, "comparator": {"path": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare", "sha256": "d227492e97794f9de2b4255f4a427df4b93be3a89f9909ae1c805c9ba18b3573"}}}
+2026-10-24T06:25:16.1678066Z ##[group]Run python3 leanWithComparator/scripts/verify.py --phase challenge
+2026-10-24T06:25:16.1678838Z [36;1mpython3 leanWithComparator/scripts/verify.py --phase challenge[0m
+2026-10-24T06:25:16.1740078Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:25:16.1740417Z env:
+2026-10-24T06:25:16.1740620Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:25:16.1740830Z ##[endgroup]
+2026-10-24T06:25:16.7755466Z {"stage": "challenge-build", "status": "started"}
+2026-10-24T06:25:29.2725764Z {"stage": "challenge-build", "status": "passed", "seconds": 12.496}
+2026-10-24T06:25:29.2729056Z {"stage": "challenge-export", "status": "started"}
+2026-10-24T06:25:36.9019470Z {"stage": "challenge-export", "status": "passed", "seconds": 7.628}
+2026-10-24T06:25:37.0858152Z ##[group]Run actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+2026-10-24T06:25:37.0858601Z with:
+2026-10-24T06:25:37.0858803Z   path: lean/.lake/build
+2026-10-24T06:25:37.0859267Z   key: fc6923-proof-linux-4341-3e66a70b95dc677ceb8d3f36bf0edc6ba96bac6a314571c913fb66946a2f3c57
+2026-10-24T06:25:37.0859770Z   enableCrossOsArchive: false
+2026-10-24T06:25:37.0860021Z   fail-on-cache-miss: false
+2026-10-24T06:25:37.0860462Z   lookup-only: false
+2026-10-24T06:25:37.0860664Z env:
+2026-10-24T06:25:37.0860842Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:25:37.0861044Z ##[endgroup]
+2026-10-24T06:25:37.1944295Z (node:4141) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-24T06:25:37.1945775Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-24T06:25:37.3990925Z Cache not found for input keys: fc6923-proof-linux-4341-3e66a70b95dc677ceb8d3f36bf0edc6ba96bac6a314571c913fb66946a2f3c57
+2026-10-24T06:25:37.4095417Z ##[group]Run python3 leanWithComparator/scripts/verify.py --phase solution
+2026-10-24T06:25:37.4095968Z [36;1mpython3 leanWithComparator/scripts/verify.py --phase solution[0m
+2026-10-24T06:25:37.4156227Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T06:25:37.4156568Z env:
+2026-10-24T06:25:37.4156772Z   LEAN_NUM_THREADS: 2
+2026-10-24T06:25:37.4157257Z   FC_PROOF_CACHE_HIT: 
+2026-10-24T06:25:37.4157494Z   FC_PROOF_CACHE_MATCHED_KEY: 
+2026-10-24T06:25:37.4157750Z ##[endgroup]
+2026-10-24T06:25:37.9008245Z {"stage": "solution-build", "status": "started"}
+2026-10-24T07:01:11.9516882Z {"stage": "solution-build", "status": "passed", "seconds": 2134.05}
+2026-10-24T07:01:11.9526163Z {"stage": "raw-pr-model-agreement", "status": "started"}
+2026-10-24T07:01:17.1989559Z {"stage": "raw-pr-model-agreement", "status": "passed", "seconds": 5.245}
+2026-10-24T07:01:17.1994717Z {"stage": "axioms", "status": "started"}
+2026-10-24T07:01:22.2014267Z {"stage": "axioms", "status": "passed", "seconds": 5.001}
+2026-10-24T07:01:22.2139905Z ##[group]Run python3 leanWithComparator/scripts/verify.py --phase finish
+2026-10-24T07:01:22.2140482Z [36;1mpython3 leanWithComparator/scripts/verify.py --phase finish[0m
+2026-10-24T07:01:22.2201399Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T07:01:22.2201740Z env:
+2026-10-24T07:01:22.2201928Z   LEAN_NUM_THREADS: 2
+2026-10-24T07:01:22.2202142Z ##[endgroup]
+2026-10-24T07:01:22.7704028Z {"stage": "solution-export", "status": "started"}
+2026-10-24T07:02:31.2429183Z {"stage": "solution-export", "status": "passed", "seconds": 68.472}
+2026-10-24T07:02:31.2446614Z {"stage": "comparator", "status": "started"}
+2026-10-24T07:03:23.9081845Z {"stage": "comparator", "status": "passed", "seconds": 52.664}
+2026-10-24T07:03:23.9095832Z {"stage": "nanoda", "status": "started"}
+2026-10-24T07:06:23.8413108Z {"stage": "nanoda", "status": "passed", "seconds": 179.931}
+2026-10-24T07:06:23.8420886Z {"stage": "negative-controls", "status": "started"}
+2026-10-24T07:06:40.6876258Z {"status": "passed", "target": "LogTwo.irrationalityExponent_log_two", "checked_declarations": 117647, "reported_axioms": ["Classical.choice", "Quot.sound", "propext"]}
+2026-10-24T07:06:40.6996201Z ##[group]Run python3 - <<'PY'
+2026-10-24T07:06:40.6996539Z [36;1mpython3 - <<'PY'[0m
+2026-10-24T07:06:40.6996769Z [36;1mimport json[0m
+2026-10-24T07:06:40.6997325Z [36;1mp='leanWithComparator/evidence/result.json'[0m
+2026-10-24T07:06:40.6997672Z [36;1md=json.load(open(p))[0m
+2026-10-24T07:06:40.6997923Z [36;1massert d['status']=='passed'[0m
+2026-10-24T07:06:40.6998275Z [36;1massert d['target']=='LogTwo.irrationalityExponent_log_two'[0m
+2026-10-24T07:06:40.6998806Z [36;1massert all(d[k] for k in ['comparator','independent_nanoda_replay','negative_controls'])[0m
+2026-10-24T07:06:40.6999294Z [36;1massert d['raw_pr_model_target_agreement'][0m
+2026-10-24T07:06:40.6999608Z [36;1massert d['definition_holes']==[][0m
+2026-10-24T07:06:40.7000024Z [36;1massert set(d['reported_axioms']) <= {'propext','Classical.choice','Quot.sound'}[0m
+2026-10-24T07:06:40.7000466Z [36;1massert len(d['controls']['cases'])==7[0m
+2026-10-24T07:06:40.7000853Z [36;1massert d['source_warning_policy']['unexpected']==[][0m
+2026-10-24T07:06:40.7001183Z [36;1mPY[0m
+2026-10-24T07:06:40.7063697Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-24T07:06:40.7064034Z env:
+2026-10-24T07:06:40.7064226Z   LEAN_NUM_THREADS: 2
+2026-10-24T07:06:40.7064630Z ##[endgroup]
+2026-10-24T07:06:40.8135983Z ##[group]Run actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+2026-10-24T07:06:40.8136398Z with:
+2026-10-24T07:06:40.8136598Z   path: lean/.lake/build
+2026-10-24T07:06:40.8137521Z   key: fc6923-proof-linux-4341-3e66a70b95dc677ceb8d3f36bf0edc6ba96bac6a314571c913fb66946a2f3c57
+2026-10-24T07:06:40.8138078Z   enableCrossOsArchive: false
+2026-10-24T07:06:40.8138316Z env:
+2026-10-24T07:06:40.8138498Z   LEAN_NUM_THREADS: 2
+2026-10-24T07:06:40.8138701Z ##[endgroup]
+2026-10-24T07:06:40.9382805Z (node:13649) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-24T07:06:40.9384195Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-24T07:06:40.9629927Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent --files-from manifest.txt --use-compress-program zstdmt
+2026-10-24T07:06:54.9188969Z (node:13649) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-24T07:06:55.9043982Z Sent 0 of 251556645 (0.0%), 0.0 MBs/sec
+2026-10-24T07:06:56.9044477Z Sent 67108864 of 251556645 (26.7%), 32.0 MBs/sec
+2026-10-24T07:06:57.9050585Z Sent 201326592 of 251556645 (80.0%), 64.0 MBs/sec
+2026-10-24T07:06:58.9054073Z Sent 201326592 of 251556645 (80.0%), 48.0 MBs/sec
+2026-10-24T07:06:59.9061205Z Sent 201326592 of 251556645 (80.0%), 38.4 MBs/sec
+2026-10-24T07:07:00.9059012Z Sent 201326592 of 251556645 (80.0%), 32.0 MBs/sec
+2026-10-24T07:07:01.9065726Z Sent 201326592 of 251556645 (80.0%), 27.4 MBs/sec
+2026-10-24T07:07:02.9077235Z Sent 201326592 of 251556645 (80.0%), 24.0 MBs/sec
+2026-10-24T07:07:03.9086969Z Sent 201326592 of 251556645 (80.0%), 21.3 MBs/sec
+2026-10-24T07:07:04.9095153Z Sent 201326592 of 251556645 (80.0%), 19.2 MBs/sec
+2026-10-24T07:07:05.9109466Z Sent 201326592 of 251556645 (80.0%), 17.4 MBs/sec
+2026-10-24T07:07:06.9115346Z Sent 201326592 of 251556645 (80.0%), 16.0 MBs/sec
+2026-10-24T07:07:07.6693918Z Sent 251556645 of 251556645 (100.0%), 18.8 MBs/sec
+2026-10-24T07:07:07.9623417Z Cache saved with key: fc6923-proof-linux-4341-3e66a70b95dc677ceb8d3f36bf0edc6ba96bac6a314571c913fb66946a2f3c57
+2026-10-24T07:07:07.9782924Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-24T07:07:07.9783345Z with:
+2026-10-24T07:07:07.9783557Z   name: fc6923-evidence-40069906619-1
+2026-10-24T07:07:07.9784485Z   path: leanWithComparator/evidence/**/*.json
+leanWithComparator/evidence/**/*.log
+leanWithComparator/evidence/**/*.txt
+leanWithComparator/.tools/logs/
+leanWithComparator/.tools/tools-lock.json
+leanWithComparator/bootstrap-logs/
+
+2026-10-24T07:07:07.9785430Z   include-hidden-files: true
+2026-10-24T07:07:07.9785676Z   retention-days: 90
+2026-10-24T07:07:07.9785902Z   if-no-files-found: warn
+2026-10-24T07:07:07.9786149Z   compression-level: 6
+2026-10-24T07:07:07.9786379Z   overwrite: false
+2026-10-24T07:07:07.9786574Z env:
+2026-10-24T07:07:07.9786756Z   LEAN_NUM_THREADS: 2
+2026-10-24T07:07:07.9787219Z ##[endgroup]
+2026-10-24T07:07:08.1413063Z (node:13673) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-24T07:07:08.1414447Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-24T07:07:08.1597315Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-24T07:07:08.1600981Z The least common ancestor is /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator. This will be the root directory of the artifact
+2026-10-24T07:07:08.1601826Z With the provided path, there will be 50 files uploaded
+2026-10-24T07:07:08.1607960Z Artifact name is valid!
+2026-10-24T07:07:08.1608447Z Root directory input is valid!
+2026-10-24T07:07:08.5043909Z Beginning upload of artifact content to blob storage
+2026-10-24T07:07:08.5740415Z (node:13673) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-24T07:07:08.8506655Z Uploaded bytes 39573
+2026-10-24T07:07:08.9158147Z Finished uploading artifact content to blob storage!
+2026-10-24T07:07:08.9159559Z SHA256 digest of uploaded artifact zip is 7abed9d244cd8d01f02d5f09a132eadec1eabe83bbea3c8b41cbfacff64b1725
+2026-10-24T07:07:08.9161749Z Finalizing artifact upload
+2026-10-24T07:07:09.3682486Z Artifact fc6923-evidence-40069906619-1.zip successfully finalized. Artifact ID 12551343637
+2026-10-24T07:07:09.3683983Z Artifact fc6923-evidence-40069906619-1 has been successfully uploaded! Final size is 39573 bytes. Artifact ID is 12551343637
+2026-10-24T07:07:09.3687895Z Artifact download URL: https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40069906619/artifacts/12551343637
+2026-10-24T07:07:09.3947922Z Post job cleanup.
+2026-10-24T07:07:09.4782225Z [command]/usr/bin/git version
+2026-10-24T07:07:09.4822973Z git version 2.55.0
+2026-10-24T07:07:09.4859714Z Temporarily overriding HOME='/home/runner/work/_temp/d14e0426-1b60-45ef-baee-b3d7adb20afd' before making global git config changes
+2026-10-24T07:07:09.4861527Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-24T07:07:09.4866199Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent
+2026-10-24T07:07:09.4900789Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T07:07:09.4934286Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T07:07:09.5167464Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T07:07:09.5198225Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T07:07:09.5416857Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T07:07:09.5449980Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T07:07:09.5799834Z Cleaning up orphan processes
+2026-10-24T07:07:09.6318593Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830, actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830, actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

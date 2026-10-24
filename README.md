@@ -65,6 +65,8 @@ The [public verification on main](https://github.com/KitaKen1/log2-irrationality
 passed on 2026-10-24: exact target/definition comparison, independent nanoda replay
 of 117,647 declarations, the three-axiom audit, and all seven controls.
 [Permanent main receipt and logs](leanWithComparator/receipts/main-run-40069906619/README.txt).
+See the [verification appendix](#appendix-verification-by-lean-comparator-on-github-ci-runner)
+for the original CI artifact, full job log and checksums preserved in Git.
 
 ## Mathematical explanation (AI generated)
 
@@ -162,6 +164,59 @@ GPT-6 Astra and GPT-6.1 sol.
 2. Raffaele Marcovecchio. [*The Rhin–Viola method for log 2*][marcovecchio]. 2009.
 3. Yann Bugeaud and Dong Han Kim. [*On the $b$-ary expansion of a real number whose irrationality exponent is close to 2*][bugeaud-kim]. arXiv:2510.02059v2, April 20, 2026.
 4. The Stacks Project Authors. *The Stacks Project*: [Tag 0AG6][stacks-cohomology] and [Tag 0AG7][stacks-sections] on coherent sheaves and sections on Proj; [Tag 0B5U][stacks-serre] on ampleness and cohomology vanishing.
+
+## Appendix: Verification by Lean Comparator on GitHub CI runner
+
+The GitHub-hosted Linux workflow builds the pinned proof on Lean **v4.34.1**,
+compares the exact FC target and its reachable definitions using pinned Comparator
+core, checks the permitted axioms, and independently replays the exported proof
+with **nanoda**. There are no definition holes. The compiled audit also checks
+agreement of the FC definition and theorem type with the proof.
+
+### Within 90 days: CI results
+
+The [public main run](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40069906619)
+passed on **2026-10-24**, attempt **1**, for
+`LogTwo.irrationalityExponent_log_two`.
+The workflow uploads verification logs and receipts as an Actions artifact with
+a 90-day retention period.
+
+- [Comparator output](leanWithComparator/receipts/main-run-40069906619/comparator.log): target and reachable definitions matched.
+- [Independent nanoda replay](leanWithComparator/receipts/main-run-40069906619/nanoda.log): **117,647 declarations checked with no errors**.
+- [Axiom audit](leanWithComparator/receipts/main-run-40069906619/axioms.log): only `propext`, `Classical.choice`, and `Quot.sound`.
+- [All seven controls](leanWithComparator/receipts/main-run-40069906619/controls/result.json) passed; the [result JSON](leanWithComparator/receipts/main-run-40069906619/result.json) records the full checked scope and export hashes.
+
+| Record | Pinned commit |
+| --- | --- |
+| Tested CI source on `main` | [`5d606b4adbc451061271f89636f9fc0187b64bd4`](https://github.com/KitaKen1/log2-irrationality-exponent/tree/5d606b4adbc451061271f89636f9fc0187b64bd4) |
+| Original proof | [`93a66a6c6b69e5e2f7775d791fd4943f4b1cf671`](https://github.com/KitaKen1/log2-irrationality-exponent/tree/93a66a6c6b69e5e2f7775d791fd4943f4b1cf671/lean) |
+| FC statement | [`78d227fba77b02455c326e4e4d93d9881b3db025`](https://github.com/KitaKen1/formal-conjectures/blob/78d227fba77b02455c326e4e4d93d9881b3db025/FormalConjectures/Arxiv/2510.02059/LogTwo.lean) |
+
+### After 90 days: archived evidence
+
+The [CI archive](leanWithComparator/receipts/main-run-40069906619/ci-archive/)
+preserves the **original artifact ZIP**, **full job log**, run/attempt and step
+metadata, GitHub's artifact digest, an archive manifest and **SHA-256 checksums**
+in this repository, independently of Actions retention. The original ZIP's digest
+was checked against GitHub's metadata, and its result JSON matches the separately
+committed receipt byte for byte.
+
+The archive distinguishes the tested proof and verification commits from later
+documentation and archive commits. Successful-run NDJSON exports are represented
+by their hashes in the receipt. From the archive directory, its files can be
+checked with `sha256sum -c SHA256SUMS` (macOS: `shasum -a 256 -c SHA256SUMS`).
+
+### Reproduce the verification
+
+The [main verification workflow](.github/workflows/fc-log2-verification.yml)
+records the complete Linux commands and supports manual dispatch. For a clean
+local checkout, follow the
+[instructions at the tested commit](https://github.com/KitaKen1/log2-irrationality-exponent/tree/5d606b4adbc451061271f89636f9fc0187b64bd4/leanWithComparator).
+The receipt records the pinned Comparator-core driver, lean4export and nanoda
+versions. This run rebuilt the proof from source with the fixed Mathlib cache;
+no proof-project build cache was restored. The
+[verification guide](leanWithComparator/README.md) records the toolchain adaptation,
+warning policy and scope of the checks.
 
 ## Appendix: History
 

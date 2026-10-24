@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 12551343637,
+      "node_id": "MDg6QXJ0aWZhY3QxMjU1MTM0MzYzNw==",
+      "name": "fc6923-evidence-40069906619-1",
+      "size_in_bytes": 39573,
+      "url": "https://api.github.com/repos/KitaKen1/log2-irrationality-exponent/actions/artifacts/12551343637",
+      "archive_download_url": "https://api.github.com/repos/KitaKen1/log2-irrationality-exponent/actions/artifacts/12551343637/zip",
+      "expired": false,
+      "digest": "sha256:7abed9d244cd8d01f02d5f09a132eadec1eabe83bbea3c8b41cbfacff64b1725",
+      "created_at": "2026-10-24T07:07:09Z",
+      "updated_at": "2026-10-24T07:07:09Z",
+      "expires_at": "2027-01-22T06:21:51Z",
+      "workflow_run": {
+        "id": 40069906619,
+        "repository_id": 1408847666,
+        "head_repository_id": 1408847666,
+        "head_branch": "main",
+        "head_sha": "5d606b4adbc451061271f89636f9fc0187b64bd4"
+      }
+    }
+  ]
+}

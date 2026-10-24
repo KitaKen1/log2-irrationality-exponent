@@ -1,0 +1,36 @@
+{
+  "archived_at_utc": "2026-10-24T07:14:27.164241+00:00",
+  "ci_url": "https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40069906619",
+  "branch": "main",
+  "run_id": 40069906619,
+  "run_attempt": 1,
+  "conclusion": "success",
+  "tested_verification_commit": "5d606b4adbc451061271f89636f9fc0187b64bd4",
+  "proof_commit": "93a66a6c6b69e5e2f7775d791fd4943f4b1cf671",
+  "fc_statement": {
+    "repository": "KitaKen1/formal-conjectures",
+    "commit": "78d227fba77b02455c326e4e4d93d9881b3db025",
+    "path": "FormalConjectures/Arxiv/2510.02059/LogTwo.lean",
+    "git_blob": "91e14b006911811d629109ac87c633f47c77964d",
+    "sha256": "7014fb968fe8848c73036a2acea77e014b62e2e35040624f135aaa9ff14791cf",
+    "pull_request": "https://github.com/google-deepmind/formal-conjectures/pull/6923"
+  },
+  "original_receipt_commit": "082e9deae948c903bc01b42f660b195a08c62637",
+  "artifact_id": 12551343637,
+  "github_artifact_digest": "sha256:7abed9d244cd8d01f02d5f09a132eadec1eabe83bbea3c8b41cbfacff64b1725",
+  "download_endpoints": {
+    "artifact": "https://api.github.com/repos/KitaKen1/log2-irrationality-exponent/actions/artifacts/12551343637/zip",
+    "job_log": "https://api.github.com/repos/KitaKen1/log2-irrationality-exponent/actions/jobs/120800899084/logs"
+  },
+  "original_zip_result_matches_committed_receipt": true,
+  "successful_export_policy": "NDJSON export hashes only, recorded in ../result.json",
+  "sha256": {
+    "README.md": "2334c8bf060baae7877b50f22802ccdb9776d04ef451b52872df62648f260cd3",
+    "artifacts.json": "c1ccef2b915900964a2427496a597c1a7a6ca6f28fa9d59f9829f54dd60c17ba",
+    "fc6923-evidence-40069906619-1.zip": "7abed9d244cd8d01f02d5f09a132eadec1eabe83bbea3c8b41cbfacff64b1725",
+    "job-120800899084.log": "8f7ea90c8fe003cf8d77e1c270252a8c44381a30c0babf80e4640da164526dc8",
+    "jobs.json": "ecf5dcbe95520b2384a893d4443c25ab1a327ce503915ea28d4bbeca729ffa58",
+    "run.json": "00cd10b9a3fdc2cbffe334b8f1315cd2a260b8d0b7c05099d968987e25d39529",
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  }
+}

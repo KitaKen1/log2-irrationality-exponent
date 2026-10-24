@@ -40,6 +40,8 @@ Use a clean checkout with no `leanWithComparator/evidence/` directory. A success
 
 [Permanent main receipt and logs](receipts/main-run-40069906619/README.txt) · [result.json](receipts/main-run-40069906619/result.json). The receipt commit adds evidence and documentation to the tested source; it does not change the verification code or proof.
 
+The [original CI archive](receipts/main-run-40069906619/ci-archive/) additionally preserves the uploaded artifact ZIP, full job log, GitHub API metadata and SHA-256 checksums in Git, independently of Actions retention. The root README's [verification appendix](../README.md#appendix-verification-by-lean-comparator-on-github-ci-runner) summarizes the checked scope and provenance.
+
 ## Earlier public verification result
 
 The preliminary branch [run 40066294960](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40066294960) passed on 2026-10-24 at verification commit `2303de25fb0d06866563ee62d2f8759dd7333b62`. The original pinned proof was built from source using the fixed Mathlib cache, without restoring a proof build cache. Comparator core matched the exact target and its reachable definitions, nanoda checked 117,647 declarations, and all seven controls passed. The reported axioms are exactly `propext`, `Classical.choice`, and `Quot.sound`.
