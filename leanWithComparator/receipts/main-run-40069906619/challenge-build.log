@@ -1,0 +1,7 @@
+✔ [8924/8931] Built FormalConjecturesUtil.Answer.Syntax (270ms)
+✔ [8925/8931] Built FormalConjecturesUtil.Answer (682ms)
+✔ [8926/8931] Built FormalConjecturesUtil.Attributes.AMS (1.1s)
+✔ [8927/8931] Built FormalConjecturesUtil.Attributes.Basic (1.8s)
+✔ [8928/8931] Built RawPRFC (4.6s)
+✔ [8930/8931] Built ChallengeFC (4.6s)
+Build completed successfully (8931 jobs).

@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-24T06:24:25.135829+00:00",
+  "tools": {
+    "comparator": {
+      "repository": "https://github.com/leanprover/comparator.git",
+      "commit": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+      "actual_commit": "d03acab154d269c06e60e4de7e4cc85deebff94b"
+    },
+    "lean4export": {
+      "repository": "https://github.com/leanprover/lean4export.git",
+      "commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+      "actual_commit": "076e8e57707e813375e8f9da8bf989799ace9680"
+    },
+    "nanoda": {
+      "repository": "https://github.com/robsimmons/nanoda_lib.git",
+      "commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+      "actual_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840"
+    }
+  },
+  "executions": [
+    {
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/lean4export",
+      "returncode": 0,
+      "seconds": 5.85,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/logs/exporter.log",
+      "log_sha256": "39a2ebfee5e94c3c23c4aae6560fe0521b02d47511f245fb22fb160c47a93151"
+    },
+    {
+      "argv": [
+        "cargo",
+        "+1.90.0",
+        "build",
+        "--release",
+        "--locked",
+        "--jobs",
+        "2"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda",
+      "returncode": 0,
+      "seconds": 19.39,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/logs/nanoda.log",
+      "log_sha256": "f0e9e884a93ff1695316ef1786a84d597a89349c5066f29819712209c839a5bc"
+    },
+    {
+      "argv": [
+        "cargo",
+        "+1.90.0",
+        "test",
+        "--release",
+        "--locked",
+        "--lib",
+        "--jobs",
+        "2"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda",
+      "returncode": 0,
+      "seconds": 18.159,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/logs/nanoda-tests.log",
+      "log_sha256": "c0547950cf057961a58eab3679c1d131a15164516e0ef4552ce4f1f203e43de8"
+    },
+    {
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver",
+      "returncode": 0,
+      "seconds": 5.951,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/logs/driver.log",
+      "log_sha256": "bc5e35196a7893e8e84f2e83c00062f5c03e7e83f12e8b1d19a2315dc45e0c35"
+    }
+  ],
+  "finished_at": "2026-10-24T06:25:15.904033+00:00",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "lean": "leanprover/lean4:v4.34.1",
+  "rust": "1.90.0",
+  "binaries": {
+    "exporter": {
+      "path": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/lean4export/.lake/build/bin/lean4export",
+      "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
+    },
+    "nanoda": {
+      "path": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda/target/release/nanoda_bin",
+      "sha256": "fb5c026599d3dcdfbae26000d6d4335e74e1e5fe4f0b28495f44ac26a309b759"
+    },
+    "comparator": {
+      "path": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+      "sha256": "d227492e97794f9de2b4255f4a427df4b93be3a89f9909ae1c805c9ba18b3573"
+    }
+  }
+}

@@ -61,10 +61,10 @@ rechecks its exported proof with nanoda. [Run the public workflow](https://githu
 Only `propext`, `Classical.choice`, and `Quot.sound` are permitted; seven controls
 check that malformed or weakened inputs are rejected.
 
-The preliminary branch [public run on 2026-10-24](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40066294960)
-passed all stages: exact target/definition comparison, independent nanoda replay
+The [public verification on main](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40069906619)
+passed on 2026-10-24: exact target/definition comparison, independent nanoda replay
 of 117,647 declarations, the three-axiom audit, and all seven controls.
-[Permanent receipt and logs](leanWithComparator/receipts/public-run-40066294960/README.txt).
+[Permanent main receipt and logs](leanWithComparator/receipts/main-run-40069906619/README.txt).
 
 ## Mathematical explanation (AI generated)
 

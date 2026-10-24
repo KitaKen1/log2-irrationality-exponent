@@ -1,0 +1,2 @@
+LogTwo.irrationalityExponent_log_two : LogTwo.irrationalityExponent (Real.log 2) = 2
+'LogTwo.irrationalityExponent_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]

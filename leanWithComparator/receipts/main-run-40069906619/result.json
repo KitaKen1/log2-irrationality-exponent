@@ -1,0 +1,432 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-24T06:25:16.220138+00:00",
+  "target": "LogTwo.irrationalityExponent_log_two",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "definition_holes": [],
+  "executions": {
+    "challenge-build": {
+      "argv": [
+        "lake",
+        "--wfail",
+        "build",
+        "ChallengeFC",
+        "RawPRFC"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 12.496,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/challenge-build.log",
+      "log_sha256": "f3c83af9724bf550b5991105792dbbfba01e2444d8dc0f017b0e27384e6f1786"
+    },
+    "challenge-export": {
+      "argv": [
+        "lake",
+        "env",
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/lean4export/.lake/build/bin/lean4export",
+        "ChallengeFC",
+        "--",
+        "LogTwo.irrationalityExponent_log_two",
+        "LogTwo.irrationalityExponent",
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 7.628,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/challenge-export.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "solution-build": {
+      "argv": [
+        "lake",
+        "build",
+        "SolutionFC",
+        "AuditFC",
+        "ModelAuditFC"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 2134.05,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/solution-build.log",
+      "log_sha256": "37f0f0bc62e6c39d805a67a978175e8b6c24fb98214f5cde09178959c2482f1e"
+    },
+    "raw-pr-model-agreement": {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-Ewarning",
+        "ModelAuditFC.lean"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 5.245,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/raw-pr-model-agreement.log",
+      "log_sha256": "5850b290a365a6b22392bc0015c1c04718eab3dcfa1a5e6e712d3c304f4c1438"
+    },
+    "axioms": {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-Ewarning",
+        "AuditFC.lean"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 5.001,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/axioms.log",
+      "log_sha256": "8cc1f41306024eed040686f82e48b5e11019b1c3d97a34656b5d1698197e85f9"
+    },
+    "solution-export": {
+      "argv": [
+        "lake",
+        "env",
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/lean4export/.lake/build/bin/lean4export",
+        "SolutionFC",
+        "--",
+        "LogTwo.irrationalityExponent_log_two",
+        "LogTwo.irrationalityExponent",
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 68.472,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/solution-export.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparator": {
+      "argv": [
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/challenge.ndjson",
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/solution.ndjson",
+        "LogTwo.irrationalityExponent_log_two",
+        "LogTwo.irrationalityExponent"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 52.664,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/comparator.log",
+      "log_sha256": "c86537eaae44b76e9e2ccba09b6da4a42d878f3881a29e2868ecc30b8f85fcff"
+    },
+    "nanoda": {
+      "argv": [
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda/target/release/nanoda_bin",
+        "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/nanoda-config.json"
+      ],
+      "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+      "returncode": 0,
+      "seconds": 179.931,
+      "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/nanoda.log",
+      "log_sha256": "3ad6b526d4f6a330743f2f127ed6c32da146130cf8533e1fe498ed5601e2ecc2"
+    }
+  },
+  "comparator": true,
+  "independent_nanoda_replay": true,
+  "negative_controls": true,
+  "scope": {
+    "mathlib_cache": "Trusted fixed-revision Mathlib cache may be used",
+    "proof_build_cache_hit": false,
+    "proof_build_cache_matched_key": "",
+    "full_dependency_cold_build": false,
+    "landrun_pipeline": false,
+    "adversarial_build_sandbox": false,
+    "independent_human_semantic_review": false
+  },
+  "environment": {
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "architecture": "x86_64",
+    "lean": "leanprover/lean4:v4.34.1",
+    "rust": "1.90.0",
+    "lean_archive_sha256": "47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4"
+  },
+  "ci": {
+    "repository": "KitaKen1/log2-irrationality-exponent",
+    "sha": "5d606b4adbc451061271f89636f9fc0187b64bd4",
+    "run_id": "40069906619",
+    "run_attempt": "1",
+    "url": "https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40069906619"
+  },
+  "inputs": {
+    "proof_commit": "93a66a6c6b69e5e2f7775d791fd4943f4b1cf671",
+    "proof_files": 891,
+    "proof_lock_sha256": "0051d11d5e6812735de47a9afdf4727953a103a2559585ba00cdcebf933b29a4",
+    "pr_statement": {
+      "repository": "KitaKen1/formal-conjectures",
+      "commit": "78d227fba77b02455c326e4e4d93d9881b3db025",
+      "path": "FormalConjectures/Arxiv/2510.02059/LogTwo.lean",
+      "git_blob": "91e14b006911811d629109ac87c633f47c77964d",
+      "sha256": "7014fb968fe8848c73036a2acea77e014b62e2e35040624f135aaa9ff14791cf",
+      "pull_request": "https://github.com/google-deepmind/formal-conjectures/pull/6923"
+    },
+    "dependency_revisions": {
+      "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+      "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+    },
+    "publication_metadata": {}
+  },
+  "challenge_generation": {
+    "namespace_body_verbatim": true,
+    "namespace_body_sha256": "75e063a1712c56f19bdb99a7b06f8048fb11352e8629d82ab1f6b90ee4440bf6",
+    "changes": [
+      "replace FC module/public import/public section wrapper with 4.34.1 imports"
+    ],
+    "raw_pr_variant": "RawPRFC.lean; identical to ChallengeFC.lean",
+    "answer": "answer(2), unchanged",
+    "placeholder": "one intentional Challenge sorry"
+  },
+  "verification_git_sha": "5d606b4adbc451061271f89636f9fc0187b64bd4",
+  "current_stage": "complete",
+  "source_warning_policy": {
+    "accepted": [
+      "warning: LogTwo/Geometry/JetMatrix.lean:69:55: This simp argument is unused:",
+      "warning: LogTwo/Geometry/NormalizedContact.lean:31:32: `dif_neg` has been deprecated: Use `dite_eq_right` instead",
+      "warning: LogTwo/Geometry/NormalizedContact.lean:31:62: `dif_neg` has been deprecated: Use `dite_eq_right` instead",
+      "warning: LogTwo/Geometry/ConstantFiber.lean:57:6: Try this:",
+      "warning: LogTwo/Geometry/ConstantFiber.lean:105:4: Try this:",
+      "warning: LogTwo/Geometry/CurveWordVanishing.lean:62:4: Try this:",
+      "warning: LogTwo/Geometry/CurveWordVanishing.lean:69:4: Try this:",
+      "warning: LogTwo/Geometry/ChosenContactBound.lean:30:45: Variable name `hinj` is not explicitly referenced."
+    ],
+    "unexpected": [],
+    "reference": "reference/accepted-build-warnings.json",
+    "reference_sha256": "fd7635f1c8d2518ac0f8a730e6ba3b49b62fea86421174b8ce6b848c6da24fa1"
+  },
+  "raw_pr_model_target_agreement": true,
+  "reported_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "export_meta": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+      "version": "4.34.1"
+    }
+  },
+  "compared_model_roots": [
+    "LogTwo.irrationalityExponent"
+  ],
+  "checked_declarations": 117647,
+  "controls": {
+    "status": "passed",
+    "fixture_target": "FCControl.target",
+    "cases": {
+      "Sorry": {
+        "expected": "reject",
+        "passed": true,
+        "stage": "comparator",
+        "reason": "Illegal axiom detected: 'sorryAx'",
+        "execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Challenge.ndjson",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Sorry.ndjson",
+            "FCControl.target",
+            "FCControl.Subject"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 1,
+          "seconds": 0.074,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Sorry-compare.log",
+          "log_sha256": "8e3e62573f1848fe37a7bf493d712016fcf635b28ab9d6fcccd7014bfd8b36a6"
+        }
+      },
+      "Axiom": {
+        "expected": "reject",
+        "passed": true,
+        "stage": "comparator",
+        "reason": "Illegal axiom detected: 'FCControl.cheat'",
+        "execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Challenge.ndjson",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Axiom.ndjson",
+            "FCControl.target",
+            "FCControl.Subject"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 1,
+          "seconds": 0.053,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Axiom-compare.log",
+          "log_sha256": "2c90a5a770e448b37f60289c1877556c0c8400953a8f66776b05d931af5c3b82"
+        }
+      },
+      "Weakened": {
+        "expected": "reject",
+        "passed": true,
+        "stage": "comparator",
+        "reason": "Const does not match",
+        "execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Challenge.ndjson",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Weakened.ndjson",
+            "FCControl.target",
+            "FCControl.Subject"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 1,
+          "seconds": 0.053,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Weakened-compare.log",
+          "log_sha256": "3dfee65500ed5057b7b78d0ee04025df1d3f93e072efde0731174155b8b2d38e"
+        }
+      },
+      "Type": {
+        "expected": "reject",
+        "passed": true,
+        "stage": "comparator",
+        "reason": "theorem statement do not match",
+        "execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Challenge.ndjson",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Type.ndjson",
+            "FCControl.target",
+            "FCControl.Subject"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 1,
+          "seconds": 0.054,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Type-compare.log",
+          "log_sha256": "d35ff60965855c005c64efec1f72ee52d12d14d13a1e1245ab88cf733ce611a0"
+        }
+      },
+      "Missing": {
+        "expected": "reject",
+        "passed": true,
+        "stage": "comparator",
+        "reason": "Const not found in solution",
+        "execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/compare-driver/.lake/build/bin/fccompare",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Challenge.ndjson",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Missing.ndjson",
+            "FCControl.target",
+            "FCControl.Subject"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 1,
+          "seconds": 0.054,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/Missing-compare.log",
+          "log_sha256": "40d45beed30fbb4d0f20f3af5848015648d3bc015114839f8cac6a9c53b61fe8"
+        }
+      },
+      "Valid": {
+        "expected": "accept",
+        "passed": true,
+        "stage": "comparator+nanoda",
+        "nanoda_execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda/target/release/nanoda_bin",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/valid-nanoda.json"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 0,
+          "seconds": 0.002,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/valid-nanoda.log",
+          "log_sha256": "06ed6a8913e3b1a5b465f26f70ffb031c1dc2f6db2e83058e00643596acb86db"
+        }
+      },
+      "Broken": {
+        "expected": "reject",
+        "passed": true,
+        "stage": "nanoda",
+        "mutation": "target proof replaced by its type expression",
+        "comparator_accepted": true,
+        "execution": {
+          "argv": [
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/.tools/nanoda/target/release/nanoda_bin",
+            "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/broken-nanoda.json"
+          ],
+          "cwd": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator",
+          "returncode": 101,
+          "seconds": 0.002,
+          "log": "/home/runner/work/log2-irrationality-exponent/log2-irrationality-exponent/leanWithComparator/evidence/controls/broken-nanoda.log",
+          "log_sha256": "069365074bdfa3a872841505fe5c6fab4f0443dedeee93aeaca1da302435bd48"
+        }
+      }
+    },
+    "scope": "Small compiled fixtures, using the same driver, exporter, checker and axiom policy"
+  },
+  "evidence_sha256": {
+    "comparator.log": "c86537eaae44b76e9e2ccba09b6da4a42d878f3881a29e2868ecc30b8f85fcff",
+    "nanoda-config.json": "a4e733227569150b5b359ee9738f3245883b5686a00d74c35bc54600e335b065",
+    "challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.log": "8cc1f41306024eed040686f82e48b5e11019b1c3d97a34656b5d1698197e85f9",
+    "solution.ndjson": "7b03a566f7294f3e6f13fddd75bb9bb01574b4f39a8ff4d7652605b11f4f3001",
+    "checked-statements.txt": "cb92bb86c810731b1c262abfa92d7edeaa3a79c69052d2aca94fb1adaeda9962",
+    "solution-build.log": "37f0f0bc62e6c39d805a67a978175e8b6c24fb98214f5cde09178959c2482f1e",
+    "tools-lock.json": "80a6d569b9b2478f21d89c8b5a8a2e311991005f5baa50dbc2e4299343d320cc",
+    "challenge.ndjson": "9aa947e3e32741d838b466b0ece822dc20609a38b586bb5a1eb4fb514ab579bb",
+    "challenge-build.log": "f3c83af9724bf550b5991105792dbbfba01e2444d8dc0f017b0e27384e6f1786",
+    "raw-pr-model-agreement.log": "5850b290a365a6b22392bc0015c1c04718eab3dcfa1a5e6e712d3c304f4c1438",
+    "solution-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nanoda.log": "3ad6b526d4f6a330743f2f127ed6c32da146130cf8533e1fe498ed5601e2ecc2",
+    "controls/Valid-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/Axiom-compare.log": "2c90a5a770e448b37f60289c1877556c0c8400953a8f66776b05d931af5c3b82",
+    "controls/Sorry-compare.log": "8e3e62573f1848fe37a7bf493d712016fcf635b28ab9d6fcccd7014bfd8b36a6",
+    "controls/Weakened-compare.log": "3dfee65500ed5057b7b78d0ee04025df1d3f93e072efde0731174155b8b2d38e",
+    "controls/Challenge-build.log": "f36d6e5793e565c53e51c22c2b91f3929dac5835e248a840b823feeaec7e258b",
+    "controls/Valid-compare.log": "b1545aeb5538257ae0ec3d081c92eb7ac7c17f3547900411451a4ff81e0c9f0b",
+    "controls/valid-nanoda.json": "ed1371cca92a958990c1d3bc304065190aee1451a45cfc4b01145cff84de4b18",
+    "controls/Weakened-build.log": "dcdf42add1ae28305eb054a7f5bcb9523813c8941dce221ffc60498a371583dd",
+    "controls/broken-nanoda.json": "a0ea7511b903eebaee4f6d3220d43ad3136008562dcc0ad3644983172abe89a0",
+    "controls/Type.ndjson": "503727b05486cf1e0f79890f369fdbf2c93cbd48c863b4c2bbe85cc1d4a54c58",
+    "controls/Axiom.ndjson": "2c01d3bf2b2625dc297c55aafb437b5c0844e36ab1ac7dd788fc972bc7fbe6cb",
+    "controls/valid-statements.txt": "db3ba2e2dc279e021f6d817402d0f0faa11639612507696950a246f15eeac4f9",
+    "controls/Valid.ndjson": "d9d94cd792df7e6399ff44e1132ff87f09f4b019cc0b2db55dd4d4ce40a7e055",
+    "controls/Weakened.ndjson": "dcda5ce07d3e9bdacac81997c3d3cc8f12cd4d794fd144d82265345ff55ebcba",
+    "controls/Sorry-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/Missing.ndjson": "e007364822282e526a265080f499fcc1812c7bd73c0a812b4a0befaf01015d3b",
+    "controls/Challenge-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/Sorry.ndjson": "26b2d86fcd8337fb2771a355d2f36b286b54e5a80a50ba7eef9d1932979b4f6c",
+    "controls/Valid-build.log": "edda5cda911f13d12ccb21dce395e63cdbe85195167cda9073d00d851dd34865",
+    "controls/Missing-build.log": "98a59c8d6ec9b780db1646ccf2ae20712ba5b1448c6725e45965e454a4d971b0",
+    "controls/broken-nanoda.log": "069365074bdfa3a872841505fe5c6fab4f0443dedeee93aeaca1da302435bd48",
+    "controls/Weakened-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/broken-compare.log": "b1545aeb5538257ae0ec3d081c92eb7ac7c17f3547900411451a4ff81e0c9f0b",
+    "controls/Sorry-build.log": "13467588775f6a3648ef83668ffed86e8aca89701cdd6b5626950e241550af6d",
+    "controls/Type-build.log": "e4dc6584f1300df8c276e5cbdfc2715066b91bcd7fe955c7bc845b8c155720d8",
+    "controls/Type-compare.log": "d35ff60965855c005c64efec1f72ee52d12d14d13a1e1245ab88cf733ce611a0",
+    "controls/result.json": "8f07aa97fb326f36095550db8d600b57007263fddad6926049c107e2edbcacb5",
+    "controls/Missing-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/Axiom-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/Challenge.ndjson": "2eb9f7274a5625069d659309179618a0bd3fa83522a9184cbbf1568df77b428c",
+    "controls/valid-nanoda.log": "06ed6a8913e3b1a5b465f26f70ffb031c1dc2f6db2e83058e00643596acb86db",
+    "controls/Type-export.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controls/Axiom-build.log": "b55bb31aba78280651ff0b12072bbb4c1e114f1c6125cd1c048b9570a71dab1f",
+    "controls/Broken.ndjson": "41dde3d01af3f295284e3751533a9ad9725c6a961a1c2e7ce0d190061e6e08ab",
+    "controls/Missing-compare.log": "40d45beed30fbb4d0f20f3af5848015648d3bc015114839f8cac6a9c53b61fe8",
+    "controls/broken-statements.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tool-build-logs/nanoda-tests.log": "c0547950cf057961a58eab3679c1d131a15164516e0ef4552ce4f1f203e43de8",
+    "tool-build-logs/exporter.log": "39a2ebfee5e94c3c23c4aae6560fe0521b02d47511f245fb22fb160c47a93151",
+    "tool-build-logs/driver.log": "bc5e35196a7893e8e84f2e83c00062f5c03e7e83f12e8b1d19a2315dc45e0c35",
+    "tool-build-logs/nanoda.log": "f0e9e884a93ff1695316ef1786a84d597a89349c5066f29819712209c839a5bc"
+  },
+  "finished_at": "2026-10-24T07:06:40.686613+00:00"
+}

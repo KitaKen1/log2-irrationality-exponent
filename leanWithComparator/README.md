@@ -34,6 +34,12 @@ python3 leanWithComparator/scripts/verify.py
 
 Use a clean checkout with no `leanWithComparator/evidence/` directory. A successful run writes `evidence/result.json`; the workflow publishes logs and receipts as an Actions artifact. The receipt records the CI source commit, original proof and FC statement commits, export hashes, tool revisions, definition agreement, axiom report and all seven controls.
 
+## Verification on main
+
+[Main run 40069906619](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40069906619) passed on 2026-10-24 at verification commit `5d606b4adbc451061271f89636f9fc0187b64bd4`. It rebuilt the pinned proof from source using the fixed Mathlib cache, without restoring a proof-project build cache. Comparator core matched the target and reachable definitions with no definition holes; nanoda checked 117,647 declarations with no errors. The axiom audit reported exactly `propext`, `Classical.choice`, and `Quot.sound`, and all seven controls passed.
+
+[Permanent main receipt and logs](receipts/main-run-40069906619/README.txt) · [result.json](receipts/main-run-40069906619/result.json). The receipt commit adds evidence and documentation to the tested source; it does not change the verification code or proof.
+
 ## Earlier public verification result
 
 The preliminary branch [run 40066294960](https://github.com/KitaKen1/log2-irrationality-exponent/actions/runs/40066294960) passed on 2026-10-24 at verification commit `2303de25fb0d06866563ee62d2f8759dd7333b62`. The original pinned proof was built from source using the fixed Mathlib cache, without restoring a proof build cache. Comparator core matched the exact target and its reachable definitions, nanoda checked 117,647 declarations, and all seven controls passed. The reported axioms are exactly `propext`, `Classical.choice`, and `Quot.sound`.
