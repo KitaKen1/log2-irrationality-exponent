@@ -1,0 +1,8 @@
+{
+  "repository": "KitaKen1/formal-conjectures",
+  "commit": "78d227fba77b02455c326e4e4d93d9881b3db025",
+  "path": "FormalConjectures/Arxiv/2510.02059/LogTwo.lean",
+  "git_blob": "91e14b006911811d629109ac87c633f47c77964d",
+  "sha256": "7014fb968fe8848c73036a2acea77e014b62e2e35040624f135aaa9ff14791cf",
+  "pull_request": "https://github.com/google-deepmind/formal-conjectures/pull/6923"
+}

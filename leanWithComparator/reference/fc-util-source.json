@@ -1,0 +1,10 @@
+{
+  "repository": "google-deepmind/formal-conjectures",
+  "commit": "d838afa7a62f66dc034c96fb011c10b9bde3f44c",
+  "blobs": {
+    "FormalConjecturesUtil/Answer.lean": "1ef64b8c99fa0af0a89cb02100da3df2b25eaf91",
+    "FormalConjecturesUtil/Answer/Syntax.lean": "38e18bccdccfceec42bd50c94a79cdf980b45468",
+    "FormalConjecturesUtil/Attributes/Basic.lean": "02003fdab3d4c20287d1e8a7f3f4e1e810925958",
+    "FormalConjecturesUtil/Attributes/AMS.lean": "a4873dcc1119beb5eac860ff68d09e3ed4d3ff13"
+  }
+}

@@ -55,6 +55,12 @@ Axioms: `propext`, `Classical.choice`, `Quot.sound`.
 [Build results](lean/evidence/build-results.json) ·
 [Build instructions](lean/README.md) · [Lean4Web](lean4web/README.md)
 
+The [exact FC PR #6923 verification](leanWithComparator/README.md) compares the
+pinned proof against the PR statement using Comparator core and independently
+rechecks its exported proof with nanoda. [Run the public workflow](https://github.com/KitaKen1/log2-irrationality-exponent/actions/workflows/fc-log2-verification.yml).
+Only `propext`, `Classical.choice`, and `Quot.sound` are permitted; seven controls
+check that malformed or weakened inputs are rejected.
+
 ## Mathematical explanation (AI generated)
 
 The following sketch follows the formal proof. The Lean statements and proofs,

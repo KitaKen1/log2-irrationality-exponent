@@ -1,0 +1,15 @@
+{
+  "proof_commit": "93a66a6c6b69e5e2f7775d791fd4943f4b1cf671",
+  "warnings": [
+    "warning: LogTwo/Geometry/JetMatrix.lean:69:55: This simp argument is unused:",
+    "warning: LogTwo/Geometry/NormalizedContact.lean:31:32: `dif_neg` has been deprecated: Use `dite_eq_right` instead",
+    "warning: LogTwo/Geometry/NormalizedContact.lean:31:62: `dif_neg` has been deprecated: Use `dite_eq_right` instead",
+    "warning: LogTwo/Geometry/ConstantFiber.lean:57:6: Try this:",
+    "warning: LogTwo/Geometry/ConstantFiber.lean:105:4: Try this:",
+    "warning: LogTwo/Geometry/CurveWordVanishing.lean:62:4: Try this:",
+    "warning: LogTwo/Geometry/CurveWordVanishing.lean:69:4: Try this:",
+    "warning: LogTwo/Geometry/ChosenContactBound.lean:30:45: Variable name `hinj` is not explicitly referenced."
+  ],
+  "policy": "Only these existing style/deprecation warnings are accepted. All other warnings fail; proof, comparison and axiom checks stay strict.",
+  "provenance": "Existing style and deprecation warnings measured in the unchanged pinned proof during preliminary CI."
+}

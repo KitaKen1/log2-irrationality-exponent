@@ -9,3 +9,6 @@
 *.ilean
 *.ir
 *.trace
+**/.tools/
+leanWithComparator/evidence/
+leanWithComparator/bootstrap-logs/

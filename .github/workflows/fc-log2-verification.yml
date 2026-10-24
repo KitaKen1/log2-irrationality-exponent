@@ -1,0 +1,139 @@
+name: FC6923 final theorem verification (public)
+
+on:
+  push:
+    branches: [fc-6923-public-verification-20261024]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fc6923-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    env:
+      LEAN_NUM_THREADS: '2'
+    steps:
+      - name: Require the authorized public Log2 repository
+        env:
+          REPOSITORY_PRIVATE: ${{ github.event.repository.private }}
+        run: |
+          test "$GITHUB_REPOSITORY" = KitaKen1/log2-irrationality-exponent
+          test "$REPOSITORY_PRIVATE" = false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Prepare disposable runner
+        run: |
+          test "$GITHUB_ACTIONS" = true
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          test "$RUNNER_OS" = Linux
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup
+          sudo fallocate -l 12G /fc6923-swap
+          sudo chmod 600 /fc6923-swap
+          sudo mkswap /fc6923-swap
+          sudo swapon /fc6923-swap
+          free -h
+          df -h /
+      - name: Install pinned Lean manager and Rust toolchain
+        run: |
+          curl -sSfL https://github.com/leanprover/elan/releases/download/v4.1.2/elan-x86_64-unknown-linux-gnu.tar.gz -o "$RUNNER_TEMP/elan.tar.gz"
+          # The release archive digest is checked before executing it.
+          echo "f81c2e48c1588d4612cd2c8851947898a45ac8d72748a07dff3a5694f1cf589b  $RUNNER_TEMP/elan.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/elan.tar.gz" -C "$RUNNER_TEMP"
+          "$RUNNER_TEMP/elan-init" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+          rustup toolchain install 1.90.0 --profile minimal
+          # Fetch the exact official release without the release.lean-lang.org redirect.
+          curl --retry 5 --retry-all-errors --retry-delay 5 -sSfL https://github.com/leanprover/lean4/releases/download/v4.34.1/lean-4.34.1-linux.tar.zst -o "$RUNNER_TEMP/lean-4.34.1-linux.tar.zst"
+          echo "47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4  $RUNNER_TEMP/lean-4.34.1-linux.tar.zst" | sha256sum -c -
+          FC_LEAN_DIR="$HOME/.elan/toolchains/leanprover--lean4---v4.34.1"
+          mkdir -p "$FC_LEAN_DIR"
+          tar --zstd -xf "$RUNNER_TEMP/lean-4.34.1-linux.tar.zst" -C "$FC_LEAN_DIR" --strip-components=1
+          "$FC_LEAN_DIR/bin/lean" --version
+      - name: Check immutable proof, PR snapshot and generated Challenge
+        run: |
+          test -z "$(find lean leanWithComparator -name '*.olean' -print -quit)"
+          python3 leanWithComparator/scripts/make_challenge.py --check
+      - name: Fetch pinned dependencies and trusted Mathlib cache
+        working-directory: leanWithComparator
+        run: |
+          mkdir -p bootstrap-logs
+          for attempt in 1 2 3; do
+            if lake exe cache get 2>&1 | tee -a bootstrap-logs/dependencies.log; then
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
+      - name: Build pinned comparator core, exporter and nanoda
+        run: python3 leanWithComparator/scripts/setup_tools.py
+      - name: Freeze the exact PR challenge environment
+        run: python3 leanWithComparator/scripts/verify.py --phase challenge
+      - name: Restore only this exact pinned proof build
+        id: proof-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: lean/.lake/build
+          key: fc6923-proof-linux-4341-${{ hashFiles('leanWithComparator/reference/proof-source-lock.json', 'lean/lake-manifest.json', 'lean/lean-toolchain') }}
+      - name: Build the pinned LogTwo proof and audit its interface and axioms
+        env:
+          FC_PROOF_CACHE_HIT: ${{ steps.proof-cache.outputs.cache-hit }}
+          FC_PROOF_CACHE_MATCHED_KEY: ${{ steps.proof-cache.outputs.cache-matched-key }}
+        run: python3 leanWithComparator/scripts/verify.py --phase solution
+      - name: Compare the exact target, replay with nanoda, and run controls
+        run: python3 leanWithComparator/scripts/verify.py --phase finish
+      - name: Require every verification stage
+        run: |
+          python3 - <<'PY'
+          import json
+          p='leanWithComparator/evidence/result.json'
+          d=json.load(open(p))
+          assert d['status']=='passed'
+          assert d['target']=='LogTwo.irrationalityExponent_log_two'
+          assert all(d[k] for k in ['comparator','independent_nanoda_replay','negative_controls'])
+          assert d['raw_pr_model_target_agreement']
+          assert d['definition_holes']==[]
+          assert set(d['reported_axioms']) <= {'propext','Classical.choice','Quot.sound'}
+          assert len(d['controls']['cases'])==7
+          assert d['source_warning_policy']['unexpected']==[]
+          PY
+      - name: Save complete or partial exact pinned proof build
+        if: always() && steps.proof-cache.outcome == 'success' && steps.proof-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: lean/.lake/build
+          key: fc6923-proof-linux-4341-${{ hashFiles('leanWithComparator/reference/proof-source-lock.json', 'lean/lake-manifest.json', 'lean/lean-toolchain') }}
+      - name: Upload success or failure evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: fc6923-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            leanWithComparator/evidence/**/*.json
+            leanWithComparator/evidence/**/*.log
+            leanWithComparator/evidence/**/*.txt
+            leanWithComparator/.tools/logs/
+            leanWithComparator/.tools/tools-lock.json
+            leanWithComparator/bootstrap-logs/
+          include-hidden-files: true
+          retention-days: 90
+          if-no-files-found: warn
+      - name: Preserve exported environments for comparison diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: fc6923-debug-exports-${{ github.run_id }}-${{ github.run_attempt }}
+          path: leanWithComparator/evidence/*.ndjson
+          retention-days: 7
+          if-no-files-found: ignore
